@@ -1,0 +1,268 @@
+@import 'config';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+body {
+    background-color: $background-color;
+    font-family: $nunito;
+    line-height: 16px;
+    letter-spacing: 2;
+}
+
+ul, ol, li {
+    list-style-type: none;
+}
+
+#main {
+    width: 100vw;
+    height: 100vh;
+
+    // target the "left" and "right" id's
+    display: grid;
+    grid-template-columns: .75fr 1fr;
+
+    #left {
+        background-color: $primary-color; 
+        position: relative;
+
+        & > ol {
+            position: absolute;
+            right: 9.5%;
+            top: 35vh;
+
+            font-weight: 400;
+            font-size: 22px;
+            color: $grey-1;
+
+            list-style-position: outside;
+
+            li {
+                list-style-type: decimal;
+                padding: 15px 0;
+            }
+            .active {
+                list-style-image: url("../svg/check.svg");
+            }
+            .current {
+                font-weight: 700;
+            }
+        }
+    }
+
+    #right {
+        padding: 8.5vh 10% 0 10%;
+        // margin: 0 10%;
+        color: $grey-5;
+
+        & > h2 {
+            margin-bottom: 6.5vh;
+            line-height:1;
+        }
+
+        // generally scoped
+        h4 {
+            width: 100%;
+            border: 1.35px solid $grey-3;
+            border-top: 0;
+            border-left: 0;
+            border-right: 0;
+            padding: 0 0 5px 0;
+        }
+            
+        .form {
+            margin: 7.5px 0 0 0;
+
+            h5 {
+                padding: 0 0 9px 4.5px;
+            }
+            
+            input {
+                border: 1px solid darken($blue-sky, 50%);
+                border-radius: 5px;
+                outline: 0;
+                font-size: 18px;
+                background-color: transparent;
+                padding: 8.5px 7.5px;
+                width: 100%;
+            }
+            
+            .donor {
+                border: 2px solid $primary-color;
+            }
+        }
+
+        // first form section
+        .first-form {
+            margin-bottom: 15px;
+            
+
+            h1 {
+                border: 1.35px solid $grey-3;
+                border-top: 0;
+                border-left: 0;
+                border-right: 0;
+                padding: 0 0 20px 0;
+            }
+
+            .name {
+                width: 95%;
+                padding: 15px 10px;
+                margin: 0 0 5px 0;
+            }
+        
+            .first-form-2 {
+                display: grid;
+                grid-template-columns: .7fr 1fr;
+                gap: 8.5%; grid-gap: 8.5%;
+                width: 95%;
+
+                .first-form-3 {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    gap: 5.5%; grid-gap: 5.5%;
+                }
+            }
+        }
+
+        // Second Form
+        .second-form {
+            .second-form-2 {
+                width: 95%;
+                display: grid;
+                grid-template-columns: 1fr .85fr;
+                gap: 12.5%; grid-gap: 12.5%;
+            }
+        }
+
+        // Third Form
+        // Applicable only to Suppliers.html
+        .third-form {
+            width: 95%;
+            margin-top: 15px;
+
+            & > div {
+                display: grid;
+                grid-template-columns: 1fr .85fr;
+                gap: 12.5%; grid-gap: 12.5%;
+
+                .account-number {
+                    margin-left: 5%;
+                }
+            }
+        }
+
+        // fourth Form
+        // Applicable only to capture.html
+        .fourth-form {
+            .capture {
+                border: 1px solid $primary-color;
+                width: 50%;
+                // height: 50%;
+                height: 400px;
+                margin: 0 auto;
+
+                .capture-button-div {
+                    width: 100%;
+                    text-align: center;
+
+                    button {
+                        width: 100px;
+                        padding: 10px 20px;
+                        border: 2px solid $info;
+                        border-radius: 5px;
+                        font-size: 15px; 
+                        background-color: $info;
+                        color: $background-color;
+                        margin: 0 auto;
+                        
+                        &:hover {
+                            background-color: darken($blue-sky, 30%);
+                            border: 2px solid darken($blue-sky, 30%);
+                        }
+        
+                        &:active {
+                            background-color: $info;
+                            color: $background-color;
+                            border: 2px solid $info;
+                        }
+                    }
+                }
+            }
+        }
+
+
+        // BUTTONS
+        .buttons {
+            position: relative;
+            margin: 20px 0;
+            width: 95%;
+
+            button {
+                width: 100px;
+                padding: 10px 20px;
+                border: 1px solid $info;
+                border-radius: 5px;
+                font-size: 15px;    
+                color: $grey-5;
+            }
+
+            .back-button {
+                transition: .5s ease-in-out;
+
+                &:hover {
+                    background-color: $info;
+                    color: $background-color;
+                }
+
+                &:active {
+                    background-color: transparent;
+                    color: $grey-5;
+
+                }
+            }
+            .next-button {
+                transition: .5s ease-in-out;
+                background-color: $info;
+                color: $background-color;
+                position: absolute;
+                right: 0;
+
+                &:hover {
+                    background-color: darken($blue-sky, 30%);
+                    border: 2px solid darken($blue-sky, 30%);
+                }
+
+                &:active {
+                    background-color: $info;
+                    color: $background-color;
+                    border: 2px solid $info;
+                }
+            }
+
+            .donor {
+                border: 2px solid $primary-color;
+            }
+        }
+    }
+}
+
+
+#main {
+    overflow: hidden;
+    
+    #left {
+        overflow: hidden;
+    }
+    #right {
+    overflow-y: scroll;
+    }
+}
+
+
+
+@import 'media';

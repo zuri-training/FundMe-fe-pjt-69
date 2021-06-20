@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donor</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- The main div contains everything included in the webpage -->
+    <div id="main">
+        <div id="left">
+            <ol class="main-ul">
+            <!-- The "Active" is given to the highlighted section, depending on the webpage -->
+                <li class="py-1 ps-3 active current">Personal Information</li>
+                <li class="py-1 ps-3">Parents/Guardian/School</li>
+                <li class="py-1 ps-3">Suppliers</li>
+                <li class="py-1 ps-3">Data Capture</li>
+            </ol>
+        </div>
+
+        <!-- The Right side contains the input forms -->
+        <form id="right">
+            <h2>Personal Information</h2>
+            
+            <!-- The First form Contains the User's Name, DOB, Country and Phone Number -->
+            <div class="first-form">
+                <h4>Student/Parent/School</h4>
+                <div class="form">
+                    <h5>Full Name</h5>
+                    <input type="text" placeholder="FundMe|" class="name donor" required>
+                </div>
+
+                <div class="first-form-2">
+                    <div class="form">
+                        <h5>Date Of Birth</h5>
+                        <input type="date" placeholder="2020" value="2020" class="donor" required>
+                    </div>
+
+                    <div class="first-form-3">
+                        <div class="form">
+                            <h5>Country</h5>
+                            <input type="tel" placeholder="+234" class="donor" required>
+                        </div>
+                        <div class="form">
+                            <h5>Phone Number</h5>
+                            <input type="tel" placeholder="80616..." class="donor" required>
+                         </div>
+                    </div>
+                </div>        
+            </div>
+
+            <div action="" class="second-form">
+                <h4>Personal Address</h4>
+                <div>
+                    <div class="second-form-2">
+                        <div class="form">
+                            <h5>State</h5>
+                            <input type="text" placeholder="Lagos" class="donor" required>
+                        </div>
+                        
+                        <div class="form">
+                            <h5>City</h5>
+                            <input type="text" placeholder="Abuja" class="donor" required>
+                        </div>
+                    </div>
+
+                    <div class="second-form-2">
+                        <div class="form">
+                            <h5>Personal Address</h5>
+                            <input type="text" placeholder="No. 2 ..."class="donor"  required>
+                        </div>
+
+                        <div class="form">
+                            <h5>Address Code</h5>
+                            <input type="text" placeholder="NG 19004" class="donor" required>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="buttons">
+                <button class="back-button donor">Back</button>
+                <button type="submit" class="next-button donor">Next</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
