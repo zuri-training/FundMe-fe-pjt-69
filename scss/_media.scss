@@ -76,13 +76,15 @@
     }
 }
 
-@media (max-width:430px) {
+@media (max-width:280px) {
     #main {
         // background-color: $background-color;
         padding-top: 30px;
 
         #right {
             margin: 0;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
             
             .buttons {
                 padding-bottom: 30px;

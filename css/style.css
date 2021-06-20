@@ -274,12 +274,14 @@ ul, ol, li {
     padding: 5vh 5% 0 5%;
   }
 }
-@media (max-width: 430px) {
+@media (max-width: 280px) {
   #main {
     padding-top: 30px;
   }
   #main #right {
     margin: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
   }
   #main #right .buttons {
     padding-bottom: 30px;
