@@ -13,6 +13,7 @@ header {
   background-size: cover;
 }
 
+
 /* NAV START */
 .navbar {
   position: relative;
@@ -100,7 +101,9 @@ header {
 }
 
 /* NAV ENDS HERE */
-
+.messager{
+  width: 100%;
+}
 .message {
   text-align: left;
   position: relative;
@@ -218,6 +221,106 @@ h6 > p {
   position: relative;
   bottom: 50vh;
 }
+
+@media (max-width: 992px) {
+
+/* SUPPORT */
+.achieve {
+  text-align: left;
+  font-weight: bold;
+  color: #4f4f4f;
+}
+
+.by {
+  font-weight: bolder;
+}
+
+.achievey {
+  position: relative;
+  text-align: left;
+  color: #b33e00;
+}
+
+.percent > h3 {
+  color: #b33e00;
+}
+
+.raised {
+  padding-left: 10vh;
+}
+
+.color {
+  color: #4f4f4f;
+}
+
+.percent {
+  text-align: left;
+  position: relative;
+  bottom: 50vh;
+}
+
+.img-fluid {
+
+  /* position: relative;
+  right: 10vh; */
+
+  /* width: 100%;
+  height: 400px; */
+  display: none;
+}
+
+.img-fluid2 {
+  display: none;
+  /* position: relative;
+  top: 40vh;
+  right: 15vh;
+  width: 30%;
+  height: 300px; */
+  /* left: 40vh;
+  width: 100%;
+  height: 500px; */
+  /* z-index: 9999; */
+ }
+}
+
+@media (max-width: 1092px) {
+  .achieve {
+    text-align: left;
+    font-weight: bold;
+    color: #4f4f4f;
+  }
+  
+  .by {
+    font-weight: bolder;
+  }
+  
+  .achievey {
+    position: relative;
+    text-align: left;
+    color: #b33e00;
+    top: 12vh;
+  }
+  
+  .percent > h3 {
+    color: #b33e00;
+  }
+  
+  .raised {
+    padding-left: 10vh;
+  }
+  
+  .color {
+    color: #4f4f4f;
+  }
+  
+  .percent {
+    text-align: left;
+    position: relative;
+    top: 15vh;
+  }
+}
+
+ 
 /* SUPPORT ENDS */
 
 /* COLLABORATE */
@@ -275,6 +378,33 @@ h6 > p {
     width: 100%;
     height: 500px; */
     z-index: 9999;
+  }
+}
+
+@media (max-width: 1092px) {
+  .img-fluid {
+    /* justify-content: right;
+    align-items: flex-end;
+    display: flex;
+    text-align: left; */
+    /* position: relative;
+    left: 45vh;
+    width: 100%;
+    height: 500px; */
+    display: none;
+  }
+
+  .img-fluid2 {
+    /* position: relative;
+    top: 48vh;
+    right: 39vh;
+    width: 30%;
+    height: 300px; */
+    /* left: 40vh;
+    width: 100%;
+    height: 500px; */
+    /* z-index: 9999; */
+    display: none;
   }
 }
 
@@ -455,6 +585,13 @@ h6 > p {
 .apps {
   color: #0072b1;
   font-weight: bold;
+}
+
+@media (max-width: 782px) {
+  .phone{
+    width: 100%;
+    height: 200px;
+  }
 }
 
 .foot {
