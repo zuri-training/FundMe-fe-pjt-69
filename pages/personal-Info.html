@@ -4,7 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Donor</title>
+    
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../logos/">
+    <link rel="icon" type="image/png" sizes="32x32" href="../logos//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../logos//favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <title>Basic Information</title>
 
     <link rel="stylesheet" href="../css/style.css">
 </head>
@@ -14,10 +21,9 @@
         <div id="left">
             <ol class="main-ul">
             <!-- The "Active" is given to the highlighted section, depending on the webpage -->
-                <li class="py-1 ps-3 active current">Personal Information</li>
-                <li class="py-1 ps-3">Parents/Guardian/School</li>
-                <li class="py-1 ps-3">Suppliers</li>
-                <li class="py-1 ps-3">Data Capture</li>
+                <li class="py-1 ps-3 active current">Basic Information</li>
+                <li class="py-1 ps-3">Document Capture</li>
+                <li class="py-1 ps-3">Fund's Goal</li>
             </ol>
         </div>
 
@@ -27,7 +33,7 @@
             
             <!-- The First form Contains the User's Name, DOB, Country and Phone Number -->
             <div class="first-form">
-                <h4>Student/Parent/School</h4>
+                <h4>Beneficiary</h4>
                 <div class="form">
                     <h5>Full Name</h5>
                     <input type="text" placeholder="FundMe|" class="name donor" required>
@@ -58,7 +64,7 @@
                     <div class="second-form-2">
                         <div class="form">
                             <h5>State</h5>
-                            <input type="text" placeholder="Lagos" class="donor" required>
+                            <input type="text" placeholder="Abuja" class="donor" required>
                         </div>
                         
                         <div class="form">
@@ -75,7 +81,7 @@
 
                         <div class="form">
                             <h5>Address Code</h5>
-                            <input type="text" placeholder="NG 19004" class="donor" required>
+                            <input type="text" placeholder="Ng 19004" class="donor" required>
                         </div>
                     </div>
                 </div>
@@ -83,7 +89,7 @@
             
             <div class="buttons">
                 <button class="back-button donor">Back</button>
-                <button type="submit" class="next-button donor">Next</button>
+                <a href="capture.html"><button type="submit" class="next-button donor">Next</button></a>
             </div>
         </form>
     </div>

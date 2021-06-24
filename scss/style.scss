@@ -18,6 +18,10 @@ ul, ol, li {
     list-style-type: none;
 }
 
+h1, h2, h3,h4, h5, h6 {
+    font-weight: 700;
+}
+
 #main {
     width: 100vw;
     height: 100vh;
@@ -56,8 +60,7 @@ ul, ol, li {
 
     #right {
         padding: 8.5vh 10% 0 10%;
-        // margin: 0 10%;
-        color: $grey-5;
+        color: #000;
 
         & > h2 {
             margin-bottom: 6.5vh;
@@ -140,10 +143,14 @@ ul, ol, li {
         }
 
         // Third Form
-        // Applicable only to Suppliers.html
+        // Applicable only to funds-goal.html
         .third-form {
             width: 95%;
             margin-top: 15px;
+
+            h4 {
+                margin-bottom: 5px;
+            }
 
             & > div {
                 display: grid;
@@ -195,11 +202,30 @@ ul, ol, li {
             }
         }
 
+        // Fifth Form
+        // Applicable only to Funds-goal.html
+        .fifth-form {
+            width: 95%;
+            margin-bottom: 70px;
+
+            h4 {
+                margin-bottom: 50px;
+            }
+
+            p {
+                margin-bottom: 35px;
+            }
+
+            input {
+                padding: 20px 10px;
+            }
+        }
+
 
         // BUTTONS
         .buttons {
             position: relative;
-            margin: 20px 0;
+            margin: 70px 0 20px 0;
             width: 95%;
 
             button {
@@ -233,8 +259,8 @@ ul, ol, li {
                 right: 0;
 
                 &:hover {
-                    background-color: darken($blue-sky, 30%);
-                    border: 2px solid darken($blue-sky, 30%);
+                    background-color: darken($blue-sky, 50%);
+                    border-color: darken($blue-sky, 45%);
                 }
 
                 &:active {
