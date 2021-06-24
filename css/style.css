@@ -42,7 +42,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 #main #left > ol li {
   list-style-type: decimal;
-  padding: 15px 0;
+  padding: 15px 0 15px 10px;
 }
 #main #left > ol .active {
   list-style-image: url("../svg/check.svg");
@@ -136,16 +136,47 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: 5%;
 }
 #main #right .fourth-form .capture {
-  border: 1px solid #0072B1;
   width: 50%;
-  height: 400px;
-  margin: 0 auto;
+  margin: 40px auto 0 auto;
 }
-#main #right .fourth-form .capture .capture-button-div {
+#main #right .fourth-form .capture .capture-output {
+  border: 1px solid #0072B1;
+  min-height: 250px;
+  max-height: 300px;
+  min-width: 200px;
+  text-align: center;
+  overflow: hidden;
+  border-radius: 5px;
+  position: relative;
+  background: url("../svg/capture.png");
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#main #right .fourth-form .capture .capture-output label {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: transparent;
+  z-index: 10;
+}
+#main #right .fourth-form .capture .capture-output > img {
+  height: 100%;
+  width: 100%;
+  border: 0;
+  outline: 0;
+}
+#main #right .fourth-form .capture .capture-input {
+  margin-top: 30px;
   width: 100%;
   text-align: center;
 }
-#main #right .fourth-form .capture .capture-button-div button {
+#main #right .fourth-form .capture .capture-input input {
+  display: none;
+}
+#main #right .fourth-form .capture .capture-input .capture-button {
+  cursor: pointer;
   width: 100px;
   padding: 10px 20px;
   border: 2px solid #2f80ed;
@@ -155,11 +186,11 @@ h1, h2, h3, h4, h5, h6 {
   color: #F4F4F4;
   margin: 0 auto;
 }
-#main #right .fourth-form .capture .capture-button-div button:hover {
-  background-color: #34b9f4;
-  border: 2px solid #34b9f4;
+#main #right .fourth-form .capture .capture-input .capture-button:hover {
+  background-color: #0a82b8;
+  border: 2px solid #0b94d1;
 }
-#main #right .fourth-form .capture .capture-button-div button:active {
+#main #right .fourth-form .capture .capture-input .capture-button:active {
   background-color: #2f80ed;
   color: #F4F4F4;
   border: 2px solid #2f80ed;
@@ -247,6 +278,11 @@ h1, h2, h3, h4, h5, h6 {
     display: block;
   }
 }
+@media (max-width: 865px) {
+  #main > #right > .fourth-form .capture {
+    width: 75%;
+  }
+}
 @media (max-width: 768px) {
   #main #right .first-form > .first-form-2 {
     width: 100%;
@@ -293,6 +329,9 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 550px) {
   #main > #right {
     padding: 5vh 5% 0 5%;
+  }
+  #main > #right .fourth-form .capture {
+    width: 95%;
   }
 }
 @media (max-width: 280px) {

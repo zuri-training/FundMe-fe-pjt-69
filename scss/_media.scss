@@ -23,6 +23,12 @@
     }
 }
 
+@media (max-width: 865px) {
+   #main > #right > .fourth-form .capture {
+       width: 75%;
+   } 
+}
+
 @media (max-width: 768px) {
     #main {
         #right {
@@ -73,9 +79,14 @@
 
 @media (max-width:550px) {
     #main > #right {
-        padding: 5vh 5% 0 5%;
+        padding: 5vh 5% 0 5%; 
+        
+        .fourth-form .capture {
+            width: 95%;
+        }
     }
 }
+
 
 @media (max-width:280px) {
     #main {
