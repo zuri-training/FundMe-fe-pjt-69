@@ -31,9 +31,9 @@ header {
 
 @media (max-width: 992px) {
   /* header {
-    background-image: url(/IMG-Landing/Header.jpg);
-    height: 550px;
-    width: 100%;
+    background-image: url(/FundMe-fe-pjt-69/IMG-Landing/Header.jpg);
+    height: 1500px !important;
+    width: 100% !important;
     background-repeat: no-repeat;
     background-size: contain;
   } */
@@ -82,6 +82,7 @@ header {
   background-color: transparent;
   border: none;
   transition: box-shadow 0.15s ease-in-out;
+  z-index: 9999 !important;
 }
 
 .navbar-dark .navbar-toggler {
@@ -100,9 +101,6 @@ header {
 }
 
 /* NAV ENDS HERE */
-.messager {
-  width: 100%;
-}
 .message {
   text-align: left;
   position: relative;
@@ -122,6 +120,24 @@ header {
 .play {
   position: relative;
   bottom: 2px;
+}
+
+@media (max-width: 782px) {
+  /* .messager {
+    background: #fff;
+    position: relative;
+    top: 10vh;
+  }
+
+  .message {
+    position: relative !important;
+    top: 15vh;
+    text-align: center;
+    color: #000;
+  } */
+  .navbar {
+    background: #0072b1 !important;
+  }
 }
 
 /* SUPPORT */
@@ -185,7 +201,24 @@ h6 > p {
   height: 40px;
 }
 
-/* SUPPORT */
+@media (max-width: 782px) {
+
+  
+  #support {
+    width: 250px !important;
+  }
+
+  #select{
+    width: 250px !important;
+    outline: #fff;
+  }
+
+  .btn5{
+    width: 250px !important;
+  }
+}
+
+/* SUPPORT ENDS */
 .achieve {
   text-align: left;
   font-weight: bold;
@@ -222,7 +255,6 @@ h6 > p {
 }
 
 @media (max-width: 992px) {
-  /* SUPPORT */
   .achieve {
     text-align: left;
     font-weight: bold;
@@ -353,11 +385,13 @@ h6 > p {
   .collab {
     margin: 0 auto;
     width: 100%;
+    height: 150px;
   }
 
   .collab2 {
     margin: 0 auto;
     width: 100%;
+    height: 200px;
   }
 }
 
@@ -396,27 +430,10 @@ h6 > p {
 
 @media (max-width: 1092px) {
   .img-fluid {
-    /* justify-content: right;
-    align-items: flex-end;
-    display: flex;
-    text-align: left; */
-    /* position: relative;
-    left: 45vh;
-    width: 100%;
-    height: 500px; */
     display: none;
   }
 
   .img-fluid2 {
-    /* position: relative;
-    top: 48vh;
-    right: 39vh;
-    width: 30%;
-    height: 300px; */
-    /* left: 40vh;
-    width: 100%;
-    height: 500px; */
-    /* z-index: 9999; */
     display: none;
   }
 }
