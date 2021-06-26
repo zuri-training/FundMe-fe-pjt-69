@@ -123,20 +123,25 @@ header {
 }
 
 @media (max-width: 782px) {
-  /* .messager {
-    background: #fff;
-    position: relative;
-    top: 10vh;
+
+  .messager {
+    position: relative !important;
+    text-align: center;
   }
 
   .message {
     position: relative !important;
-    top: 15vh;
+    top: 10vh;
     text-align: center;
-    color: #000;
-  } */
+    font-weight: bold;
+    font-size: 15px;
+  }
   .navbar {
     background: #0072b1 !important;
+  }
+
+  #navmenu {
+    z-index: 9999;
   }
 }
 
@@ -144,6 +149,9 @@ header {
 .support {
   background-color: #0072b1;
   text-align: center;
+  z-index: 9999;
+  position: relative;
+  top: 0vh;
 }
 
 #support {
@@ -202,19 +210,46 @@ h6 > p {
 }
 
 @media (max-width: 782px) {
+  .token{
+    font-size: 15px;
+    color: #fff;
+    font-weight: bolder;
+    text-align: center;
+  }
 
-  
+  .cause{
+    text-align: center;
+    color: #fff;
+    font-size: 25px;
+    
+  }
+
   #support {
     width: 250px !important;
+    margin: 0 auto;
   }
 
-  #select{
+  .support{
+    z-index: 0;
+  }
+
+  .col-auto{
+    margin: 0 auto;
+    padding: 5px;
+  }
+
+  #select {
     width: 250px !important;
     outline: #fff;
+    color: #fff;
   }
 
-  .btn5{
+  .btn5 {
     width: 250px !important;
+  }
+
+  .form-check-input, .form-check-label{
+    display: none;
   }
 }
 
@@ -254,6 +289,65 @@ h6 > p {
   bottom: 50vh;
 }
 
+@media (max-width: 565px) {
+
+  .raised {
+    padding-left: 0 !important;
+  }
+
+  .push{
+    position: relative;
+    bottom:10vh !important;
+  }
+
+}
+
+@media (max-width: 782px) {
+
+  .achieve {
+    text-align: left;
+    font-weight: bold;
+    color: #4f4f4f;
+  }
+
+  .by {
+    font-weight: bolder;
+  }
+
+  .achievey {
+    position: relative;
+    text-align: left;
+    color: #b33e00;
+  }
+
+  .percent > h3 {
+    color: #b33e00;
+  }
+
+  .raised {
+    padding-left: 0;
+    
+  }
+
+  .color {
+    color: #4f4f4f;
+  }
+
+  .percent {
+    text-align: left;
+    position: relative;
+    bottom: 50vh;
+  }
+
+  .img-fluid {
+    display: none;
+  }
+
+  .img-fluid2 {
+    display: none;
+  }
+}
+
 @media (max-width: 992px) {
   .achieve {
     text-align: left;
@@ -290,25 +384,11 @@ h6 > p {
   }
 
   .img-fluid {
-    /* position: relative;
-  right: 10vh; */
-
-    /* width: 100%;
-  height: 400px; */
     display: none;
   }
 
   .img-fluid2 {
     display: none;
-    /* position: relative;
-  top: 40vh;
-  right: 15vh;
-  width: 30%;
-  height: 300px; */
-    /* left: 40vh;
-  width: 100%;
-  height: 500px; */
-    /* z-index: 9999; */
   }
 }
 
@@ -391,7 +471,7 @@ h6 > p {
   .collab2 {
     margin: 0 auto;
     width: 100%;
-    height: 200px;
+    height: 130px;
   }
 }
 
