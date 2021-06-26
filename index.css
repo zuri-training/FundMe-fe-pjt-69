@@ -31,9 +31,9 @@ header {
 
 @media (max-width: 992px) {
   /* header {
-    background-image: url(/IMG-Landing/Header.jpg);
-    height: 550px;
-    width: 100%;
+    background-image: url(/FundMe-fe-pjt-69/IMG-Landing/Header.jpg);
+    height: 1500px !important;
+    width: 100% !important;
     background-repeat: no-repeat;
     background-size: contain;
   } */
@@ -82,6 +82,7 @@ header {
   background-color: transparent;
   border: none;
   transition: box-shadow 0.15s ease-in-out;
+  z-index: 9999 !important;
 }
 
 .navbar-dark .navbar-toggler {
@@ -100,7 +101,6 @@ header {
 }
 
 /* NAV ENDS HERE */
-
 .message {
   text-align: left;
   position: relative;
@@ -120,6 +120,24 @@ header {
 .play {
   position: relative;
   bottom: 2px;
+}
+
+@media (max-width: 782px) {
+  /* .messager {
+    background: #fff;
+    position: relative;
+    top: 10vh;
+  }
+
+  .message {
+    position: relative !important;
+    top: 15vh;
+    text-align: center;
+    color: #000;
+  } */
+  .navbar {
+    background: #0072b1 !important;
+  }
 }
 
 /* SUPPORT */
@@ -183,7 +201,24 @@ h6 > p {
   height: 40px;
 }
 
-/* SUPPORT */
+@media (max-width: 782px) {
+
+  
+  #support {
+    width: 250px !important;
+  }
+
+  #select{
+    width: 250px !important;
+    outline: #fff;
+  }
+
+  .btn5{
+    width: 250px !important;
+  }
+}
+
+/* SUPPORT ENDS */
 .achieve {
   text-align: left;
   font-weight: bold;
@@ -218,6 +253,102 @@ h6 > p {
   position: relative;
   bottom: 50vh;
 }
+
+@media (max-width: 992px) {
+  .achieve {
+    text-align: left;
+    font-weight: bold;
+    color: #4f4f4f;
+  }
+
+  .by {
+    font-weight: bolder;
+  }
+
+  .achievey {
+    position: relative;
+    text-align: left;
+    color: #b33e00;
+  }
+
+  .percent > h3 {
+    color: #b33e00;
+  }
+
+  .raised {
+    padding-left: 10vh;
+  }
+
+  .color {
+    color: #4f4f4f;
+  }
+
+  .percent {
+    text-align: left;
+    position: relative;
+    bottom: 50vh;
+  }
+
+  .img-fluid {
+    /* position: relative;
+  right: 10vh; */
+
+    /* width: 100%;
+  height: 400px; */
+    display: none;
+  }
+
+  .img-fluid2 {
+    display: none;
+    /* position: relative;
+  top: 40vh;
+  right: 15vh;
+  width: 30%;
+  height: 300px; */
+    /* left: 40vh;
+  width: 100%;
+  height: 500px; */
+    /* z-index: 9999; */
+  }
+}
+
+@media (max-width: 1092px) {
+  .achieve {
+    text-align: left;
+    font-weight: bold;
+    color: #4f4f4f;
+  }
+
+  .by {
+    font-weight: bolder;
+  }
+
+  .achievey {
+    position: relative;
+    text-align: left;
+    color: #b33e00;
+    top: 12vh;
+  }
+
+  .percent > h3 {
+    color: #b33e00;
+  }
+
+  .raised {
+    padding-left: 10vh;
+  }
+
+  .color {
+    color: #4f4f4f;
+  }
+
+  .percent {
+    text-align: left;
+    position: relative;
+    top: 15vh;
+  }
+}
+
 /* SUPPORT ENDS */
 
 /* COLLABORATE */
@@ -243,6 +374,25 @@ h6 > p {
   height: 170px;
   position: relative;
   bottom: 5vh;
+}
+
+@media (max-width: 782px) {
+  .collaborate {
+    position: relative;
+    top: 24vh;
+    margin: 0 auto;
+  }
+  .collab {
+    margin: 0 auto;
+    width: 100%;
+    height: 150px;
+  }
+
+  .collab2 {
+    margin: 0 auto;
+    width: 100%;
+    height: 200px;
+  }
 }
 
 /* GIVEN */
@@ -275,6 +425,16 @@ h6 > p {
     width: 100%;
     height: 500px; */
     z-index: 9999;
+  }
+}
+
+@media (max-width: 1092px) {
+  .img-fluid {
+    display: none;
+  }
+
+  .img-fluid2 {
+    display: none;
   }
 }
 
@@ -457,6 +617,13 @@ h6 > p {
   font-weight: bold;
 }
 
+@media (max-width: 782px) {
+  .phone {
+    width: 100%;
+    height: 200px;
+  }
+}
+
 .foot {
   background: #0072b1;
   color: #fff;
@@ -464,13 +631,12 @@ h6 > p {
   top: 27vh;
 }
 
-.text-uppercase{
+.text-uppercase {
   font-weight: bolder !important;
   color: #fff !important;
   font-size: 15px !important;
 }
 
-.text-uppercase > p{
+.text-uppercase > p {
   font-size: 12px;
 }
-
