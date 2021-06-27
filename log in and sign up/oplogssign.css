@@ -40,8 +40,9 @@ body{
     align-items: center;
 }
 .header img{
-    width: 10em;
-    height: 5em;
+    width: 130px;
+    height: 50px;
+
 }
 .header p{
     font-size: 18px;
@@ -59,7 +60,7 @@ body{
     padding-bottom: 0;
 }
 .editable{
-    width: 95%;
+    width: auto;
     height: 10%;
     margin-bottom: 1.6em;
     padding: .3em;
@@ -87,8 +88,8 @@ label{
     text-decoration: underline;
 }
 .logIn-btn{
-    width: 95%;
-    height: 5em;
+    width: auto;
+    height: 10%;
     border-radius: .4em;
     border: none;
     background-color: #0072b1;
@@ -133,7 +134,7 @@ button:focus {
     padding-right: .4em;
 }
 .logBtns{
-    width: 100%;
+    width: 105%;
     height: 100%;
     font-size: 14px;
     display: flex;
@@ -175,8 +176,8 @@ button:focus {
     margin: 1em;
 }
 .signUpLink{
-    width: 10em;
-    height: 4em;
+    width: 240px;
+    height: 40px;
     border-radius: .4em;
     border: none;
     background-color: #0072b1;
