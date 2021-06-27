@@ -28,6 +28,8 @@ h1, h2, h3, h4, h5, h6 {
   grid-template-columns: 0.75fr 1fr;
 }
 #main #left {
+  background: url("../svg/left-bg.svg");
+  background-repeat: repeat-x;
   background-color: #0072B1;
   position: relative;
 }

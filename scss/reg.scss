@@ -31,7 +31,9 @@ h1, h2, h3,h4, h5, h6 {
     grid-template-columns: .75fr 1fr;
 
     #left {
-        background-color: $primary-color; 
+        background: url('../svg/left-bg.svg');
+        background-repeat: repeat-x;
+        background-color: $primary-color;
         position: relative;
 
         & > ol {
