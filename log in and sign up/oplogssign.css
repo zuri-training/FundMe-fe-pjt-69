@@ -281,8 +281,8 @@ button:focus {
     text-decoration: none;
 }
 .btn{
-    width: 10em;
-    height: 3.5em;
+    width: 190px;
+    height: 50px;
     border-radius: .4em;
     border: none;
     font-size: 16px;
@@ -330,9 +330,10 @@ button:focus {
         flex-direction: column;
         align-items: center;
     }
-    .btn{
+    .btn {
         font-size: 18px;
-        width: 12em;
+        width: 240px;
+        height: 50px;
         margin-bottom: 1em;
     }
 }
