@@ -5,21 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
     <link rel="stylesheet" href="oplogssign.css">
 </head>
+
 <body>
+    <form>
     <div class="container">
+        
         <div class="left-side">
             <div class="header">
                 <img src="images/Logo (SVG).png" alt="">
                 <p>Log into your account</p>
             </div>
+
+            
             <div class="logInfield">
                 <label for="Email">Email</label>
-                <input type="email" placeholder="Yourname@FundMe" class="editable">
+                <input type="email" placeholder="Yourname@FundMe" class="editable" required="required">
                 <label for="password" >Password</label>
-                <input type="password" class="editable" placeholder="******">
+                <input type="password" class="editable" placeholder="******" required>
                 <div class="middle-section">
                     <div>
                         <input type="checkbox" name="Remember me" id="logInSave">
@@ -46,6 +50,7 @@
                 </div>
             </div>
         </div>
+    </form>
         <div class="right-side">
             <section class="overlay-text">
                 <img src="images/logowhitex.png" alt="" class="one">
@@ -55,5 +60,6 @@
         </div>
         
     </div>
+
 </body>
 </html>
