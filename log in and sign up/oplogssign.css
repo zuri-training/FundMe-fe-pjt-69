@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+/* general all page design */
+*{
+    padding: 0;
+    margin: 0;  
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Nunito', sans-serif;
+}
+.container{
+    width: 75vw;
+    height: 50em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3em auto;
+    border-radius: .6em;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.25), 
+			0 7px 7px rgba(0,0,0,0.22);
+    overflow: hidden;
+}
+
+/* Log in page
+    left side*/
+.left-side{
+    width: 50%;
+    height: 100%;
+    margin: .5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.header{
+    width: 15em;
+    height: 17%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header img{
+    width: 130px;
+    height: 50px;
+
+}
+.header p{
+    font-size: 18px;
+    font-weight: 500;
+    color: #2f80ed;
+    margin: 1em 0;
+}
+.logInfield{
+    height: 75%;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #2f80ed;
+    padding: 2em;
+    padding-bottom: 0;
+}
+.editable{
+    width: auto;
+    height: 10%;
+    margin-bottom: 1.6em;
+    padding: .3em;
+    border-radius: .4em;
+    border: 2px solid #2f80ed;
+    
+}
+label{
+    font-size: 16px;
+    font-weight: 400;
+}
+.middle-section{
+    width: 92%;
+    display: flex;
+    padding: 0 .7em;
+    margin-bottom: 1.5em;
+    justify-content: space-between;
+}
+.middle-section a{
+    font-size: 16px;
+    text-decoration: none;
+    color: #2f80ed;
+}
+.middle-section a:hover{
+    text-decoration: underline;
+}
+.logIn-btn{
+    width: auto;
+    height: 10%;
+    border-radius: .4em;
+    border: none;
+    background-color: #0072b1;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.logIn-btn:hover{
+    background-color: #2f80ed;
+}
+button:active {
+	transform: scale(0.95);
+}
+button:focus {
+	outline: none;
+}
+.wrap{
+    width: 80%; 
+    text-align: center; 
+    border-bottom: 1px solid #333333; 
+    line-height: 0.2em;
+    margin-top: 1em; 
+    align-self: center;
+} 
+.logWrap{
+    margin: 1.2em;
+}
+.wrap span { 
+    background:#fff; 
+    padding:0 3.5em; 
+}
+.socialBtns{
+    width: 95%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    margin-top: .7em;
+}
+.gicon{
+    width: 6%;
+    padding-right: .4em;
+}
+.logBtns{
+    width: 105%;
+    height: 100%;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: .4em 0;
+    border-radius: .4em;
+    border: 2px solid #2f80ed;
+    cursor: pointer;
+}
+/*right side of the page*/
+.right-side{
+    width: 49%;
+    height: 100%;
+    background: linear-gradient(rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.5)), url(images/Gerry.jpg);
+    background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+    border-radius: .6em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.overlay-text{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.overlay-text img{
+    width: 10em;
+    height: 4em;
+}
+.overlay-text p{
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    margin: 1em;
+}
+.signUpLink{
+    width: 240px;
+    height: 40px;
+    border-radius: .4em;
+    border: none;
+    background-color: #0072b1;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.signUpLink:hover{
+    background-color: #2f80ed;
+}
+
+
+/*hidden div in log in and sign up page*/
+.alternative{
+    align-self: center;
+    margin-bottom: .5em;
+    display: none;
+}
+.alternative a{
+    color: #2f80ed;
+    text-decoration: none;
+    margin-left: .5em;
+}
+@media only screen and (max-width: 1024px ) {
+    .left-side{
+        width: 90%;
+    }
+    .right-side{
+        display: none;
+    }
+    .alternative{
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 425px ) {
+    .container{
+        width: 90vw;
+    }
+    .logInfield{
+        width: 90%;
+        padding: 1em;
+        margin: 0;
+    }
+    .middle-section{
+        width: 94%;
+    }
+    .middle-section label{
+        font-size: 12px;
+    }
+    .middle-section a{
+        font-size: 12px;
+    }
+    .wrap{
+        width: 80%; 
+    } 
+    .wrap span { 
+        background:#fff; 
+        padding:0 2em; 
+    }
+    .alternative{
+        text-align: center;
+    }
+}
+
+
+
+/* option page */
+.central{
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.top{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    color: #2f80ed;
+    border-bottom: 1px solid #828282;
+    padding-bottom: 1.7em;
+    margin-bottom: 2em;
+}
+.bottom{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 22px;
+    color: #828282;
+}
+.bottom div{
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    margin: 4em;
+}
+.bottom div a{
+    text-decoration: none;
+}
+.btn{
+    width: 190px;
+    height: 50px;
+    border-radius: .4em;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.optionbtn1{
+    color: #2f80ed;
+    border: 2px solid #2f80ed;
+    background-color: #fff;
+}
+.optionbtn1:hover{
+    border: none;
+    background-color: #0072b1;
+    color: #fff;
+}
+.optionbtn2{
+    color: #fff;
+    background-color: #0072b1;
+}
+.optionbtn2:hover{
+    color: #fff;
+    background-color: #2f80ed;
+
+}
+@media only screen and (max-width: 1024px ){
+    .container{
+        height: 45em;
+    }
+    .bottom{
+        width: 120%;
+    }
+    .btn{
+        width: 8em;
+    }
+}
+@media only screen and (max-width: 425px ){
+    .bottom{
+        width: 130%;
+        font-size: 18px;
+        text-align: center;
+    }
+    .bottom div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .btn {
+        font-size: 18px;
+        width: 240px;
+        height: 50px;
+        margin-bottom: 1em;
+    }
+}
+
+/* sign up page */
+.signUp{
+    background: linear-gradient(rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.5)), url(images/bazzz.jpg);
+    background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.signMsg{
+    width: 70%;
+    align-self: center;
+    text-align: center;
+    margin: .7em;
+    margin-top: 0;
+    font-size: 12px;
+}
+.signMsg a{
+    color: #2f80ed;
+
+}
+@media only screen and (max-width: 1024px ) {
+    .signUp{
+        display: none;
+    }
+}
