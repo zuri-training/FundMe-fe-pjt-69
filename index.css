@@ -3,6 +3,7 @@
 body {
   font-family: "Nunito", sans-serif;
   background-color: #e0e0e0;
+  scroll-behavior: smooth;
 }
 
 header {
@@ -123,7 +124,6 @@ header {
 }
 
 @media (max-width: 782px) {
-
   .messager {
     position: relative !important;
     text-align: center;
@@ -210,18 +210,17 @@ h6 > p {
 }
 
 @media (max-width: 782px) {
-  .token{
+  .token {
     font-size: 15px;
     color: #fff;
     font-weight: bolder;
     text-align: center;
   }
 
-  .cause{
+  .cause {
     text-align: center;
     color: #fff;
     font-size: 25px;
-    
   }
 
   #support {
@@ -229,11 +228,11 @@ h6 > p {
     margin: 0 auto;
   }
 
-  .support{
+  .support {
     z-index: 0;
   }
 
-  .col-auto{
+  .col-auto {
     margin: 0 auto;
     padding: 5px;
   }
@@ -248,7 +247,8 @@ h6 > p {
     width: 250px !important;
   }
 
-  .form-check-input, .form-check-label{
+  .form-check-input,
+  .form-check-label {
     display: none;
   }
 }
@@ -290,20 +290,17 @@ h6 > p {
 }
 
 @media (max-width: 565px) {
-
   .raised {
     padding-left: 0 !important;
   }
 
-  .push{
+  .push {
     position: relative;
-    bottom:10vh !important;
+    bottom: 10vh !important;
   }
-
 }
 
 @media (max-width: 782px) {
-
   .achieve {
     text-align: left;
     font-weight: bold;
@@ -326,7 +323,6 @@ h6 > p {
 
   .raised {
     padding-left: 0;
-    
   }
 
   .color {
@@ -430,6 +426,32 @@ h6 > p {
 }
 
 /* SUPPORT ENDS */
+
+#card1 {
+  height: 280.5px !important;
+}
+
+#card2 {
+  height: 250px !important;
+}
+
+#card3 {
+  height: 282px !important;
+}
+
+@media (max-width: 992px) {
+  #card1 {
+    height: 345px !important;
+  }
+  
+  #card2 {
+    height: 233px !important;
+  }
+  
+  #card3 {
+    height: 303px !important;
+  }
+}
 
 /* COLLABORATE */
 .collaborate {
