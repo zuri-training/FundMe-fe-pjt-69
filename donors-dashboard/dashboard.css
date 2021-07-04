@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  background-color: #f4f4f4;
+  scroll-behavior: smooth;
+}
+
+.main-content {
+  display: flex;
+}
+
+.aside-content {
+  height: 100vh;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+.main-sub-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.brand-logo {
+  width: 140px;
+  height: 50px;
+  margin: 30px auto;
+}
+
+.brand-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.link-items {
+  margin-bottom: 20px;
+}
+
+.link {
+  list-style: none;
+  margin: 15px auto;
+  padding: 10px 20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.link:hover {
+  background-color: #30b5ff;
+}
+
+.link-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.link-ref {
+  text-decoration: none;
+  cursor: pointer;
+  margin-left: 40px;
+  color: #333333;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.link-ref:hover {
+  color: #0072b1;
+  background-color: #33b8ff;
+}
+
+.btn-profile {
+  display: flex;
+  text-decoration: none;
+  color: #333333;
+  font-size: 18px;
+  font-weight: 500;
+  width: 220px;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  padding: 30px 50px;
+  margin-bottom: 100px;
+}
+
+.btn-profile:hover {
+  background-color: #e0e0e0;
+}
+
+.btn-donate {
+  width: 80%;
+  height: 50px;
+  background-color: #b33e00;
+  color: #ffffff;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 10px auto;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.profile-link-img,
+.profile-link-icon {
+  margin: 10px 20px;
+}
+
+.profile-link-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.dashboard-data {
+  flex: 5;
+  margin: 40px 60px;
+}
