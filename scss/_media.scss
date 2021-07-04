@@ -1,0 +1,108 @@
+@media (max-width:1030px) {
+    #main {
+        grid-template-columns: .6fr 1fr;
+    }
+}
+
+@media (max-width:945px) {
+    #main {
+        grid-template-columns: 280px 1fr;
+        
+        #left {
+            ol { 
+                transform: scale(.8);
+            }
+        }
+        #right {
+            .first-form {
+                .first-form-2 {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 865px) {
+   #main > #right > .fourth-form .capture {
+       width: 75%;
+   } 
+}
+
+@media (max-width: 768px) {
+    #main {
+        #right {
+            .first-form > .first-form-2 {
+                width: 100%;
+                .first-form-3 { display: block;}
+            }
+            .second-form .second-form-2 { display: block;}
+            .third-form > div { display: block;}
+            .third-form > div > .account-number { margin-left: 0;}
+
+            .first-form .name, .second-form  .second-form-2, .third-form, .fifth-form, .buttons
+            { 
+            width: 100%;
+            }
+
+        }
+    }
+}
+
+@media (max-width: 650px) {
+    #main {
+        display: block;
+        overflow: scroll;
+        background-color: $primary-color;
+
+        #left {
+        display: none;
+        }
+
+        #right {
+            overflow-y: visible;
+            margin:40px 5%;
+            background-color: $background-color;
+            border-radius: 8.5px;
+
+            h2 {
+                text-align: center;
+            }
+
+            .buttons {
+                padding-bottom: 30px;
+                margin: 30px 0 20px 0;
+            }
+        }
+    }
+}
+
+@media (max-width:550px) {
+    #main > #right {
+        padding: 5vh 5% 0 5%; 
+        
+        .fourth-form .capture {
+            width: 95%;
+        }
+    }
+}
+
+
+@media (max-width:280px) {
+    #main {
+        // background-color: $background-color;
+        padding-top: 30px;
+
+        #right {
+            // margin: 0;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+            
+            .buttons {
+                padding-bottom: 30px;
+                margin: 20px 0 0 0;
+                border-radius: 10px;
+            }
+        }
+    }
+}
