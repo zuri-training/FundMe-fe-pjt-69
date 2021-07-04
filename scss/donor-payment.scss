@@ -1,0 +1,32 @@
+@import 'config';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+body {
+    background-color: $background-color;
+    font-family: $nunito;
+    line-height: 16px;
+    letter-spacing: 2;
+}
+
+ul, ol, li {
+    list-style-type: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+h1, h2, h3,h4, h5, h6 {
+    font-weight: 700;
+    color: $grey-4;
+}
+
+input::placeholder, input, p {
+    color: $grey-4;
+}
