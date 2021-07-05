@@ -279,8 +279,18 @@ tr:nth-child(even) {
   background-color: #dddddd;
 }
 
+.mobile-screen {
+  display: none;
+}
+
 @media screen and (max-width: 768px) {
-  .dashboard-data {
-    position: relative;
+  .main-content {
+    display: none;
+  }
+
+  .mobile-screen {
+    display: block;
+    width: 80%;
+    margin: 200px auto;
   }
 }
