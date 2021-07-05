@@ -1,5 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap");
 
+:root {
+  --text-color: #333333;
+  --text-light-color: #828282;
+  --bg-color: #f4f4f4;
+  --white-color: #ffffff;
+  --btn-color: #b33e00;
+  --btn-hover-color: #b33e00;
+  --text-blue-color: #0072b1;
+  --bg-blue-color: #30b5ff;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -8,8 +19,9 @@
 
 body {
   font-family: "Nunito", sans-serif;
-  background-color: #f4f4f4;
+  background-color: var(--bg-color);
   scroll-behavior: smooth;
+  color: var(--text-color);
 }
 
 .main-content {
@@ -17,8 +29,9 @@ body {
 }
 
 .aside-content {
+  position: fixed;
   height: 100vh;
-  background-color: #ffffff;
+  background-color: var(--white-color);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,7 +39,7 @@ body {
   flex: 1;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
-  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .main-sub-content {
@@ -58,45 +71,48 @@ body {
   width: 100%;
   display: flex;
   align-items: center;
-  background-color: #ffffff;
+  background-color: var(--white-color);
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
 }
 
-.link:hover {
-  background-color: #30b5ff;
+.fa {
+  color: var(--text-light-color);
+  padding-left: 45px;
+  font-family: "FontAwesome", "Nunito", sans-serif;
 }
 
-.link-icon {
-  width: 30px;
-  height: 30px;
+.link:hover,
+.fa:hover {
+  background-color: var(--bg-blue-color);
+  color: var(--text-blue-color);
 }
 
 .link-ref {
   text-decoration: none;
   cursor: pointer;
   margin-left: 40px;
-  color: #333333;
+  color: var(--text-light-color);
   font-size: 20px;
   font-weight: 500;
 }
 
 .link-ref:hover {
-  color: #0072b1;
-  background-color: #33b8ff;
+  color: var(--text-blue-color);
+  background-color: var(--bg-blue-color);
 }
 
 .btn-profile {
   display: flex;
   text-decoration: none;
-  color: #333333;
+  color: var(--text-color);
   font-size: 18px;
   font-weight: 500;
   width: 220px;
   height: 60px;
   justify-content: center;
   align-items: center;
-  background-color: #f4f4f4;
+  background-color: var(--bg-color);
   border-radius: 10px;
   padding: 30px 50px;
   margin-bottom: 100px;
@@ -109,8 +125,8 @@ body {
 .btn-donate {
   width: 80%;
   height: 50px;
-  background-color: #b33e00;
-  color: #ffffff;
+  background-color: var(--btn-color);
+  color: var(--white-color);
   text-align: center;
   font-size: 18px;
   font-weight: 500;
@@ -119,6 +135,26 @@ body {
   outline: none;
   border-radius: 5px;
   cursor: pointer;
+}
+
+.btn {
+  width: 150px;
+  height: 40px;
+  background-color: var(--btn-color);
+  color: var(--white-color);
+  text-align: center;
+  font-size: 14px;
+  font-weight: 200;
+  margin: 10px auto;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover,
+.btn-donate:hover {
+  background-color: var(--btn-hover-color);
 }
 
 .profile-link-img,
@@ -134,6 +170,117 @@ body {
 }
 
 .dashboard-data {
+  position: absolute;
+  left: 15vw;
+  right: 0.5vw;
   flex: 5;
   margin: 40px 60px;
+}
+
+.donation-status {
+  color: green;
+}
+
+.dashboard-data h1,
+.card h2 {
+  color: var(--text-blue-color);
+  font-size: 48px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.dashboard-banner {
+  background-color: var(--text-blue-color);
+  color: #fff;
+  padding: 20px 40px;
+}
+
+.dashboard-banner h2,
+.activities {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.activities {
+  color: var(--text-blue-color);
+  margin-bottom: 20px;
+}
+
+.dashboard-banner p {
+  width: 45%;
+  font-size: 18px;
+  line-height: 36px;
+  margin: 10px 0;
+}
+
+.activities-cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px auto;
+}
+
+.card {
+  background-color: var(--white-color);
+  border-radius: 15px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  text-align: center;
+  width: 25%;
+  padding: 20px;
+}
+
+.card h4 {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.dashboard-table {
+  width: 100%;
+  background-color: var(--white-color);
+  border-radius: 20px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+table {
+  width: 90%;
+  margin: 10px auto;
+  font-family: "Nunito", sans-serif;
+  border-collapse: collapse;
+  color: var(--text-color);
+  padding: 20px 60px;
+}
+
+.cause-name,
+.date {
+  color: var(--text-light-color);
+}
+
+td,
+th {
+  border: none;
+  text-align: left;
+  padding: 8px;
+}
+
+tr,
+td {
+  padding: 20px 40px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+th {
+  font-size: 22px;
+  font-weight: 600;
+  padding: 20px 40px 40px 40px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+@media screen and (max-width: 768px) {
+  .dashboard-data {
+    position: relative;
+  }
 }
