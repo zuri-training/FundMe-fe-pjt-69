@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="dashboard.css">
+  <title></title>
+</head>
+<body>
+  <main class="main-content">
+    <!--SIDEBAR CONTENT-->
+    <header class="header">
+      <!--NAVBAR-->
+      <nav class="aside-content">
+        <div class="main-sub-content">
+        <!--BRAND-LOGO-->
+        <div class="brand-logo">
+          <a href="#">
+            <img src="../IMG/FundMEblue.png" alt="brand-image" class="brand-img">
+          </a>
+        </div>
+        <!--LINKS-->
+        <ul class="link-items">
+          <li class="link">
+            <i class="fa fa-th-large" aria-hidden="true">
+            <a href="#dashboard" class="link-ref">Dashboard</a></i>
+          </li>
+          <li class="link">
+            <i class="fa fa-heart-o" aria-hidden="true">
+            <a href="#causes" class="link-ref">Causes</a></i>
+          </li>
+          <li class="link">
+            <i class="fa fa-signal" aria-hidden="true">
+            <a href="#activities" class="link-ref">Activities</a></i>
+          </li>
+          <li class="link">
+            <i class="fa fa-bell-o" aria-hidden="true">
+            <a href="#notifications" class="link-ref">Notifications</a></i>
+          </li>
+        </ul>
+        <!--DONATE BUTTON-->
+        <button class="btn-donate">Donate</button>
+        </div>
+        <!--PROFILE LINK-->
+        <a class="btn-profile" href="#profile">
+          <img src="../IMG-Landing/bazzz.jpg" alt="settings" class="profile-link-img">
+            Mistura
+          <img src="../FundMe Iconoraphy/chevron-down.png" alt="settings" class="profile-link-icon">
+        </a> 
+      </nav>
+      <!--HAMBURGER (MOBILE)-->
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </header>
+
+
+    <!--DASHBOARD SECTION-->
+
+    <!--DASHBOARD CONTAINER-->
+    <section class="dashboard-data">
+      <h1>Dashboard</h1>
+      <div class="dashboard-banner">
+        <i class="fa fa-times" aria-hidden="true"></i>
+        <h2>Next Donation is in 7 days</h2>
+        <p>Donating to a cause not only helps the beneficiaries, it can also be deeply rewarding for you as well!</p>
+        <button class="btn">Donate</button>
+      </div>
+
+      <!--DASHBOARD ACTIVITIES CARDS-->
+      <section class="activities-cards">
+        <!--Total Donations Card-->
+        <div class="total-donations card">
+          <h4>Total Donations</h4>
+          <h2>144,252</h2>
+          <button class="btn">View all</button>
+        </div>
+        <!--Total Causes Card-->
+        <div class="total-causes card">
+          <h4>Total Causes</h4>
+          <h2>143</h2>
+          <button class="btn btn-view">View all</button>
+        </div>
+        <!--Upcoming Donations Card-->
+        <div class="upcoming-donations card">
+          <h4>Upcoming Donations</h4>
+          <h2>2</h2>
+          <button class="btn">View all</button>
+        </div>
+      </section>
+
+      <!--Activities Table-->
+      <h3 class="activities" id="activities">Activities</h3>
+        <section class="dashboard-table" id="dashboard">
+          <table>
+            <!--Table Heading-->
+            <tr class="headers">
+              <th class="beneficiary">Beneficiary</th>
+              <th class="cause">Causes</th>
+              <th class="amount">Amount</th>
+              <th class="donation">Date of Donation</th>
+              <th class="status">Status</th>
+            </tr>
+            <!--Table Data Row One-->
+            <tr class="beneficiary-data">
+              <td class="beneficiary-name">Taiwo Kehinde</td>
+              <td class="cause-name">Textbook</td>
+              <td class="amount-donated">2,000</td>
+              <td class="date">17-06-2021</td>
+              <td class="donation-status">Successful</td>
+            </tr>
+            <!--Table Data Row Two-->
+            <tr class="beneficiary-data">
+              <td class="beneficiary-name">Taiwo Kehinde</td>
+              <td class="cause-name">Textbook</td>
+              <td class="amount-donated">2,000</td>
+              <td class="date">17-06-2021</td>
+              <td class="donation-status">Successful</td>
+            </tr>
+            <!--Table Data Row Three-->
+            <tr class="beneficiary-data">
+              <td class="beneficiary-name">Taiwo Kehinde</td>
+              <td class="cause-name">Textbook</td>
+              <td class="amount-donated">2,000</td>
+              <td class="date">17-06-2021</td>
+              <td class="donation-status">Successful</td>
+            </tr>
+            <!--Table Data Row Four-->
+            <tr class="beneficiary-data">
+              <td class="beneficiary-name">Taiwo Kehinde</td>
+              <td class="cause-name">Textbook</td>
+              <td class="amount-donated">2,000</td>
+              <td class="date">17-06-2021</td>
+              <td class="donation-status">Successful</td>
+            </tr>
+            <!--Table Data Row Five-->
+            <tr class="beneficiary-data">
+              <td class="beneficiary-name">Taiwo Kehinde</td>
+              <td class="cause-name">Textbook</td>
+              <td class="amount-donated">2,000</td>
+              <td class="date">17-06-2021</td>
+              <td class="donation-status">Successful</td>
+            </tr>
+            <!--Table Data Row Six-->
+            <tr class="beneficiary-data">
+              <td class="beneficiary-name">Taiwo Kehinde</td>
+              <td class="cause-name">Textbook</td>
+              <td class="amount-donated">2,000</td>
+              <td class="date">17-06-2021</td>
+              <td class="donation-status">Successful</td>
+            </tr>
+          </table>
+        </section>  
+    </section>
+  </main>
+    <script src="app.js"></script>
+</body>
+</html>
