@@ -36,6 +36,10 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
   margin: 0;
 }
 
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 header {
   width: 100%;
   padding: 20px 0 0 0;
@@ -199,6 +203,15 @@ body > button:active {
   background-color: #0072B1;
   margin: 5px 0 0 0;
   text-align: center;
+  transition: 0.5s ease-in-out;
+}
+#main .general-div .donate .amount .continue:hover {
+  background-color: transparent;
+  color: #2f80ed;
+}
+#main .general-div .donate .amount .continue:active {
+  background-color: #0072B1;
+  color: #E0E0E0;
 }
 #main .general-div .donate .payment {
   margin: 30px 0 0 0;
@@ -369,6 +382,16 @@ body > button:active {
   #main .general-div .donate .amount .buttons {
     gap: 5px;
     overflow-x: scroll;
+    /* Hide scrollbar for IE, Edge and Firefox */
+  }
+  #main .general-div .donate .amount .buttons::-webkit-scrollbar {
+    display: none;
+  }
+  #main .general-div .donate .amount .buttons {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
   }
   #main .general-div .donate .amount .buttons p {
     padding: 10px;

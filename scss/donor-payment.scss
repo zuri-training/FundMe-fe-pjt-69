@@ -34,8 +34,11 @@ input::placeholder, input, select, p {
     
 // HIDE NUMBER SPINNER
 input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button { 
-    -webkit-appearance: none; 
+    -webkit-appearance: none;
     margin: 0; 
+}
+input[type=number] {
+    -moz-appearance: textfield;
 }
 
 // select {
@@ -236,6 +239,16 @@ body > button {
                     background-color: $primary-color;
                     margin: 5px 0 0 0;
                     text-align: center;
+                    transition: .5s ease-in-out;
+                    
+                    &:hover {
+                        background-color: transparent;
+                        color: $info;
+                    }
+                    &:active {
+                        background-color: $primary-color;
+                        color: $grey-1;
+                    }
                 }
             }
 

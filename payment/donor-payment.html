@@ -30,30 +30,30 @@
                 <section class="amount">
                     <h3>Please choose an amount</h3>
                     <div class="buttons">
-                        <p>N1000</p>
-                        <p>N2000</p>
-                        <p>N10,000</p>
-                        <p>N50,000</p>
+                        <p>N<span id="value-1" onclick="amount(value_1)">1000</span></p>
+                        <p>N<span id="value-2" onclick="amount(value_2)">2000</span></p>
+                        <p>N<span id="value-3" onclick="amount(value_3)">10000</span></p>
+                        <p>N<span id="value-4" onclick="amount(value_4)">50000</span></p>
                     </div>
                     <h3>Enter an amount</h3>
     
                     <div class="input">
-                        <input type="number" value="5000.00">
+                        <input type="number" id="amount" value="5000.00">
                         <span>N</span>
                     </div>
     
                     <h3>Stretch your support to FundMe</h3>
                     <p>Your donation helps provide us to develop the platform as well as make your experience pleasurable</p>
                     <div class="buttons percent">
-                        <p>2&percnt;</p>
-                        <p>5&percnt;</p>
-                        <p>8&percnt;</p>
-                        <p>10&percnt;</p>
+                        <p id="percent-2">2&percnt;</p>
+                        <p id="percent-5">5&percnt;</p>
+                        <p id="percent-8">8&percnt;</p>
+                        <p id="percent-10">10&percnt;</p>
                     </div>
 
                     <section class="summary">
                         <h5>Donation Summary</h5>
-                        <p>Your Donation <span>N5,000.00</span></p>
+                        <p>Your Donation <span id="amount-donated">N5,000</span></p>
                         <p>FundMe Tip <span>N250.00</span></p>
                         <hr>
                         <p>Total Donation <span>N5,250.00</span></p>
