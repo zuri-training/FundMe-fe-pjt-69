@@ -27,8 +27,13 @@ h1, h2, h3, h4, h5, h6 {
   color: #4F4F4F;
 }
 
-input::placeholder, input, p {
+input::placeholder, input, select, p {
   color: #4F4F4F;
+}
+
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 header {
@@ -123,16 +128,16 @@ body > button:active {
 #main .general-div .donate {
   padding-bottom: 40px;
 }
-#main .general-div .donate h3 {
+#main .general-div .donate .amount h3 {
   padding-bottom: 10px;
 }
-#main .general-div .donate .buttons {
+#main .general-div .donate .amount .buttons {
   display: flex;
   justify-content: space-evenly;
   width: 80%;
   margin-bottom: 30px;
 }
-#main .general-div .donate .buttons p {
+#main .general-div .donate .amount .buttons p {
   background-color: transparent;
   outline: 0;
   margin-top: 5px;
@@ -144,23 +149,19 @@ body > button:active {
   width: 120px;
   text-align: center;
 }
-#main .general-div .donate .buttons p:active, #main .general-div .donate .buttons p:hover {
+#main .general-div .donate .amount .buttons p:active, #main .general-div .donate .amount .buttons p:hover {
   border: 2px solid #2f80ed;
   padding: 9px 0;
 }
-#main .general-div .donate .buttons p:active {
+#main .general-div .donate .amount .buttons p:active {
   color: #0072B1;
   font-weight: bold;
 }
-#main .general-div .donate .input {
+#main .general-div .donate .amount .input {
   position: relative;
   margin-bottom: 30px;
 }
-#main .general-div .donate .input input[type=number]::-webkit-inner-spin-button, #main .general-div .donate .input input[type=number]::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-#main .general-div .donate .input input {
+#main .general-div .donate .amount .input input {
   width: 90%;
   background-color: transparent;
   padding: 5px 10px;
@@ -169,27 +170,80 @@ body > button:active {
   border: 1px solid #828282;
   color: #333333;
 }
-#main .general-div .donate .input span {
+#main .general-div .donate .amount .input span {
   position: relative;
   font-size: 23.5px;
   left: -89.5%;
   color: #333333;
 }
-#main .general-div .donate p {
+#main .general-div .donate .amount p {
   width: 85%;
 }
-#main .general-div .donate .percent {
+#main .general-div .donate .amount .percent {
   margin-top: 15px;
 }
-#main .general-div .donate .percent p {
+#main .general-div .donate .amount .percent p {
   padding: 10px 20px;
 }
-#main .general-div .donate .percent p:active, #main .general-div .donate .percent p:hover {
+#main .general-div .donate .amount .percent p:active, #main .general-div .donate .amount .percent p:hover {
   border: 2px solid #2f80ed;
   padding: 9px 19px;
 }
-#main .general-div .donate .continue {
+#main .general-div .donate .amount .continue {
   width: 90%;
+  padding: 10px 20px;
+  border: 1px solid #2f80ed;
+  border-radius: 5px;
+  font-size: 15px;
+  color: #E0E0E0;
+  background-color: #0072B1;
+  margin: 5px 0 0 0;
+  text-align: center;
+}
+#main .general-div .donate .payment {
+  margin: 30px 0 0 0;
+  width: 90%;
+}
+#main .general-div .donate .payment > div {
+  margin-bottom: 10px;
+}
+#main .general-div .donate .payment h3 {
+  padding-bottom: 15px;
+}
+#main .general-div .donate .payment label {
+  color: #4F4F4F;
+  font-size: 13.5px;
+}
+#main .general-div .donate .payment sup {
+  color: #d61818;
+}
+#main .general-div .donate .payment input, #main .general-div .donate .payment select {
+  margin-top: 6.5px;
+  padding: 7.5px 5px;
+  font-size: 18px;
+  background-color: transparent;
+  outline: 0;
+  border: 1px solid #828282;
+  width: 100%;
+}
+#main .general-div .donate .payment .fullname {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 6.5%;
+  gap: 6.5%;
+  width: 100%;
+}
+#main .general-div .donate .payment .fullname input {
+  width: 100%;
+}
+#main .general-div .donate .payment .card-details {
+  display: grid;
+  grid-gap: 6.5%;
+  gap: 6.5%;
+  grid-template-columns: 1fr 0.8fr;
+}
+#main .general-div .donate .payment button {
+  width: 100%;
   padding: 10px 20px;
   border: 1px solid #2f80ed;
   border-radius: 5px;
@@ -198,6 +252,15 @@ body > button:active {
   transition: 0.5s ease-in-out;
   background-color: #0072B1;
   margin: 5px 0 0 0;
+}
+#main .general-div .donate .payment button:hover {
+  background-color: #E0E0E0;
+  color: #2f80ed;
+}
+#main .general-div .donate .payment button:active {
+  transition: 0.15s ease-in-out;
+  background-color: #0072B1;
+  color: #E0E0E0;
 }
 
 /*# sourceMappingURL=donor-payment.css.map */
