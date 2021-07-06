@@ -89,7 +89,7 @@ body > button {
     position: relative;
 
     .summary {
-        padding: 7% 0 5% 0;
+        padding: 35px 0 30px 0;
         border-radius: 7.5px;
         box-shadow: 2px 8px 20px -3px lighten($grey-2, 5%);
         -moz-box-shadow: 2px 8px 20px -3px lighten($grey-2, 5%);
@@ -209,7 +209,7 @@ body > button {
                     }
                 }
     
-                p {
+                & > p {
                     width: 85%;
                 }
     
@@ -318,3 +318,5 @@ body > button {
     }
 
 }
+
+@import "media-donor";

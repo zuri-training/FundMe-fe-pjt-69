@@ -77,7 +77,7 @@ body > button:active {
   position: relative;
 }
 #main .summary {
-  padding: 7% 0 5% 0;
+  padding: 35px 0 30px 0;
   border-radius: 7.5px;
   box-shadow: 2px 8px 20px -3px #cacaca;
   -moz-box-shadow: 2px 8px 20px -3px #cacaca;
@@ -176,7 +176,7 @@ body > button:active {
   left: -89.5%;
   color: #333333;
 }
-#main .general-div .donate .amount p {
+#main .general-div .donate .amount > p {
   width: 85%;
 }
 #main .general-div .donate .amount .percent {
@@ -261,6 +261,170 @@ body > button:active {
   transition: 0.15s ease-in-out;
   background-color: #0072B1;
   color: #E0E0E0;
+}
+
+@media (max-width: 1320px) {
+  #main {
+    margin-right: 7.5%;
+  }
+}
+@media (max-width: 1240px) {
+  #main {
+    margin-right: 4.5%;
+  }
+}
+@media (max-width: 1200px) {
+  #main {
+    margin-right: 0;
+  }
+}
+@media (max-width: 1140px) {
+  #main .summary {
+    right: 5%;
+  }
+}
+@media (max-width: 1085px) {
+  #main .summary {
+    right: 0%;
+  }
+}
+@media (max-width: 1030px) {
+  body {
+    padding: 0 5%;
+  }
+}
+@media (max-width: 970px) {
+  #main .summary {
+    width: 35%;
+  }
+}
+@media (max-width: 885px) {
+  body > button {
+    margin-left: 8.5%;
+  }
+
+  header {
+    padding-right: 8.5%;
+  }
+
+  #main {
+    display: block;
+    margin-left: 8.5%;
+    margin-right: 8.5%;
+  }
+  #main .summary {
+    position: static;
+    width: 450px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+  }
+  #main .general-div .donate .amount .buttons {
+    justify-content: space-between;
+  }
+  #main .general-div .donate .amount .buttons p {
+    margin-right: 0;
+  }
+  #main .general-div .donate .amount > p,
+#main .general-div .donate .amount .buttons,
+#main .general-div .donate .amount .input input,
+#main .general-div .donate .amount .continue,
+#main .general-div .donate .payment {
+    width: 100%;
+  }
+  #main .general-div .donate .amount .input span {
+    left: 5px;
+    top: -27.5px;
+  }
+}
+@media (max-width: 685px) {
+  body > button {
+    margin-left: 5%;
+  }
+
+  header {
+    padding-right: 5%;
+  }
+
+  #main {
+    display: block;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+@media (max-width: 610px) {
+  #main .general-div .donate .amount .buttons {
+    gap: 10px;
+  }
+}
+@media (max-width: 570px) {
+  #main .summary {
+    width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  #main .general-div .donate .payment .fullname, #main .general-div .donate .payment .card-details {
+    display: block;
+  }
+
+  #main .general-div .donate .amount .buttons {
+    gap: 5px;
+    overflow-x: scroll;
+  }
+  #main .general-div .donate .amount .buttons p {
+    padding: 10px;
+  }
+
+  #main {
+    margin-top: 20px;
+  }
+
+  #main .general-div .info {
+    display: grid;
+  }
+  #main .general-div .info img {
+    order: 2;
+    width: 70%;
+    height: auto;
+    border-radius: 5px;
+    padding-top: 10px;
+  }
+  #main .general-div .info div {
+    margin-left: 0;
+    order: 1;
+  }
+  #main .general-div .info div h3 br {
+    display: none;
+  }
+}
+@media (max-width: 405px) {
+  body > button {
+    margin-left: 3%;
+  }
+
+  header {
+    padding-right: 3%;
+  }
+
+  #main {
+    display: block;
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+}
+@media (max-width: 370px) {
+  body > button {
+    margin-left: 2.5%;
+  }
+
+  header {
+    padding-right: 2.5%;
+  }
+
+  #main {
+    display: block;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+  }
 }
 
 /*# sourceMappingURL=donor-payment.css.map */

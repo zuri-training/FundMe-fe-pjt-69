@@ -14,7 +14,7 @@
         <img src="../IMG-Landing/Nonso.jpg">
     </header>
 
-    <button>Back to Details</button>
+    <button onclick="history.back()">Back to Details</button>
 
     <div id="main">
         <section class="general-div">
@@ -50,17 +50,19 @@
                         <p>8&percnt;</p>
                         <p>10&percnt;</p>
                     </div>
-                    
+
+                    <section class="summary">
+                        <h5>Donation Summary</h5>
+                        <p>Your Donation <span>N5,000.00</span></p>
+                        <p>FundMe Tip <span>N250.00</span></p>
+                        <hr>
+                        <p>Total Donation <span>N5,250.00</span></p>
+                    </section>
+
                     <p class="continue" id="continue" onclick="showDiv()" style="display: block;">Continue</p>
                 </section>
                     
-                <section class="summary">
-                    <h5>Donation Summary</h5>
-                    <p>Your Donation <span>N5,000.00</span></p>
-                    <p>FundMe Tip <span>N250.00</span></p>
-                    <hr>
-                    <p>Total Donation <span>N5,250.00</span></p>
-                </section>
+                
 
                 <section class="payment" id="payment" style="display: none">
                     <h3>Payment Method</h3>

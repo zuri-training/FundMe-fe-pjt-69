@@ -1,0 +1,203 @@
+@media (max-width:1320px) {
+    #main {
+        margin-right: 7.5%;
+    }
+}
+
+@media (max-width:1240px) {
+    #main {
+        margin-right: 4.5%;
+    }
+}
+
+@media (max-width:1200px) {
+    #main {
+        margin-right: 0;
+    }
+}
+
+@media (max-width:1140px) {
+    #main .summary {
+        right: 5%;
+    }
+}
+
+@media (max-width:1085px) {
+    #main .summary {
+        right: 0%;
+    }
+}
+
+@media (max-width:1030px) {
+    body {
+        padding: 0 5%;
+    }
+}
+
+
+@media (max-width:970px) {
+    #main .summary {
+        width: 35%;
+    }
+}
+
+@media (max-width:885px) {
+    body > button {
+        margin-left: 8.5%;
+   }
+   
+   header {
+        padding-right: 8.5%;
+   }
+       
+
+   #main {
+       display: block;
+       margin-left: 8.5%;
+       margin-right: 8.5%;
+
+       .summary {
+           position: static;
+           width: 450px;
+           margin-top: 40px;
+           margin-bottom: 50px;
+       }
+
+       .general-div .donate .amount .buttons {
+           justify-content: space-between;
+
+           p {
+               margin-right: 0;
+           }   
+       }
+
+       .general-div .donate .amount > p,
+       .general-div .donate .amount .buttons,
+       .general-div .donate .amount .input input,
+       .general-div .donate .amount .continue,
+       .general-div .donate .payment {
+           width: 100%;
+       }
+
+       .general-div .donate .amount .input span {
+           left: 5px;
+           top: -27.5px;
+       }
+   }
+}
+
+
+@media (max-width:685px) {
+    body > button {
+        margin-left: 5%;
+   }
+   
+   header {
+        padding-right: 5%;
+   }
+       
+
+   #main {
+       display: block;
+       margin-left: 5%;
+       margin-right: 5%;
+    }
+}
+
+@media (max-width:610px) {
+    #main .general-div .donate .amount .buttons {
+        gap: 10px;
+    }
+}
+
+@media (max-width:570px) {
+    // #main .general-div .donate .amount .buttons {
+    //     display: grid;
+    //     grid-template-columns: 1fr 1fr;
+    // }
+
+    #main .summary {
+        width: 100%;
+    }
+}
+
+@media (max-width:480px) {
+    #main {
+        .general-div .donate .payment {
+            .fullname, .card-details {
+                display: block;
+            }
+        }
+    }
+    
+    #main .general-div .donate .amount .buttons {
+        gap: 5px;
+        overflow-x: scroll;
+
+        p {
+            padding: 10px;
+        }
+    }
+
+    #main {
+        margin-top: 20px;
+    }
+
+    #main .general-div .info {
+        display: grid;
+
+        img {
+            order: 2;
+            width: 70%;
+            height: auto;
+            border-radius: 5px;
+            padding-top: 10px;
+        }
+
+        div {
+            margin-left: 0;
+            order: 1;
+
+            h3 {
+                // text-align: center;
+
+                br {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:405px) {
+    body > button {
+        margin-left: 3%;
+   }
+   
+   header {
+        padding-right: 3%;
+   }
+       
+
+   #main {
+       display: block;
+       margin-left: 3%;
+       margin-right: 3%;}
+}
+
+@media (max-width:370px) {
+    body > button {
+        margin-left: 2.5%;
+   }
+   
+   header {
+        padding-right: 2.5%;
+   }
+       
+
+   #main {
+       display: block;
+       margin-left: 2.5%;
+       margin-right: 2.5%;
+    }
+}
