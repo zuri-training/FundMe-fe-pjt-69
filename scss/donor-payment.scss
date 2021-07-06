@@ -321,6 +321,20 @@ body > button {
                         color: $grey-1;
                     }
                 }
+
+                .checkbox {
+                    display: flex;
+
+                    p {
+                        color: $grey-4;
+                        padding-top: 6px;
+                    }
+
+                    input {
+                        width: max-content;
+                        margin-right: 10px;
+                    }
+                }
             }
         }
             

@@ -275,6 +275,17 @@ body > button:active {
   background-color: #0072B1;
   color: #E0E0E0;
 }
+#main .general-div .donate .payment .checkbox {
+  display: flex;
+}
+#main .general-div .donate .payment .checkbox p {
+  color: #4F4F4F;
+  padding-top: 6px;
+}
+#main .general-div .donate .payment .checkbox input {
+  width: max-content;
+  margin-right: 10px;
+}
 
 @media (max-width: 1320px) {
   #main {
