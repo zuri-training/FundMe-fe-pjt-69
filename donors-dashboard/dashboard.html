@@ -10,47 +10,53 @@
 </head>
 <body>
   <main class="main-content">
-
     <!--SIDEBAR CONTENT-->
-    <nav class="aside-content">
-      <div class="main-sub-content">
-      <!--BRAND-LOGO-->
-      <div class="brand-logo">
-        <img src="../IMG/FundMEblue.png" alt="brand-image" class="brand-img">
+    <header class="header">
+      <!--NAVBAR-->
+      <nav class="aside-content">
+        <div class="main-sub-content">
+        <!--BRAND-LOGO-->
+        <div class="brand-logo">
+          <a href="#">
+            <img src="../IMG/FundMEblue.png" alt="brand-image" class="brand-img">
+          </a>
+        </div>
+        <!--LINKS-->
+        <ul class="link-items">
+          <li class="link">
+            <i class="fa fa-th-large" aria-hidden="true">
+            <a href="#dashboard" class="link-ref">Dashboard</a></i>
+          </li>
+          <li class="link">
+            <i class="fa fa-heart-o" aria-hidden="true">
+            <a href="#causes" class="link-ref">Causes</a></i>
+          </li>
+          <li class="link">
+            <i class="fa fa-signal" aria-hidden="true">
+            <a href="#activities" class="link-ref">Activities</a></i>
+          </li>
+          <li class="link">
+            <i class="fa fa-bell-o" aria-hidden="true">
+            <a href="#notifications" class="link-ref">Notifications</a></i>
+          </li>
+        </ul>
+        <!--DONATE BUTTON-->
+        <button class="btn-donate">Donate</button>
+        </div>
+        <!--PROFILE LINK-->
+        <a class="btn-profile" href="#profile">
+          <img src="../IMG-Landing/bazzz.jpg" alt="settings" class="profile-link-img">
+            Mistura
+          <img src="../FundMe Iconoraphy/chevron-down.png" alt="settings" class="profile-link-icon">
+        </a> 
+      </nav>
+      <!--HAMBURGER (MOBILE)-->
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
       </div>
-      <!--LINKS-->
-      <ul class="link-items">
-        <li class="link">
-          <i class="fa fa-th-large" aria-hidden="true">
-          <a href="#dashboard" class="link-ref">Dashboard</a></i>
-        </li>
-        <li class="link">
-          <i class="fa fa-heart-o" aria-hidden="true">
-          <a href="#causes" class="link-ref">Causes</a></i>
-        </li>
-        <li class="link">
-          <i class="fa fa-signal" aria-hidden="true">
-          <a href="#activities" class="link-ref">Activities</a></i>
-        </li>
-        <li class="link">
-          <i class="fa fa-bell-o" aria-hidden="true">
-          <a href="#notifications" class="link-ref">Notifications</a></i>
-        </li>
-        <li class="link">
-          <i class="fa fa-cog" aria-hidden="true">
-          <a href="#settings" class="link-ref">Settings</a></i>
-        </li> 
-      </ul>
-      <!--DONATE BUTTON-->
-      <button class="btn-donate">Donate</button>
-      </div>
-      <!--PROFILE LINK-->
-      <a class="btn-profile" href="#profile">
-        <img src="../IMG-Landing/bazzz.jpg" alt="settings" class="profile-link-img">
-          Mistura
-        <img src="../FundMe Iconoraphy/chevron-down.png" alt="settings" class="profile-link-icon">
-      </a> 
-    </nav>
+    </header>
 
 
     <!--DASHBOARD SECTION-->
@@ -59,6 +65,7 @@
     <section class="dashboard-data">
       <h1>Dashboard</h1>
       <div class="dashboard-banner">
+        <i class="fa fa-times" aria-hidden="true"></i>
         <h2>Next Donation is in 7 days</h2>
         <p>Donating to a cause not only helps the beneficiaries, it can also be deeply rewarding for you as well!</p>
         <button class="btn">Donate</button>
@@ -87,8 +94,8 @@
       </section>
 
       <!--Activities Table-->
-      <h3 class="activities">Activities</h3>
-        <div class="dashboard-table" id="dashboard">
+      <h3 class="activities" id="activities">Activities</h3>
+        <section class="dashboard-table" id="dashboard">
           <table>
             <!--Table Heading-->
             <tr class="headers">
@@ -147,12 +154,9 @@
               <td class="donation-status">Successful</td>
             </tr>
           </table>
-        </div>  
+        </section>  
     </section>
   </main>
-
-  <h1 class="mobile-screen">Please view on a desktop, mobile view in development</h1>
- 
     <script src="app.js"></script>
 </body>
 </html>

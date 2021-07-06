@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap");
-
+/*Root Variables*/
 :root {
   --text-color: #333333;
   --text-light-color: #828282;
@@ -24,10 +24,16 @@ body {
   color: var(--text-color);
 }
 
+/*Hide hamburger on desktop*/
+.burger {
+  display: none;
+}
+
 .main-content {
   display: flex;
 }
 
+/*Navbar styles*/
 .aside-content {
   position: fixed;
   height: 100vh;
@@ -49,9 +55,9 @@ body {
 }
 
 .brand-logo {
-  width: 140px;
+  width: 150px;
   height: 50px;
-  margin: 30px auto;
+  margin: 20px auto;
 }
 
 .brand-img {
@@ -61,22 +67,25 @@ body {
 }
 
 .link-items {
-  margin-bottom: 20px;
+  margin: 20px 0;
 }
 
 .link {
   list-style: none;
-  margin: 15px auto;
-  padding: 10px 20px;
+  margin: 10px auto;
+  padding: 10px 15px 10px 5px;
   width: 100%;
   display: flex;
   align-items: center;
   background-color: var(--white-color);
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
-.fa {
+.fa-th-large,
+.fa-heart-o,
+.fa-signal,
+.fa-bell-o {
   color: var(--text-light-color);
   padding-left: 45px;
   font-family: "FontAwesome", "Nunito", sans-serif;
@@ -91,9 +100,9 @@ body {
 .link-ref {
   text-decoration: none;
   cursor: pointer;
-  margin-left: 40px;
+  margin-left: 20px;
   color: var(--text-light-color);
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 500;
 }
 
@@ -108,14 +117,14 @@ body {
   color: var(--text-color);
   font-size: 18px;
   font-weight: 500;
-  width: 220px;
-  height: 60px;
+  width: 80%;
+  height: 40px;
   justify-content: center;
   align-items: center;
   background-color: var(--bg-color);
   border-radius: 10px;
-  padding: 30px 50px;
-  margin-bottom: 100px;
+  padding: 20px;
+  margin: 100px auto;
 }
 
 .btn-profile:hover {
@@ -124,11 +133,11 @@ body {
 
 .btn-donate {
   width: 80%;
-  height: 50px;
+  height: 35px;
   background-color: var(--btn-color);
   color: var(--white-color);
   text-align: center;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
   margin: 10px auto;
   border: none;
@@ -139,7 +148,7 @@ body {
 
 .btn {
   width: 150px;
-  height: 40px;
+  height: 30px;
   background-color: var(--btn-color);
   color: var(--white-color);
   text-align: center;
@@ -159,22 +168,23 @@ body {
 
 .profile-link-img,
 .profile-link-icon {
-  margin: 10px 20px;
+  margin: 10px;
 }
 
 .profile-link-img {
-  width: 50px;
-  height: 50px;
+  width: 35px;
+  height: 35px;
   border-radius: 50%;
   object-fit: cover;
 }
 
+/*Dashboard Styles*/
 .dashboard-data {
   position: absolute;
-  left: 15vw;
-  right: 0.5vw;
-  flex: 5;
-  margin: 40px 60px;
+  width: 75vw;
+  left: 21vw;
+  flex: 6;
+  margin: 40px auto;
 }
 
 .donation-status {
@@ -184,35 +194,50 @@ body {
 .dashboard-data h1,
 .card h2 {
   color: var(--text-blue-color);
-  font-size: 48px;
+  font-size: 32px;
   font-weight: 600;
   margin-bottom: 20px;
 }
 
+/*Dashboard banner style*/
 .dashboard-banner {
   background-color: var(--text-blue-color);
   color: #fff;
   padding: 20px 40px;
+  position: relative;
+}
+
+.fa-times {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: var(--bg-blue-color);
+  color: var(--white-color);
+  padding: 15px;
+  font-size: 16px;
+  border-radius: 50%;
 }
 
 .dashboard-banner h2,
 .activities {
-  font-size: 32px;
+  font-size: 28px;
   font-weight: 600;
-}
-
-.activities {
-  color: var(--text-blue-color);
-  margin-bottom: 20px;
 }
 
 .dashboard-banner p {
   width: 45%;
-  font-size: 18px;
-  line-height: 36px;
+  font-size: 16px;
+  line-height: 28px;
   margin: 10px 0;
 }
 
+/*Activities section style*/
+.activities {
+  color: var(--text-blue-color);
+  margin-bottom: 18px;
+}
+
+/*Cards styles*/
 .activities-cards {
   display: flex;
   justify-content: space-between;
@@ -225,8 +250,8 @@ body {
   border-radius: 15px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   text-align: center;
-  width: 25%;
-  padding: 20px;
+  width: 30%;
+  padding: 10px;
 }
 
 .card h4 {
@@ -237,17 +262,18 @@ body {
 .dashboard-table {
   width: 100%;
   background-color: var(--white-color);
-  border-radius: 20px;
+  border-radius: 10px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
+/*Table styles*/
 table {
   width: 90%;
   margin: 10px auto;
   font-family: "Nunito", sans-serif;
   border-collapse: collapse;
   color: var(--text-color);
-  padding: 20px 60px;
+  padding: 20px 40px;
 }
 
 .cause-name,
@@ -264,33 +290,171 @@ th {
 
 tr,
 td {
-  padding: 20px 40px;
-  font-size: 20px;
+  padding: 10px 20px;
+  font-size: 18px;
   font-weight: 600;
 }
 
+tr:hover,
+tr:nth-child(even):hover {
+  background-color: var(--text-blue-color);
+  color: var(--white-color);
+}
+
 th {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 600;
-  padding: 20px 40px 40px 40px;
+  padding: 10px 20px 20px 20px;
 }
 
 tr:nth-child(even) {
   background-color: #dddddd;
 }
 
-.mobile-screen {
-  display: none;
-}
-
+/*Mobile Responsive View Styles*/
 @media screen and (max-width: 768px) {
-  .main-content {
-    display: none;
+  .burger {
+    display: block;
+    margin-left: 85%;
+    margin-top: 20px;
   }
 
-  .mobile-screen {
+  .burger div {
+    width: 25px;
+    height: 3px;
+    background-color: var(--text-blue-color);
+    margin: 3px;
+    transition: all 0.3s ease;
+  }
+
+  .toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 3.5px);
+  }
+
+  .toggle .line2 {
+    opacity: 0;
+  }
+
+  .toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -3.5px);
+  }
+
+  .main-content {
     display: block;
-    width: 80%;
-    margin: 200px auto;
+    width: 100%;
+  }
+
+  .aside-content {
+    z-index: 1;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+  }
+
+  .brand-logo {
+    width: 110px;
+    height: 40px;
+  }
+
+  .link-items {
+    margin: 15px 0;
+  }
+
+  .btn-donate {
+    width: 75%;
+  }
+
+  .btn {
+    width: 120px;
+  }
+
+  .dashboard-data {
+    display: block;
+    position: relative;
+    width: 100%;
+    left: 0;
+    margin: 0;
+  }
+
+  .dashboard-data h1,
+  .card h2 {
+    font-size: 26px;
+    margin: 10px;
+  }
+
+  .dashboard-banner {
+    width: 95%;
+    margin: 10px auto;
+    padding: 20px;
+    height: 200px;
+  }
+
+  .fa-times {
+    padding: 10px;
+    font-size: 12px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
+
+  .dashboard-banner h2,
+  .activities {
+    font-size: 22px;
+  }
+
+  .activities {
+    margin: 10px;
+  }
+
+  .dashboard-banner p {
+    width: 100%;
+    font-size: 16px;
+    line-height: 23px;
+    margin: 8px 0;
+  }
+
+  .activities-cards {
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+  }
+
+  .card {
+    width: 60%;
+    margin: 15px auto;
+  }
+
+  .card h4 {
+    font-size: 16px;
+  }
+
+  .dashboard-table {
+    width: 100%;
+  }
+
+  table {
+    width: 100%;
+    margin: 10px auto;
+    padding: 20px 5px;
+  }
+
+  td,
+  th {
+    padding: 10px 5px;
+  }
+
+  tr,
+  td {
+    padding: 10px 5px;
+    font-size: 10px;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  th {
+    font-size: 13px;
+    padding: 8px 5px;
   }
 }
