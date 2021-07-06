@@ -1,0 +1,349 @@
+@import 'config';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+body {
+    background-color: $background-color;
+    font-family: $nunito;
+    line-height: 16px;
+    letter-spacing: 2;
+    padding: 0 7.5%;
+}
+
+ul, ol, li {
+    list-style-type: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+h1, h2, h3,h4, h5, h6 {
+    font-weight: 700;
+    color: $grey-4;
+}
+
+input::placeholder, input, select, p {
+    color: $grey-4;
+}
+    
+// HIDE NUMBER SPINNER
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    margin: 0; 
+}
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+// select {
+//     -moz-appearance: none;
+//     -webkit-appearance: none;
+//     appearance: none;
+// }
+
+header {
+    width: 100%;
+    // height: 40px;
+    padding: 20px 0 0 0;
+    text-align: end;
+
+    img {
+        height: 65px;
+        width: auto;
+        clip-path: circle();
+    }
+}
+
+body > button {
+    width: 150px;
+    padding: 10px 20px;
+    border: 1px solid $info;
+    border-radius: 5px;
+    font-size: 15px;    
+    color: $primary-color;
+    transition: .5s ease-in-out;
+    background-color: transparent;
+    margin: 15px 0;
+
+    &:hover {
+        background-color: $info;
+        color: $background-color;
+    }
+
+    &:active {
+        color: $primary-color;
+        background-color: transparent;
+    }
+}
+
+// General Div
+#main {
+    display: grid;
+    grid-template-columns: 1fr .9fr;
+    grid-gap: 5%; gap: 5%;
+    margin-right: 10% + 2.5%;
+    margin-top: 50px;
+    position: relative;
+
+    .summary {
+        padding: 35px 0 30px 0;
+        border-radius: 7.5px;
+        box-shadow: 2px 8px 20px -3px lighten($grey-2, 5%);
+        -moz-box-shadow: 2px 8px 20px -3px lighten($grey-2, 5%);
+        -webkit-box-shadow: 2px 8px 20px -3px lighten($grey-2, 5%);
+        position: absolute;
+        top: 0;
+        right: 10%;
+        width: 350px;
+
+
+        h5 {
+            padding: 0 5% 15px 5%;
+        }
+
+        p {
+            font-weight: 700;
+            padding: 10px 5% 13.5px 5%;
+            position: relative;
+            
+            span {
+                position: absolute;
+                right: 0;
+                padding-right: 5%;
+            }
+        }
+        
+        hr {
+            margin: 5px 0;
+            color: $grey-4;
+        }
+    }
+
+    .general-div {
+        .info {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            margin: 0 0 30px 0;
+            
+            img {
+                width: 130px;
+                height: 80px;
+            }
+
+            div {
+                margin-left: 3.5%;
+
+                h3 {
+                    line-height: 1.35;
+                    color: $info;
+                }
+
+                p {
+                    padding-top: 5px;
+                    font-size: 13px;
+                }
+            }
+        }
+
+        .donate {
+            padding-bottom: 40px;
+
+            .amount {
+                h3 {
+                    padding-bottom: 10px;
+                }
+    
+                .buttons {
+                    display: flex;
+                    justify-content: space-evenly;
+                    width: 80%;
+                    margin-bottom: 30px;
+    
+                    p {
+                        background-color: transparent;
+                        outline: 0;
+                        margin-top: 5px;
+                        margin-right: 20px;
+                        padding: 10px 0;
+                        border: 1px solid $grey-3;
+                        border-radius: 5px;
+                        cursor: pointer;
+                        width: 120px;
+                        text-align: center;
+    
+                        &:active, &:hover {
+                            border: 2px solid $info;
+                            padding: 9px 0;
+                        }
+    
+                        &:active {
+                            color: $primary-color;
+                            font-weight: bold;
+                        }
+                    }
+                }
+    
+                .input {
+                    position: relative;
+                    margin-bottom: 30px;
+        
+                    input {
+                        width: 90%;
+                        background-color: transparent;
+                        padding: 5px 10px;
+                        font-size: 23.5px;
+                        text-align: end;
+                        border: 1px solid $grey-3;
+                        color: $grey-5;
+                    }
+    
+                    span {
+                        position: relative;
+                        font-size: 23.5px;
+                        left: -89.5%;
+                        color: $grey-5;
+                    }
+                }
+    
+                & > p {
+                    width: 85%;
+                }
+    
+                .percent {
+                    margin-top: 15px;
+                    p {
+                        padding: 10px 20px;
+    
+                        &:active, &:hover {
+                            border: 2px solid $info;
+                            padding: 9px 19px;
+                        }
+                    }
+    
+                }
+    
+                .continue {
+                    width: 90%;
+                    padding: 10px 20px;
+                    border: 1px solid $info;
+                    border-radius: 5px;
+                    font-size: 15px;    
+                    color: $grey-1;
+                    background-color: $primary-color;
+                    margin: 5px 0 0 0;
+                    text-align: center;
+                    transition: .5s ease-in-out;
+                    
+                    &:hover {
+                        background-color: transparent;
+                        color: $info;
+                    }
+                    &:active {
+                        background-color: $primary-color;
+                        color: $grey-1;
+                    }
+                }
+            }
+
+            .payment {
+                margin: 30px 0 0 0;
+                width: 90%;
+
+                & > div {
+                    margin-bottom: 10px;
+                }
+
+                h3 {
+                    padding-bottom: 15px;
+                }
+
+                label {
+                    color: $grey-4;
+                    font-size: 13.5px;
+                }
+
+                sup {
+                    color: rgb(214, 24, 24);
+                }
+
+                input, select {
+                    margin-top: 6.5px;
+                    padding: 7.5px 5px;
+                    font-size: 18px;
+                    background-color: transparent;
+                    outline: 0;
+                    border: 1px solid $grey-3;
+                    width: 100%;
+                }
+
+                .fullname {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    grid-gap: 6.5%; gap: 6.5%;
+                    width: 100%;
+
+                    input {
+                        width: 100%;
+                    }
+                }
+
+                .card-details {
+                    display: grid;
+                    grid-gap: 6.5%; gap: 6.5%;
+                    grid-template-columns: 1fr .8fr;
+                }
+
+                button {
+                    width: 100%;
+                    padding: 10px 20px;
+                    border: 1px solid $info;
+                    border-radius: 5px;
+                    font-size: 15px;    
+                    color: $grey-1;
+                    transition: .5s ease-in-out;
+                    background-color: $primary-color;
+                    margin: 5px 0 0 0;
+                    
+                    &:hover {
+                        background-color: $grey-1;
+                        color: $info;
+                    }
+                    &:active {
+                        transition: .15s ease-in-out;
+                        background-color: $primary-color;
+                        color: $grey-1;
+                    }
+                }
+
+                .checkbox {
+                    display: flex;
+
+                    p {
+                        color: $grey-4;
+                        padding-top: 6px;
+                    }
+
+                    input {
+                        width: max-content;
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+            
+            
+
+
+
+    }
+
+}
+
+@import "media-donor";
