@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donor Payment</title>
+
+    <link rel="stylesheet" href="../css/donor-payment.css">
+    <script src="../js/donor-payment.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="../IMG-Landing/Nonso.jpg">
+    </header>
+
+    <button onclick="history.back()">Back to Details</button>
+
+    <div id="main">
+        <section class="general-div">
+            <div class="info">
+                <img src="../IMG-Landing/T and K.jpg" alt="info">
+                <div>
+                    <h3>Support Taiye and Kehinde Buy <br> School Text Books</h3>
+                    <p>Created 7 days Ago</p>
+                </div>
+            </div>
+
+            <form class="donate">
+                <section class="amount">
+                    <h3>Please choose an amount</h3>
+                    <div class="buttons">
+                        <p>N<span id="value-1" onclick="amount(value_1)">1000</span></p>
+                        <p>N<span id="value-2" onclick="amount(value_2)">2000</span></p>
+                        <p>N<span id="value-3" onclick="amount(value_3)">10000</span></p>
+                        <p>N<span id="value-4" onclick="amount(value_4)">50000</span></p>
+                    </div>
+                    <h3>Enter an amount</h3>
+    
+                    <div class="input">
+                        <input type="number" id="amount" value="5000.00">
+                        <span>N</span>
+                    </div>
+    
+                    <h3>Stretch your support to FundMe</h3>
+                    <p>Your donation helps provide us to develop the platform as well as make your experience pleasurable</p>
+                    <div class="buttons percent">
+                        <p id="percent-2">2&percnt;</p>
+                        <p id="percent-5">5&percnt;</p>
+                        <p id="percent-8">8&percnt;</p>
+                        <p id="percent-10">10&percnt;</p>
+                    </div>
+
+                    <section class="summary">
+                        <h5>Donation Summary</h5>
+                        <p>Your Donation <span id="amount-donated">N5,000</span></p>
+                        <p>FundMe Tip <span>N250.00</span></p>
+                        <hr>
+                        <p>Total Donation <span>N5,250.00</span></p>
+                    </section>
+
+                    <p class="continue" id="continue" onclick="showDiv()" style="display: block;">Continue</p>
+                </section>
+                    
+                
+ <!-- style="display: none" -->
+                <section class="payment" id="payment">
+                    <h3>Payment Method</h3>
+
+                    <div class="fullname">
+                        <div class="firstname">
+                            <label>First Name <sup>&Star;</sup></label> <br>
+                            <input type="text" required>
+                        </div>
+
+                        <div class="firstname">
+                            <label>Last Name <sup>&Star;</sup></label> <br>
+                            <input type="text" required>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label>Email Address <sup>&Star;</sup></label> <br>
+                        <input type="email"required>
+                    </div>
+                    
+                    <div>
+                        <label>Card Number <sup>&Star;</sup></label> <br>
+                        <input type="number" required>
+                    </div>
+
+                    <div>
+                        <label>Name on Card <sup>&Star;</sup></label> <br>
+                        <input type="text" required>
+                    </div>
+                    
+                    <div class="card-details">
+                        <div class="expiration-date">
+                            <label>Expiration Date (MM/YY) <sup>&Star;</sup></label> <br>
+                            <input type="text" required>
+                        </div>
+
+                        <div class="cvv">
+                            <h5>CVV <sup>&Star;</sup></h5>
+                            <input type="number" required>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label>State <sup>&Star;</sup></label> <br>
+                        <select name="state" id="state" required>
+                            <option value="" selected="selected">&nbsp;</option>
+                            <option value="Abuja">FCT, Abuja</option>
+                            <option value="Abia">Abia</option>
+                            <option value="Adamawa">Adamawa</option>
+                            <option value="Akwa Ibom">Akwa Ibom</option>
+                            <option value="Anambra">Anambra</option>
+                            <option value="Bauchi">Bauchi</option>
+                            <option value="Bayelsa">Bayelsa</option>
+                            <option value="Benue">Benue</option>
+                            <option value="Borno">Borno</option>
+                            <option value="Cross River">Cross River</option>
+                            <option value="Delta">Delta</option>
+                            <option value="Ebonyi">Ebonyi</option>
+                            <option value="Edo">Edo</option>
+                            <option value="Ekiti">Ekiti</option>
+                            <option value="Enugu">Enugu</option>
+                            <option value="Gombe">Gombe</option>
+                            <option value="Imo">Imo</option>
+                            <option value="Jigawa">Jigawa</option>
+                            <option value="Kaduna">Kaduna</option>
+                            <option value="Kano">Kano</option>
+                            <option value="Katsina">Katsina</option>
+                            <option value="Kebbi">Kebbi</option>
+                            <option value="Kogi">Kogi</option>
+                            <option value="Kwara">Kwara</option>
+                            <option value="Lagos">Lagos</option>
+                            <option value="Nassarawa">Nassarawa</option>
+                            <option value="Niger">Niger</option>
+                            <option value="Ogun">Ogun</option>
+                            <option value="Ondo">Ondo</option>
+                            <option value="Osun">Osun</option>
+                            <option value="Oyo">Oyo</option>
+                            <option value="Plateau">Plateau</option>
+                            <option value="Rivers">Rivers</option>
+                            <option value="Sokoto">Sokoto</option>
+                            <option value="Taraba">Taraba</option>
+                            <option value="Yobe">Yobe</option>
+                            <option value="Zamfara">Zamfara</option>
+                            <option value="Outside Nigeria">Outside Nigeria</option>
+                          </select>
+                    </div>
+
+                    <div>
+                        <label>Phone Number <sup>&Star;</sup></label> <br>
+                        <input type="tel" required>
+                    </div>
+
+                    <div class="checkbox">
+                        <input type="checkbox" name="" id="">
+                        <p>Save this information for further donations</p>
+                    </div>
+
+                    <button>Donate Now</button>
+
+                </section>
+            </form>
+            
+            
+
+
+        </section>
+    </div>
+
+</body>
+</html>
