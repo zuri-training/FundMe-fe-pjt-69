@@ -67,7 +67,7 @@ input::placeholder, input, p {
   background-color: #F4F4F4;
 }
 #main #right > h2 {
-  margin-bottom: 6.5vh;
+  margin-bottom: 30px;
   line-height: 1;
 }
 #main #right h4 {
@@ -96,6 +96,11 @@ input::placeholder, input, p {
 #main #right .form .donor {
   border: 2px solid #0072B1;
 }
+#main #right .name {
+  width: 95%;
+  padding: 15px 10px;
+  margin: 0 0 5px 0;
+}
 #main #right .first-form {
   margin-bottom: 15px;
 }
@@ -123,6 +128,9 @@ input::placeholder, input, p {
   grid-template-columns: 1fr 1fr;
   gap: 5.5%;
   grid-gap: 5.5%;
+}
+#main #right .second-form h4 {
+  margin: 10px 0;
 }
 #main #right .second-form .second-form-2 {
   width: 95%;
