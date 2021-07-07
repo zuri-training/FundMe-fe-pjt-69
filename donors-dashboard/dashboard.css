@@ -346,11 +346,14 @@ tr:nth-child(even) {
 
   .aside-content {
     z-index: 1;
-    display: none;
     position: fixed;
     top: 0;
-    left: 0;
+    left: -100%;
     bottom: 0;
+  }
+
+  .aside-content.active {
+    left: 0;
   }
 
   .brand-logo {
