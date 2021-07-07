@@ -125,11 +125,10 @@ body {
 }
 
 @media (max-width: 992px) {
-
-    .error {
-        position: relative;
-        top: 15vh;
-      }
+  .error {
+     position: relative;
+    top: 15vh;
+  }
 
   .errorpage {
     width: 100%;
@@ -144,7 +143,7 @@ body {
     font-size: 5vh;
     color: #000;
     font-weight: bold;
-}
+ }
 }
 
 h1{
@@ -164,6 +163,7 @@ p{
 .btn3{
         background-color: #0072b1;
         border: none;
+
         width: 110px;
         height: 34px;
         border-radius: 4px;
