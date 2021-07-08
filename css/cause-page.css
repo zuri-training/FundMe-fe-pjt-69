@@ -54,12 +54,9 @@ body {
 }
 
 .brand-img {
-  width: 90px;
-  height: 35px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .link-items {
@@ -100,7 +97,6 @@ body {
   color: var(--text-light-color);
   font-size: 16px;
   font-weight: 500;
-  font-family: "Nunito", sans-serif;
 }
 
 .link-ref:hover {
@@ -179,8 +175,6 @@ body {
   position: relative;
   width: 100%;
 }
-
-/* <!-----DASHBOARD-ACTIVATION NAVBAR SECTION ---> */
 .main {
   position: absolute;
   width: 75vw;
@@ -189,14 +183,11 @@ body {
   margin: 40px auto;
   transition: 0.5s;
 }
-.main .topbar {
-  width: 100%;
-  background: #f4f4f4;
-  height: 60px;
+.main-sub {
   display: flex;
   justify-content: space-between;
 }
-.topbar h1 {
+ h1 {
   font-size: 36px;
   line-height: 124%;
   color: #0072b1;
@@ -237,184 +228,186 @@ body {
   padding: 10px;
   margin-top: 10px;
 }
-
-.details table {
-  position: relative;
+.causes-details{
   width: 100%;
-  margin: 30px auto;
-  font-family: "Nunito", sans-serif;
-  border-collapse: collapse;
-  color: var(--text-color);
-  padding: 20px 40px;
-  background: #fcfcfc;
-  box-shadow: 0px 5px 10px rgba(111, 111, 111, 0.16);
-  border-radius: 8px;
-}
-td,
-th {
-  border: none;
-  text-align: left;
-  padding: 8px;
-}
-
-tr,
-td {
-  padding: 10px 20px;
-  font-size: 18px;
-  font-weight: 600;
-}
-tr:hover,
-tr:nth-child(even):hover {
-  background-color: var(--text-blue-color);
-  color: var(--white-color);
-}
-
-th {
-  font-size: 20px;
-  font-weight: 600;
-  padding: 10px 20px 20px 20px;
-}
-
-tr:nth-child(even) {
-  background-color: #dddddd;
-}
-.sucessful {
-  color: #27ae60;
-}
-.failed {
-  color: #e70b0b;
-}
-.pagination_section {
+  height: 210px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-evenly;
+  align-items: center;
+  background: #f4f4f4;
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px rgba(111, 111, 111, 0.16);
+  margin: 20px;
 }
-.pagination_section a {
-  border: solid 2px #d7d7d7;
-  border-radius: 0.2rem;
-  color: #5d54d8;
-  text-decoration: none;
-  text-transform: uppercase;
-  display: inline-block;
-  text-align: center;
-  padding: 3px;
+.causes-details-info{
+  width: 40%;
+  display: flex;
+  justify-content: space-around ;
 }
-
-/* mobile view */
+.causes-details-info img {
+  width: 100px;
+  border-radius: 50%;
+  height: 83px;
+}
+.causes-details-text{
+  margin-left: 20px;
+}
+.causes-details-heading {
+  font-size: 20px;
+}
+.causes-details-info p{
+  font-size: 16px;
+}
+.causes-details-button  {
+  width: 146px;
+height: 25px;
+background: #0072B1;
+color: #FFFFFF;
+}
 @media screen and (max-width: 768px) {
-  .container {
+    .container{
+      width:100%;
+    }
+    .burger {
+      
+      display: block;
+      margin-left: 85%;
+      margin-top: 20px;
+    }
+    .header{
+      
+      width: 100%;
+    }
+  
+  
+    .burger div {
+      width: 25px;
+      height: 3px;
+      background-color: var(--text-blue-color);
+      margin: 3px;
+      transition: all 0.3s ease;
+    }
+  
+    .toggle .line1 {
+      transform: rotate(-45deg) translate(-5px, 3.5px);
+    }
+  
+    .toggle .line2 {
+      opacity: 0;
+    }
+  
+    .toggle .line3 {
+      transform: rotate(45deg) translate(-5px, -3.5px);
+    }
+  
+    .container {
+      display: block;
+      width: 100%;
+    }
+  
+    .aside-content {
+      z-index: 1;
+      position: fixed;
+      top: 0;
+      left: -100%;
+      bottom: 0;
+    }
+  
+    .aside-content.active {
+      left: 0;
+    }
+  
+    .brand-logo {
+      width: 90px;
+      height: 35px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+    }
+  
+    .link-items {
+      margin: 15px 0;
+    }
+  
+    .btn-donate {
+      width: 75%;
+    }
+  
+    .btn {
+      width: 120px;
+    }
+    .main {
+      position: relative;
+      width: 90%;
+      left: 0;
+    }
+    .topbar h1 {
+      font-size: 24px;
+      line-height: 60%;
+    }
+  
+    .categories {
+      width: 100%;
+      height: 25px;
+      padding: 0px;
+      margin-top: 0;
+    }
+    .search label input {
+      width: 50%;
+      height: 25px;
+      margin-top: 0px;
+      margin-left: 60px;
+      padding-left: 10px;
+    }
+    .search label .fa {
+      position: absolute;
+      top: 5px;
+      left: 60%;
+      cursor: pointer;
+    }
+
+  .causes-details{
     width: 100%;
+    height: 220px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    
   }
-  .burger {
-    display: block;
-    margin-left: 85%;
-    margin-top: 20px;
-  }
-  .header {
+  .causes-details-info{
     width: 100%;
+    display: flex;
+    display: flex;
+    flex-direction: column;
   }
-
-  .burger div {
-    width: 25px;
-    height: 3px;
-    background-color: var(--text-blue-color);
-    margin: 3px;
-    transition: all 0.3s ease;
-  }
-
-  .toggle .line1 {
-    transform: rotate(-45deg) translate(-5px, 3.5px);
-  }
-
-  .toggle .line2 {
-    opacity: 0;
-  }
-
-  .toggle .line3 {
-    transform: rotate(45deg) translate(-5px, -3.5px);
-  }
-
-  .container {
-    display: block;
-    width: 100%;
-  }
-
-  .aside-content {
-    z-index: 1;
-    position: fixed;
-    top: 0;
-    left: -100%;
-    bottom: 0;
-  }
-
-  .aside-content.active {
-    left: 0;
-  }
-
-  .brand-logo {
-    width: 110px;
+  .causes-details-info img {
+    width: 50px;
+    border-radius: 50%;
     height: 40px;
   }
-
-  .link-items {
-    margin: 15px 0;
+  .causes-details-text{
+    margin-left: 10px;
   }
-
-  .btn-donate {
-    width: 75%;
+  .causes-details-heading {
+    font-size: 12px;
   }
-
-  .btn {
-    width: 120px;
-  }
-  .main {
-    position: relative;
-    width: 90%;
-    left: 0;
-  }
-  .topbar h1 {
-    font-size: 24px;
-    line-height: 60%;
-  }
-
-  .categories {
-    width: 100%;
-    height: 25px;
-    padding: 0px;
-    margin-top: 0;
-  }
-  .search label input {
-    width: 50%;
-    height: 25px;
-    margin-top: 0px;
-    margin-left: 60px;
-    padding-left: 10px;
-  }
-  .search label .fa {
-    position: absolute;
-    top: 5px;
-    left: 60%;
-    cursor: pointer;
-  }
-  table {
-    width: 100%;
-    margin: auto;
-  }
-
-  td,
-  th {
-    padding: 10px 5px;
-  }
-
-  tr,
-  td {
-    padding: 10px 5px;
+  .causes-details-info p{
     font-size: 10px;
-    font-weight: 600;
-    text-align: center;
   }
-
-  th {
-    font-size: 10px;
-    padding: 8px 5px;
+  img{
+    width: 85px;
+    height: 7px;
+ 
+  }
+  .causes-details-progess {
+    margin: 30px;
+  }
+  .causes-details-button  {
+    width: 90px;
+  height: 35px;
+  background: #0072B1;
+  color: #FFFFFF;
   }
 }
