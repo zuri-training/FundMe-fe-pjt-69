@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FundMe</title>
+   <link rel="stylesheet" href="../css/dasboard-activities.css"/>
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+</head>
+<body>
+   <div class="container">
+    <header class="header">
+      <!--NAVBAR-->
+      <nav class="aside-content">
+        <div class="main-sub-content">
+          <!--BRAND-LOGO-->
+          <div class="brand-logo">
+            <a href="#">
+              <img src="img/FundMEblue.png" alt="brand-image" class="brand-img">
+            </a>
+          </div>
+          <!--LINKS-->
+          <ul class="link-items">
+            <li class="link">
+              <i class="fa fa-th-large" aria-hidden="true">
+                <a href="#dashboard" class="link-ref">Dashboard</a></i>
+            </li>
+            <li class="link">
+              <i class="fa fa-heart-o" aria-hidden="true">
+                <a href="#causes" class="link-ref">Causes</a></i>
+            </li>
+            <li class="link">
+              <i class="fa fa-signal" aria-hidden="true">
+                <a href="#activities" class="link-ref">Activities</a></i>
+            </li>
+            <li class="link">
+              <i class="fa fa-bell-o" aria-hidden="true">
+                <a href="#notifications" class="link-ref">Notifications</a></i>
+            </li>
+          </ul>
+          <!--DONATE BUTTON-->
+          <button class="btn-donate">Donate</button>
+        </div>
+        <!--PROFILE LINK-->
+        <a class="btn-profile" href="#profile">
+          <img src="img/bazzz.jpg" alt="settings" class="profile-link-img">
+          Mistura
+          <img src="img/chevron-down.png" alt="settings" class="profile-link-icon">
+        </a>
+      </nav>
+      <!--HAMBURGER (MOBILE)-->
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </header>
+
+
+    <!--DASHBOARD SECTION-->
+
+    <!--DASHBOARD CONTAINER-->
+
+    <section class="main">
+        <div class="topbar"> 
+          <h1>ACTIVITIES</h1> 
+         <div class="search">
+           <label>
+             <input type="text" placeholder="Search Here"/>
+             <i class="fa fa-search"></i>
+           </label>
+         </div>
+         <div >
+           <select class="categories "> 
+             <option value="">Categories</option>
+             <option value=""></option>
+             <option value=""></option>
+           </select>
+         </div>
+        </div> 
+        <!---DISPLAYED DATA----->
+        <div class="details">
+          <table>
+            <thead>
+              <tr>
+                <th>Beneficiaries</th>
+                <th>Category</th>
+                <th>Amount</th>
+                <th>Date of Donation</th>
+                <th>status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+              <td>Taiwo and Kehinde</td>
+              <td>Text Books</td>
+              <td>N1,500</td>
+              <td> 14-06-2021</td>
+              <td><span class="sucessful">Successful</span> </td>
+            </tr>
+            <tr> 
+              <td>Taiwo and Kehinde</td>
+              <td>Text Books</td>
+              <td>N1,500</td>
+              <td> 14-06-2021</td>
+              <td><span class="sucessful">Successful</span> </td>
+            </tr>
+            <tr>
+              <td>Taiwo and Kehinde</td>
+              <td>Text Books</td>
+              <td>N1,500</td>
+              <td> 14-06-2021</td>
+              <td><span class="sucessful">Successful</span> </td>
+            </tr>
+            <tr>
+              <td>Taiwo and Kehinde</td>
+              <td>Text Books</td>
+              <td>N1,500</td>
+              <td> 14-06-2021</td>
+              <td><span class="failed">Failed</span> </td>
+            </tr>
+            <tr>
+              <td>Taiwo and Kehinde</td>
+              <td>Text Books</td>
+              <td>N1,500</td>
+              <td> 14-06-2021</td>
+              <td><span class="sucessful">Successful</span> </td>
+            </tr>
+            <tr>
+              <td>Taiwo and Kehinde</td>
+              <td>Text Books</td>
+              <td>N1,500</td>
+              <td> 14-06-2021</td>
+              <td><span class="sucessful">Successful</span> </td>
+            </tr>
+            <tr>
+              <td>Taiwo and Kehinde</td>
+              <td>Text Books</td>
+              <td>N1,500</td>
+              <td> 14-06-2021</td>
+              <td><span class="sucessful">Successful</span> </td>
+            </tr>
+            <tr>
+              <td>Taiwo and Kehinde</td>
+              <td>Text Books</td>
+              <td>N1,500</td>
+              <td> 14-06-2021</td>
+              <td><span class="failed">Failed</span> </td>
+            </tr>
+            <tr>
+              <td>Taiwo and Kehinde</td>
+              <td>Text Books</td>
+              <td>N1,500</td>
+              <td> 14-06-2021</td>
+              <td><span class="sucessful">Successful</span> </td>
+            </tr>
+            </tbody>
+          </table>
+          
+            <!-- <h2>showing <span>1</span>of <span>15</span></h2>     -->
+            <div class="pagination_section">
+              <a href="#"> Prev</a>
+              <a href="#" >1</a>
+              <a href="#">2</a>
+              <a href="#" >3</a>
+              <a href="#"  >4</a>
+              <a href="#" >5</a>
+              <a href="#">Next</a>
+            </div>
+    </section>
+   </div> 
+   <script src="../js/dashboard-actiivities.js"></script> 
+</body>
+</html>
