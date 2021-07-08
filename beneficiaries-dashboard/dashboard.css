@@ -249,18 +249,14 @@ body {
 }
 
 .about-user {
-  height: 30px;
-  width: 80%;
+  height: 40px;
+  width: 90%;
   border: none;
   padding: 5px;
   outline: none;
   border-radius: 5px;
+  background-color: var(--white-color);
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-}
-
-.about-user:hover {
-  height: 150px;
-  width: 100%;
 }
 
 /*Activities section style*/
