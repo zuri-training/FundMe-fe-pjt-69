@@ -22,6 +22,7 @@ value_4.innerHTML = 50000;
 function amount(value_1) {
   amount_input.value = value_1.innerHTML;
 }
+
 function amount(value_2) {
   amount_input.value = value_2.innerHTML;
 
