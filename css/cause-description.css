@@ -1,0 +1,571 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;700&display=swap");
+#main .general-div .comment-div div, #main .general-div .organizer, #main .general-div .tags-div {
+  border: 1px solid #828282;
+  border-left: 0;
+  border-right: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body {
+  background-color: #F4F4F4;
+  font-family: "Nunito", sans-serif;
+  line-height: 16px;
+  letter-spacing: 2;
+  padding: 0 7.5%;
+}
+
+ul, ol, li {
+  list-style-type: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+input::placeholder, input, select, p {
+  color: #4F4F4F;
+}
+
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+body > button {
+  width: 200px;
+  padding: 10px 20px;
+  border: 1px solid #0072B1;
+  border-radius: 5px;
+  font-size: 15px;
+  color: #0072B1;
+  transition: 0.5s ease-in-out;
+  background-color: transparent;
+  margin: 35px 0 0px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-shadow: #2f80ed;
+  box-shadow: 2px 8px 20px -3px #d7d7d7;
+  -moz-box-shadow: 2px 8px 20px -3px #d7d7d7;
+  -webkit-box-shadow: 2px 8px 20px -3px #d7d7d7;
+}
+body > button svg {
+  height: 18px;
+  margin-right: 5px;
+}
+body > button:hover {
+  background-color: #2f80ed;
+  color: #F4F4F4;
+}
+body > button:active {
+  color: #0072B1;
+  background-color: transparent;
+}
+
+#main {
+  display: grid;
+  grid-template-columns: 1fr 0.7fr;
+  grid-gap: 5%;
+  gap: 5%;
+  margin-top: 50px;
+  position: relative;
+}
+#main .general-div {
+  width: 100%;
+}
+#main .general-div .info {
+  align-items: center;
+  margin: 0 0 30px 0;
+}
+#main .general-div .info .img {
+  margin-top: 10px;
+  height: 275px;
+  background: url("../IMG-Landing/T and K.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+#main .general-div .info h2 {
+  line-height: 1.35;
+  color: #0072B1;
+}
+#main .general-div .tags-div {
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+#main .general-div .tags-div p {
+  color: #333333;
+}
+#main .general-div .tags-div > span {
+  border: 1px solid #828282;
+  border-right: 0;
+  height: 50px;
+  margin: 0 15px;
+}
+#main .general-div .tags-div .tags {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #c07300;
+}
+#main .general-div .tags-div .tags svg {
+  height: 25px;
+  margin-right: 10px;
+}
+#main .general-div .tags-div .tags .tag-hide {
+  display: none;
+}
+#main .general-div .about {
+  margin: 20px 0 10px 0;
+  text-align: justify;
+}
+#main .general-div .about p {
+  margin-bottom: 30px;
+  line-height: 2;
+}
+#main .general-div .organizer {
+  padding: 20px 0;
+  margin: 30px 0 0 0;
+  position: relative;
+}
+#main .general-div .organizer div {
+  display: flex;
+  align-items: center;
+  padding: 40px 0 0 0;
+}
+#main .general-div .organizer div img {
+  width: 50px;
+  background-color: #115bbf;
+  clip-path: circle();
+  padding: 5px;
+  margin: 0 20px 0 0;
+}
+#main .general-div .organizer div p {
+  color: #333333;
+  font-weight: 600;
+  font-size: 18.5px;
+}
+#main .general-div .organizer button {
+  width: 200px;
+  padding: 10px 20px;
+  border: 1px solid #2f80ed;
+  border-radius: 5px;
+  font-size: 15px;
+  color: #0072B1;
+  transition: 0.5s ease-in-out;
+  background-color: none;
+  position: absolute;
+  right: 0;
+  top: 35%;
+  box-shadow: 2px 8px 20px -3px #d7d7d7;
+  -moz-box-shadow: 2px 8px 20px -3px #d7d7d7;
+  -webkit-box-shadow: 2px 8px 20px -3px #d7d7d7;
+}
+#main .general-div .organizer button:hover {
+  background-color: #2f80ed;
+  color: #F4F4F4;
+}
+#main .general-div .organizer button:active {
+  color: #0072B1;
+  background-color: transparent;
+}
+#main .general-div .comment-div div {
+  padding: 20px 0;
+  border-top: 0;
+  position: relative;
+}
+#main .general-div .comment-div div h3 {
+  margin-bottom: 20px;
+}
+#main .general-div .comment-div div p {
+  font-size: 15px;
+  font-weight: 600;
+  color: #828282;
+  line-height: 1.5;
+}
+#main .general-div .comment-div div .review {
+  position: absolute;
+  right: 0;
+  top: 35%;
+}
+#main .general-div .comment-div .comment .comment_text {
+  font-weight: 400;
+  width: 80%;
+}
+#main .general-div .comment-div .comment .comment_date {
+  font-weight: 500;
+  position: absolute;
+  right: 0;
+  top: 20px;
+  cursor: pointer;
+}
+#main .general-div .footnote {
+  padding: 30px 0 60px 0;
+  position: relative;
+}
+#main .general-div .footnote a {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  top: 60px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #0072B1;
+}
+#main .general-div .footnote a:hover {
+  text-decoration: underline;
+}
+#main .general-div .footnote a svg {
+  height: 18.5px;
+  margin-right: 10px;
+}
+
+#sidebar {
+  padding: 35px 0 15px 0;
+  border-radius: 2.5px;
+  position: absolute;
+  top: 72.5px;
+  right: 0;
+  width: 450px;
+  box-shadow: 2px 8px 20px -3px #e3e3e3;
+  -moz-box-shadow: 2px 8px 20px -3px #e3e3e3;
+  -webkit-box-shadow: 2px 8px 20px -3px #e3e3e3;
+}
+#sidebar section {
+  padding: 0 0 0 30px;
+  position: relative;
+}
+#sidebar section svg {
+  height: 25px;
+}
+#sidebar section h3 {
+  color: #333333;
+}
+#sidebar section .target_amount {
+  display: flex;
+  align-items: center;
+}
+#sidebar section .target_amount svg {
+  transform: rotate(45deg);
+}
+#sidebar section .target_amount div {
+  padding: 0 0 0 10px;
+}
+#sidebar section .target_amount div p {
+  padding-bottom: 10px;
+}
+#sidebar section .due_date {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-align: end;
+  padding: 0 30px 0 0;
+}
+#sidebar section .due_date div {
+  padding: 0 0 0 10px;
+}
+#sidebar section .due_date p {
+  padding-bottom: 10px;
+}
+#sidebar .progress {
+  margin: 30px;
+}
+#sidebar .progress progress {
+  width: 100%;
+  height: 10px;
+  -webkit-appearance: none;
+  border: none;
+}
+#sidebar .progress progress::-webkit-progress-bar {
+  background-color: #BDBDBD;
+  border-radius: 50px;
+}
+#sidebar .progress progress::-webkit-progress-value {
+  border-radius: 50px;
+  box-shadow: inset 0 1px 1px 0 rgba(255, 255, 255, 0.4);
+  background: #0072B1;
+}
+#sidebar .recent_donations {
+  margin: 30px;
+}
+#sidebar .recent_donations h1 {
+  margin-bottom: 20px;
+  color: #0072B1;
+  line-height: 1.25;
+}
+#sidebar .recent_donations > p {
+  margin-bottom: 15px;
+  color: #0072B1;
+  font-size: 18.5px;
+}
+#sidebar .recent_donations .recent-box {
+  display: flex;
+  align-items: center;
+  background-color: #ededed;
+  padding: 15px;
+  position: relative;
+  margin-bottom: 15px;
+}
+#sidebar .recent_donations .recent-box svg {
+  height: 50px;
+  fill: #0072B1;
+  stroke: #BDBDBD;
+  padding-right: 7.5px;
+}
+#sidebar .recent_donations .recent-box h3 {
+  padding-bottom: 10px;
+  color: #0072B1;
+}
+#sidebar .recent_donations .recent-box div > p {
+  font-weight: 600;
+}
+#sidebar .recent_donations .recent-box > p {
+  position: absolute;
+  right: 15px;
+  color: #BDBDBD;
+}
+#sidebar .recent_donations .share_and_donate {
+  margin: 40px 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#sidebar .recent_donations .share_and_donate svg {
+  height: 40px;
+}
+#sidebar .recent_donations .share_and_donate button {
+  width: 250px;
+  padding: 10px 20px;
+  border: 1px solid #0072B1;
+  border-radius: 5px;
+  font-size: 20px;
+  transition: 0.5s ease-in-out;
+  background-color: #2f80ed;
+  color: #F4F4F4;
+  height: 50px;
+  text-shadow: #2f80ed;
+  box-shadow: 2px 8px 20px -3px #cacaca;
+  -moz-box-shadow: 2px 8px 20px -3px #cacaca;
+  -webkit-box-shadow: 2px 8px 20px -3px #cacaca;
+}
+#sidebar .recent_donations .share_and_donate button:hover {
+  background-color: transparent;
+  color: #0072B1;
+}
+#sidebar .recent_donations .share_and_donate button:active {
+  color: #F4F4F4;
+  background-color: #0072B1;
+}
+#sidebar .recent_donations .share_and_donate .share {
+  width: 75px;
+  padding: 5px 20px 5px 15px;
+}
+
+@media (max-width: 1265px) {
+  body {
+    padding: 0 5%;
+  }
+}
+@media (max-width: 1180px) {
+  #main {
+    grid-template-columns: 1fr 450px;
+  }
+
+  #main > .general-div .organizer button {
+    width: 150px;
+  }
+}
+@media (max-width: 1080px) {
+  body {
+    padding: 0 3.5%;
+  }
+}
+@media (max-width: 950px) {
+  #main {
+    grid-template-columns: 1fr 400px;
+  }
+
+  #main > .general-div .organizer button {
+    width: 120px;
+  }
+
+  #sidebar {
+    width: 400px;
+  }
+}
+@media (max-width: 885px) {
+  body {
+    padding: 0 10%;
+  }
+
+  #sidebar {
+    width: 500px;
+    position: static;
+    margin: 40px 0;
+  }
+
+  #main {
+    display: block;
+  }
+
+  #main > .general-div .comment-div {
+    border-top: 1px solid #828282;
+  }
+}
+@media (max-width: 620px) {
+  #sidebar {
+    width: 100%;
+  }
+
+  #main > .general-div .tags-div {
+    display: block;
+    padding: 15px 0 0 0;
+  }
+  #main > .general-div .tags-div > span {
+    display: none;
+  }
+  #main > .general-div .tags-div p {
+    padding-bottom: 15px;
+  }
+  #main > .general-div .tags-div .tags {
+    justify-content: start;
+    padding-top: 10px;
+    border-top: 1px solid #828282;
+  }
+}
+@media (max-width: 500px) {
+  body {
+    padding: 0 7.5%;
+  }
+}
+@media (max-width: 475px) {
+  body {
+    padding: 0;
+  }
+
+  #sidebar {
+    transform: scale(0.9);
+    margin: 0;
+  }
+
+  body > button,
+#main > .general-div .info,
+#main > .general-div .tags-div,
+#main > .general-div .about,
+#main > .general-div .organizer,
+#main > .general-div .comment-div,
+#main > .general-div .footnote {
+    margin-right: 7.5%;
+    margin-left: 7.5%;
+  }
+}
+@media (max-width: 400px) {
+  body > button {
+    width: 185px;
+    padding: 10px;
+  }
+
+  #sidebar {
+    transform: scale(0.85) translateX(-2.5%) translateY(-30px);
+    margin: 0;
+    width: 105%;
+  }
+
+  #sidebar .recent_donations .share_and_donate {
+    display: grid;
+  }
+  #sidebar .recent_donations .share_and_donate .share {
+    order: 2;
+    margin-top: 10px;
+  }
+
+  #sidebar .recent_donations .share_and_donate button {
+    width: 200px;
+  }
+
+  #sidebar > .recent_donations .recent-box > p {
+    bottom: 5px;
+    margin-left: 15px;
+    margin-top: 30px;
+  }
+
+  #sidebar > section .due_date {
+    position: static;
+    text-align: start;
+    margin-top: 30px;
+  }
+
+  #sidebar .progress,
+#sidebar .recent_donations {
+    margin: 30px 20px;
+  }
+
+  #sidebar section {
+    padding: 0 0 0 20px;
+  }
+
+  #main {
+    margin-top: 30px;
+  }
+
+  #main > .general-div .comment-div {
+    position: relative;
+    top: -40px;
+  }
+  #main > .general-div .comment-div .comment h3 {
+    margin-bottom: 10px;
+  }
+  #main > .general-div .comment-div .comment .comment_text {
+    width: 100%;
+  }
+  #main > .general-div .comment-div .comment .comment_date {
+    position: static;
+    font-size: 14px;
+    padding-top: 5px;
+  }
+
+  #main > .general-div .footnote {
+    padding: 0 0 80px 0;
+  }
+
+  #main > .general-div .organizer div {
+    padding: 20px 0 0 0;
+  }
+  #main > .general-div .organizer button {
+    position: static;
+    margin: 20px 0 0 0;
+  }
+
+  #main > .general-div .tags-div .tags {
+    display: block;
+    align-items: left;
+    justify-content: left;
+  }
+  #main > .general-div .tags-div .tags svg {
+    display: none;
+  }
+  #main > .general-div .tags-div .tags .tag-hide {
+    display: contents;
+  }
+}
+
+/*# sourceMappingURL=cause-description.css.map */

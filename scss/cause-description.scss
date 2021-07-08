@@ -1,0 +1,459 @@
+@import 'config';
+
+%border {
+    border: 1px solid $grey-3;
+    border-left: 0;
+    border-right: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+body {
+    background-color: $background-color;
+    font-family: $nunito;
+    line-height: 16px;
+    letter-spacing: 2;
+    padding: 0 7.5%;
+}
+
+ul, ol, li {
+    list-style-type: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+h1, h2, h3,h4, h5, h6 {
+    font-weight: 700;
+    color: darken($grey-5, 10%);
+}
+
+input::placeholder, input, select, p {
+    color: $grey-4;
+}
+    
+// HIDE NUMBER SPINNER
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    margin: 0; 
+}
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+body > button {
+    width: 200px;
+    padding: 10px 20px;
+    border: 1px solid $primary-color;
+    border-radius: 5px;
+    font-size: 15px;    
+    color: $primary-color;
+    transition: .5s ease-in-out;
+    background-color: transparent;
+    margin: 35px 0 0px 0;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: $info;
+
+    box-shadow: 2px 8px 20px -3px lighten($grey-2, 10%);
+    -moz-box-shadow: 2px 8px 20px -3px lighten($grey-2, 10%);
+    -webkit-box-shadow: 2px 8px 20px -3px lighten($grey-2, 10%);
+
+    svg {
+        height: 18px;
+        margin-right: 5px;
+    }
+
+    &:hover {
+        background-color: $info;
+        color: $background-color;
+    }
+
+    &:active {
+        color: $primary-color;
+        background-color: transparent;
+    }
+}
+
+#main {
+    display: grid;
+    grid-template-columns: 1fr .7fr;
+    grid-gap: 5%; gap: 5%;
+    margin-top: 50px;
+    position: relative;
+
+    .general-div {
+        width: 100%;
+        
+        .info {
+            align-items: center;
+            margin: 0 0 30px 0;
+            
+            .img {
+                margin-top: 10px;
+                // width: 350px;
+                height: 275px;
+                background: url('../IMG-Landing/T\ and\ K.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+
+            h2 {
+                line-height: 1.35;
+                color: $primary-color;
+            }
+        }
+
+        .tags-div {
+            display: flex;
+            align-items: center;
+            padding: 0;
+            @extend %border;
+
+            p {
+                color: $grey-5;
+            }
+
+            & > span {
+                border: 1px solid $grey-3;
+                border-right: 0;
+                height: 50px;
+                margin: 0 15px;
+            }
+
+            .tags {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: darken($warning, 15%);
+
+                svg {
+                    height:25px;
+                    margin-right: 10px;
+                }
+
+                .tag-hide {
+                    display: none;
+                }
+            }
+        }
+
+        .about {
+            margin: 20px 0 10px 0;
+            text-align: justify;
+
+            p {
+                margin-bottom: 30px;
+                line-height: 2;
+            }
+        }
+
+        .organizer {
+            @extend %border;
+            padding: 20px 0;
+            margin: 30px 0 0 0;
+            position: relative;
+
+            div {
+                display: flex;
+                align-items: center;
+                padding: 40px 0 0 0;
+
+                img {
+                    width: 50px;
+                    background-color: darken($info, 15%);
+                    clip-path: circle();
+                    padding: 5px;
+                    margin: 0 20px 0 0;
+                }
+
+                p {
+                    color: $grey-5;
+                    font-weight: 600;
+                    font-size: 18.5px;
+                }
+            }
+
+            button {
+                width: 200px;
+                padding: 10px 20px;
+                border: 1px solid $info;
+                border-radius: 5px;
+                font-size: 15px;    
+                color: $primary-color;
+                transition: .5s ease-in-out;
+                background-color: none;
+
+                position: absolute;
+                right: 0;
+                top: 35%;
+                
+                box-shadow: 2px 8px 20px -3px lighten($grey-2, 10%);
+                -moz-box-shadow: 2px 8px 20px -3px lighten($grey-2, 10%);
+                -webkit-box-shadow: 2px 8px 20px -3px lighten($grey-2, 10%);
+
+                &:hover {
+                    background-color: $info;
+                    color: $background-color;
+                }
+
+                &:active {
+                    color: $primary-color;
+                    background-color: transparent;
+                }
+            }
+        }
+
+        .comment-div {
+            div {
+                padding: 20px 0;
+                @extend %border;
+                border-top: 0;
+                position: relative;
+                
+                h3 {
+                    margin-bottom: 20px;
+                }
+
+                p {
+                    font-size: 15px;
+                    font-weight: 600;
+                    color: $grey-3;
+                    line-height: 1.5;
+                }
+
+                .review {
+                    position: absolute;
+                    right: 0;
+                    top: 35%;
+                }
+            }
+
+            .comment {
+                .comment_text {
+                    font-weight: 400;
+                    width: 80%;
+                }
+                .comment_date {
+                    font-weight: 500;
+                    position: absolute;
+                    right: 0;
+                    top: 20px;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .footnote {
+            padding: 30px 0 60px 0;
+            position: relative;
+            
+            a {
+                display: flex;
+                align-items: center;
+                position: absolute;
+                right: 0;
+                top: 60px;
+                font-weight: 600;
+                text-decoration: none;
+                color: $primary-color;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+
+                svg {
+                    height: 18.5px;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}
+
+#sidebar {
+    padding: 35px 0 15px 0;
+    border-radius: 2.5px;
+    position: absolute;
+    top: 72.5px;
+    right: 0;
+    width: 450px;
+
+    box-shadow: 2px 8px 20px -3px lighten($grey-2, 15%);
+    -moz-box-shadow: 2px 8px 20px -3px lighten($grey-2, 15%);
+    -webkit-box-shadow: 2px 8px 20px -3px lighten($grey-2, 15%);
+
+    section {
+        padding: 0 0 0 30px;
+        position: relative;
+
+        svg {
+            height: 25px;
+        }
+        h3 {
+            color: $grey-5;
+        }
+
+        .target_amount {
+            display: flex;
+            align-items: center;
+
+            svg {
+                transform: rotate(45deg);
+            }
+
+            div {
+                padding: 0 0 0 10px;
+
+                p {
+                    padding-bottom: 10px;
+                }
+            }
+        }
+
+        .due_date {
+            display: flex;
+            align-items: center;
+            position: absolute;
+            top: 0;
+            right: 0;
+            text-align: end;
+            padding: 0 30px 0 0;
+
+            div {
+                padding: 0 0 0 10px;
+            }
+
+            p {
+                padding-bottom: 10px;
+            }
+        }
+    }
+
+    .progress {
+        margin: 30px;
+
+        progress {
+            width: 100%;
+            height: 10px;
+            
+            -webkit-appearance: none;
+            border: none;
+        }
+
+        progress::-webkit-progress-bar {
+            background-color: $grey-2;
+            border-radius: 50px;
+        }
+
+        progress::-webkit-progress-value {
+            border-radius: 50px;
+            box-shadow: inset 0 1px 1px 0 rgba(255, 255, 255, 0.4);
+            background: $primary-color;
+        }
+    }
+
+    .recent_donations {
+        margin: 30px;
+
+        h1 {
+            margin-bottom: 20px;
+            color: $primary-color;
+            line-height: 1.25;
+        }
+
+        & > p {
+            margin-bottom: 15px;
+            color: $primary-color;
+            font-size: 18.5px;
+        }
+        
+        .recent-box {
+            display: flex;
+            align-items: center;
+            background-color: lighten($grey-1, 5%);
+            padding: 15px;
+            position: relative;
+            margin-bottom: 15px;
+            
+            svg {
+                height: 50px;
+                fill: $primary-color;
+                stroke: $grey-2;
+                padding-right: 7.5px;
+            }
+            
+            h3 {
+                padding-bottom: 10px;
+                color: $primary-color;
+            }
+
+            div > p {
+                font-weight: 600;
+            }
+
+            & > p {
+                position: absolute;
+                right: 15px;
+                color: $grey-2;
+            }
+        }
+
+        .share_and_donate {
+            margin: 40px 0 0 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            svg {
+                height: 40px;
+            }
+            
+            button {
+                width: 250px;
+                padding: 10px 20px;
+                border: 1px solid $primary-color;
+                border-radius: 5px;
+                font-size: 20px;    
+                transition: .5s ease-in-out;
+                background-color: $info;
+                color: $background-color;
+                height: 50px;
+                
+                text-shadow: $info;
+
+                box-shadow: 2px 8px 20px -3px lighten($grey-2, 5%);
+                -moz-box-shadow: 2px 8px 20px -3px lighten($grey-2, 5%);
+                -webkit-box-shadow: 2px 8px 20px -3px lighten($grey-2, 5%);
+
+
+                &:hover {
+                    background-color: transparent;               
+                    color: $primary-color;
+
+                }
+
+                &:active {
+                    color: $background-color;
+                    background-color: $primary-color;
+                }
+            }
+
+            .share {
+                width: 75px;
+                padding: 5px 20px 5px 15px;
+            }
+        }
+    }
+}
+
+@import 'media-cause';
