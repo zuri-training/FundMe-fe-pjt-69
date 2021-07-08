@@ -1,0 +1,396 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: 0;
+}
+
+body {
+  background-color: #F4F4F4;
+  font-family: "Nunito", sans-serif;
+  line-height: 16px;
+  letter-spacing: 2;
+}
+
+ul, ol, li {
+  list-style-type: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  color: #4F4F4F;
+}
+
+input::-webkit-input-placeholder {
+  color: #4F4F4F;
+}
+
+input::-moz-placeholder {
+  color: #4F4F4F;
+}
+
+input:-ms-input-placeholder {
+  color: #4F4F4F;
+}
+
+input::-ms-input-placeholder {
+  color: #4F4F4F;
+}
+
+input::placeholder, input, p {
+  color: #4F4F4F;
+}
+
+#main {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 0.75fr 1fr;
+}
+#main #left {
+  background: url("../svg/left-bg.svg");
+  background-repeat: repeat-x;
+  background-color: #0072B1;
+  position: relative;
+}
+#main #left > ol {
+  position: absolute;
+  right: 9.5%;
+  top: 35vh;
+  font-weight: 400;
+  font-size: 22px;
+  color: #E0E0E0;
+  list-style-position: outside;
+}
+#main #left > ol li {
+  list-style-type: decimal;
+  padding: 15px 0 15px 10px;
+}
+#main #left > ol .active {
+  list-style-image: url("../svg/check.svg");
+}
+#main #left > ol .current {
+  font-weight: 700;
+}
+#main #right {
+  padding: 8.5vh 10% 0 10%;
+  color: #000;
+  background-color: #F4F4F4;
+}
+#main #right > h2 {
+  margin-bottom: 30px;
+  line-height: 1;
+}
+#main #right h4 {
+  width: 100%;
+  border: 1.35px solid #828282;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  padding: 0 0 5px 0;
+}
+#main #right .form {
+  margin: 7.5px 0 0 0;
+}
+#main #right .form h5 {
+  padding: 0 0 9px 4.5px;
+}
+#main #right .form input {
+  border: 1px solid #0a82b8;
+  border-radius: 5px;
+  outline: 0;
+  font-size: 18px;
+  background-color: transparent;
+  padding: 8.5px 7.5px;
+  width: 100%;
+}
+#main #right .form .donor {
+  border: 2px solid #0072B1;
+}
+#main #right .name {
+  width: 95%;
+  padding: 15px 10px;
+  margin: 0 0 5px 0;
+}
+#main #right .first-form {
+  margin-bottom: 15px;
+}
+#main #right .first-form h1 {
+  border: 1.35px solid #828282;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  padding: 0 0 20px 0;
+}
+#main #right .first-form .name {
+  width: 95%;
+  padding: 15px 10px;
+  margin: 0 0 5px 0;
+}
+#main #right .first-form .first-form-2 {
+  display: grid;
+  grid-template-columns: 0.7fr 1fr;
+  gap: 8.5%;
+  grid-gap: 8.5%;
+  width: 95%;
+}
+#main #right .first-form .first-form-2 .first-form-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5.5%;
+  grid-gap: 5.5%;
+}
+#main #right .second-form h4 {
+  margin: 10px 0;
+}
+#main #right .second-form .second-form-2 {
+  width: 95%;
+  display: grid;
+  grid-template-columns: 1fr 0.85fr;
+  gap: 12.5%;
+  grid-gap: 12.5%;
+}
+#main #right .third-form {
+  width: 95%;
+  margin-top: 15px;
+}
+#main #right .third-form h4 {
+  margin-bottom: 5px;
+}
+#main #right .third-form > div {
+  display: grid;
+  grid-template-columns: 1fr 0.85fr;
+  gap: 12.5%;
+  grid-gap: 12.5%;
+}
+#main #right .third-form > div .account-number {
+  margin-left: 5%;
+}
+#main #right .fourth-form .capture {
+  width: 50%;
+  margin: 40px auto 0 auto;
+}
+#main #right .fourth-form .capture .capture-output {
+  border: 1px solid #0072B1;
+  min-height: 250px;
+  max-height: 300px;
+  min-width: 200px;
+  text-align: center;
+  overflow: hidden;
+  border-radius: 5px;
+  position: relative;
+  background: url("../svg/capture.png");
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+#main #right .fourth-form .capture .capture-output label {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: transparent;
+  z-index: 10;
+}
+#main #right .fourth-form .capture .capture-output > img {
+  height: 100%;
+  width: 100%;
+  border: 0;
+  outline: 0;
+}
+#main #right .fourth-form .capture .capture-input {
+  margin-top: 30px;
+  width: 100%;
+  text-align: center;
+}
+#main #right .fourth-form .capture .capture-input input {
+  display: none;
+}
+#main #right .fourth-form .capture .capture-input .capture-button {
+  cursor: pointer;
+  width: 100px;
+  padding: 10px 20px;
+  border: 2px solid #2f80ed;
+  border-radius: 5px;
+  font-size: 15px;
+  background-color: #2f80ed;
+  color: #F4F4F4;
+  margin: 0 auto;
+}
+#main #right .fourth-form .capture .capture-input .capture-button:hover {
+  background-color: #0a82b8;
+  border: 2px solid #0b94d1;
+}
+#main #right .fourth-form .capture .capture-input .capture-button:active {
+  background-color: #2f80ed;
+  color: #F4F4F4;
+  border: 2px solid #2f80ed;
+}
+#main #right .fifth-form {
+  width: 95%;
+  margin-bottom: 70px;
+}
+#main #right .fifth-form h4 {
+  margin-bottom: 50px;
+}
+#main #right .fifth-form p {
+  margin-bottom: 35px;
+}
+#main #right .fifth-form input {
+  padding: 20px 10px;
+}
+#main #right .buttons {
+  position: relative;
+  margin: 70px 0 20px 0;
+  width: 95%;
+}
+#main #right .buttons button {
+  width: 100px;
+  padding: 10px 20px;
+  border: 1px solid #2f80ed;
+  border-radius: 5px;
+  font-size: 15px;
+  color: #333333;
+}
+#main #right .buttons .back-button {
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+#main #right .buttons .back-button:hover {
+  background-color: #2f80ed;
+  color: #F4F4F4;
+}
+#main #right .buttons .back-button:active {
+  background-color: transparent;
+  color: #333333;
+}
+#main #right .buttons .next-button {
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  background-color: #2f80ed;
+  color: #F4F4F4;
+  position: absolute;
+  right: 0;
+}
+#main #right .buttons .next-button:hover {
+  background-color: #0a82b8;
+  border-color: #0b94d1;
+}
+#main #right .buttons .next-button:active {
+  background-color: #2f80ed;
+  color: #F4F4F4;
+  border: 2px solid #2f80ed;
+}
+#main #right .buttons .donor {
+  border: 2px solid #0072B1;
+}
+
+#main {
+  overflow: hidden;
+}
+#main #left {
+  overflow: hidden;
+}
+#main #right {
+  overflow-y: scroll;
+}
+
+@media (max-width: 1030px) {
+  #main {
+    grid-template-columns: 0.6fr 1fr;
+  }
+}
+@media (max-width: 945px) {
+  #main {
+    grid-template-columns: 280px 1fr;
+  }
+  #main #left ol {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  #main #right .first-form .first-form-2 {
+    display: block;
+  }
+}
+@media (max-width: 865px) {
+  #main > #right > .fourth-form .capture {
+    width: 75%;
+  }
+}
+@media (max-width: 768px) {
+  #main #right .first-form > .first-form-2 {
+    width: 100%;
+  }
+  #main #right .first-form > .first-form-2 .first-form-3 {
+    display: block;
+  }
+  #main #right .second-form .second-form-2 {
+    display: block;
+  }
+  #main #right .third-form > div {
+    display: block;
+  }
+  #main #right .third-form > div > .account-number {
+    margin-left: 0;
+  }
+  #main #right .first-form .name, #main #right .second-form .second-form-2, #main #right .third-form, #main #right .fifth-form, #main #right .buttons {
+    width: 100%;
+  }
+}
+@media (max-width: 650px) {
+  #main {
+    display: block;
+    overflow: scroll;
+    background-color: #0072B1;
+  }
+  #main #left {
+    display: none;
+  }
+  #main #right {
+    overflow-y: visible;
+    margin: 40px 5%;
+    background-color: #F4F4F4;
+    border-radius: 8.5px;
+  }
+  #main #right h2 {
+    text-align: center;
+  }
+  #main #right .buttons {
+    padding-bottom: 30px;
+    margin: 30px 0 20px 0;
+  }
+}
+@media (max-width: 550px) {
+  #main > #right {
+    padding: 5vh 5% 0 5%;
+  }
+  #main > #right .fourth-form .capture {
+    width: 95%;
+  }
+}
+@media (max-width: 280px) {
+  #main {
+    padding-top: 30px;
+  }
+  #main #right {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  #main #right .buttons {
+    padding-bottom: 30px;
+    margin: 20px 0 0 0;
+    border-radius: 10px;
+  }
+}/*# sourceMappingURL=reg.css.map */
