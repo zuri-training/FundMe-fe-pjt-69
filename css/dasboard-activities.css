@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap");
-/*Root Variables*/
+
 :root {
   --text-color: #333333;
   --text-light-color: #828282;
@@ -23,17 +23,10 @@ body {
   scroll-behavior: smooth;
   color: var(--text-color);
 }
-
-/*Hide hamburger on desktop*/
-.burger {
-  display: none;
-}
-
-.main-content {
+.container {
   display: flex;
 }
 
-/*Navbar styles*/
 .aside-content {
   position: fixed;
   height: 100vh;
@@ -67,7 +60,7 @@ body {
 }
 
 .link-items {
-  margin: 20px 0;
+  margin-bottom: 15px;
 }
 
 .link {
@@ -168,7 +161,7 @@ body {
 
 .profile-link-img,
 .profile-link-icon {
-  margin: 10px;
+  margin: 10px 5px;
 }
 
 .profile-link-img {
@@ -178,109 +171,81 @@ body {
   object-fit: cover;
 }
 
-/*Dashboard Styles*/
-.dashboard-data {
+.container {
+  position: relative;
+  width: 100%;
+}
+
+/* <!-----DASHBOARD-ACTIVATION NAVBAR SECTION ---> */
+.main {
   position: absolute;
   width: 75vw;
   left: 21vw;
   flex: 6;
   margin: 40px auto;
+  transition: 0.5s;
 }
-
-.donation-status {
-  color: green;
-}
-
-.dashboard-data h1,
-.card h2 {
-  color: var(--text-blue-color);
-  font-size: 32px;
-  font-weight: 600;
-  margin-bottom: 20px;
-}
-
-/*Dashboard banner style*/
-.dashboard-banner {
-  background-color: var(--text-blue-color);
-  color: #fff;
-  padding: 20px 40px;
-  position: relative;
-}
-
-.fa-times {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  background-color: var(--bg-blue-color);
-  color: var(--white-color);
-  padding: 15px;
-  font-size: 16px;
-  border-radius: 50%;
-}
-
-.dashboard-banner h2,
-.activities {
-  font-size: 28px;
-  font-weight: 600;
-}
-
-.dashboard-banner p {
-  width: 45%;
-  font-size: 16px;
-  line-height: 28px;
-  margin: 10px 0;
-}
-
-/*Activities section style*/
-.activities {
-  color: var(--text-blue-color);
-  margin-bottom: 18px;
-}
-
-/*Cards styles*/
-.activities-cards {
+.main .topbar {
+  width: 100%;
+  background: #f4f4f4;
+  height: 60px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  margin: 50px auto;
 }
-
-.card {
-  background-color: var(--white-color);
-  border-radius: 4px;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  text-align: center;
-  width: 30%;
-  padding: 10px;
+.topbar h1 {
+  font-size: 36px;
+  line-height: 124%;
+  color: #0072b1;
+  font-weight: bold;
 }
-
-.card h4 {
-  margin-bottom: 20px;
-  font-size: 20px;
+.search {
+  position: relative;
+  width: 400px;
 }
-
-.dashboard-table {
+.search label {
+  position: relative;
   width: 100%;
-  background-color: var(--white-color);
-  border-radius: 10px;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.search label input {
+  width: 100%;
+  height: 35px;
+  background: #f4f4f4;
+  opacity: 0.4;
+  border: 0.5px solid #222222;
+  box-sizing: border-box;
+  box-shadow: 0px 10px 20px rgba(0, 85, 224, 0.13);
+  border-radius: 4px;
+  margin-top: 10px;
+  margin-right: 30%;
+  padding-left: 10px;
+}
+.search label .fa {
+  position: absolute;
+  top: 5px;
+  left: 70%;
+  cursor: pointer;
+}
+.categories {
+  width: 100%;
+  height: 35px;
+  background: #f4f4f4;
+  color: #828282;
+  padding: 10px;
+  margin-top: 10px;
 }
 
-/*Table styles*/
-table {
-  width: 90%;
-  margin: 10px auto;
+.details table {
+  position: relative;
+  width: 100%;
+  margin: 30px auto;
   font-family: "Nunito", sans-serif;
   border-collapse: collapse;
   color: var(--text-color);
   padding: 20px 40px;
+  background: #fcfcfc;
+  box-shadow: 0px 5px 10px rgba(111, 111, 111, 0.16);
+  border-radius: 8px;
 }
-
-.cause-name,
-.date {
-  color: var(--text-light-color);
-}
-
 td,
 th {
   border: none;
@@ -294,7 +259,6 @@ td {
   font-size: 18px;
   font-weight: 600;
 }
-
 tr:hover,
 tr:nth-child(even):hover {
   background-color: var(--text-blue-color);
@@ -310,14 +274,43 @@ th {
 tr:nth-child(even) {
   background-color: #dddddd;
 }
+.sucessful {
+  color: #27ae60;
+}
+.failed {
+  color: #e70b0b;
+}
+.pagination_section {
+  display: flex;
+  justify-content: flex-end;
+}
+.pagination_section a {
+  border: solid 2px #d7d7d7;
+  border-radius: 0.2rem;
+  color: #5d54d8;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  text-align: center;
+  padding: 3px;
+}
 
-/*Mobile Responsive View Styles*/
+/* mobile view */
 @media screen and (max-width: 768px) {
+  .container{
+    width:100%;
+  }
   .burger {
+    
     display: block;
     margin-left: 85%;
     margin-top: 20px;
   }
+  .header{
+    
+    width: 100%;
+  }
+
 
   .burger div {
     width: 25px;
@@ -339,7 +332,7 @@ tr:nth-child(even) {
     transform: rotate(45deg) translate(-5px, -3.5px);
   }
 
-  .main-content {
+  .container {
     display: block;
     width: 100%;
   }
@@ -372,75 +365,39 @@ tr:nth-child(even) {
   .btn {
     width: 120px;
   }
-
-  .dashboard-data {
-    display: block;
+  .main {
     position: relative;
-    width: 100%;
+    width: 90%;
     left: 0;
-    margin: 0;
+  }
+  .topbar h1 {
+    font-size: 24px;
+    line-height: 60%;
   }
 
-  .dashboard-data h1,
-  .card h2 {
-    font-size: 26px;
-    margin: 10px;
+  .categories {
+    width: 100%;
+    height: 25px;
+    padding: 0px;
+    margin-top: 0;
   }
-
-  .dashboard-banner {
-    width: 95%;
-    margin: 10px auto;
-    padding: 20px;
-    height: 200px;
+  .search label input {
+    width: 50%;
+    height: 25px;
+    margin-top: 0px;
+    margin-left: 60px;
+    padding-left: 10px;
   }
-
-  .fa-times {
-    padding: 10px;
-    font-size: 12px;
+  .search label .fa {
     position: absolute;
-    top: 15px;
-    right: 15px;
+    top: 5px;
+    left: 60%;
+    cursor: pointer;
   }
-
-  .dashboard-banner h2,
-  .activities {
-    font-size: 22px;
-  }
-
-  .activities {
-    margin: 10px;
-  }
-
-  .dashboard-banner p {
-    width: 100%;
-    font-size: 16px;
-    line-height: 23px;
-    margin: 8px 0;
-  }
-
-  .activities-cards {
-    display: flex;
-    flex-direction: column;
-    margin: 20px auto;
-  }
-
-  .card {
-    width: 60%;
-    margin: 15px auto;
-  }
-
-  .card h4 {
-    font-size: 16px;
-  }
-
-  .dashboard-table {
-    width: 100%;
-  }
-
   table {
     width: 100%;
-    margin: 10px auto;
-    padding: 20px 5px;
+    margin: auto;
+    
   }
 
   td,
@@ -452,12 +409,12 @@ tr:nth-child(even) {
   td {
     padding: 10px 5px;
     font-size: 10px;
-    font-weight: 500;
+    font-weight: 600;
     text-align: center;
   }
 
   th {
-    font-size: 13px;
+    font-size: 10px;
     padding: 8px 5px;
   }
 }
