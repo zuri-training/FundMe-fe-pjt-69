@@ -54,9 +54,12 @@ body {
 }
 
 .brand-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  width: 90px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
 }
 
 .link-items {
@@ -81,7 +84,7 @@ body {
 .fa-bell-o {
   color: var(--text-light-color);
   padding-left: 45px;
-  font-family: "FontAwesome", "Nunito", sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 
 .link:hover,
@@ -97,6 +100,7 @@ body {
   color: var(--text-light-color);
   font-size: 16px;
   font-weight: 500;
+  font-family: "Nunito", sans-serif;
 }
 
 .link-ref:hover {
@@ -297,20 +301,17 @@ tr:nth-child(even) {
 
 /* mobile view */
 @media screen and (max-width: 768px) {
-  .container{
-    width:100%;
+  .container {
+    width: 100%;
   }
   .burger {
-    
     display: block;
     margin-left: 85%;
     margin-top: 20px;
   }
-  .header{
-    
+  .header {
     width: 100%;
   }
-
 
   .burger div {
     width: 25px;
@@ -397,7 +398,6 @@ tr:nth-child(even) {
   table {
     width: 100%;
     margin: auto;
-    
   }
 
   td,
