@@ -247,7 +247,7 @@ body {
 
 .card {
   background-color: var(--white-color);
-  border-radius: 15px;
+  border-radius: 4px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   text-align: center;
   width: 30%;
@@ -346,11 +346,14 @@ tr:nth-child(even) {
 
   .aside-content {
     z-index: 1;
-    display: none;
     position: fixed;
     top: 0;
-    left: 0;
+    left: -100%;
     bottom: 0;
+  }
+
+  .aside-content.active {
+    left: 0;
   }
 
   .brand-logo {
