@@ -12,6 +12,7 @@ var value_4 = document.getElementById('value-4');
 
 var amount_input = document.getElementById('amount');
 
+
 value_1.innerHTML = 1000;
 value_2.innerHTML = 2000;
 value_3.innerHTML = 10000;
@@ -20,8 +21,8 @@ value_4.innerHTML = 50000;
 
 function amount(value_1) {
   amount_input.value = value_1.innerHTML;
-
 }
+
 function amount(value_2) {
   amount_input.value = value_2.innerHTML;
 
@@ -35,4 +36,41 @@ function amount(value_4) {
 }
 
 // that's all.
+
+
+
+var donation = document.getElementById('donation');
+var tip = document.getElementById('tip');
+var total = document.getElementById('total');
+
+var two = document.getElementById('two');
+var five = document.getElementById('five');
+var eight = document.getElementById('eight');
+var ten = document.getElementById('ten');
+
+
+
+// handles fundmetip
+two.value= 2/100
+five.value= 5/100
+eight.value= 8/100
+ten.value= 10/100
+
+
+function fundTip(two) {
+  tip.innerHTML = amount_input.value * two.value;
+}
+
+function fundTip(five) {
+  tip.innerHTML = amount_input.value * five.value;
+}
+
+function fundTip(eight) {
+  tip.innerHTML = amount_input.value * eight.value;
+}
+
+function fundTip(ten) {
+  tip.innerHTML = amount_input.value * ten.value;
+}
+
 
