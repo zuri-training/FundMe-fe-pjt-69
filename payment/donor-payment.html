@@ -38,21 +38,38 @@
                         <span>N</span>
                     </div>
     
-                    <h3>Stretch your support to FundMe</h3>
+                    <!-- <h3>Stretch your support to FundMe</h3>
                     <p>Your donation helps provide us to develop the platform as well as make your experience pleasurable</p>
                     <div class="buttons percent">
                         <p>2&percnt;</p>
                         <p>5&percnt;</p>
                         <p>8&percnt;</p>
                         <p>10&percnt;</p>
+                    </div> -->
+
+                    <h3>Stretch your support to FundMe</h3>
+                    <p>Your donation helps provide us to develop the platform as well as make your experience pleasurable</p>
+                    <div class="buttons percent">
+                        <p onclick="fundTip(two)" id="two">2&percnt;</p>
+                        <p onclick="fundTip(five)" id="five">5&percnt;</p>
+                        <p onclick="fundTip(eight)" id="eight">8&percnt;</p>
+                        <p onclick="fundTip(ten)" id="ten">10&percnt;</p>
                     </div>
 
-                    <section class="summary">
+                    <!-- <section class="summary">
                         <h5>Donation Summary</h5>
                         <p>Your Donation <span>N5,000</span></p>
                         <p>FundMe Tip <span>N250.00</span></p>
                         <hr>
                         <p>Total Donation <span>N5,250.00</span></p>
+                    </section> -->
+
+                    <section class="summary">
+                        <h5>Donation Summary</h5>
+                        <p>Your Donation <span id="donation">N5,000</span></p>
+                        <p>FundMe Tip <span id="tip">N250.00</span></p>
+                        <hr>
+                        <p>Total Donation <span id="total">N5,250.00</span></p>
                     </section>
 
                     <p class="continue" id="continue" onclick="showDiv()" style="display: block;">Continue</p>
