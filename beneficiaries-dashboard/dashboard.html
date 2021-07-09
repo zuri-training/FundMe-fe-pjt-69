@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="dashboard.css">
+  <title>Beneficiary-dashboard</title>
+</head>
+
+<body>
+  <main class="main-content">
+    <!--SIDEBAR CONTENT-->
+    <header class="header">
+      <!--NAVBAR-->
+      <nav class="aside-content">
+        <div class="main-sub-content">
+          <!--BRAND-LOGO-->
+          <div class="brand-logo">
+            <a href="#">
+              <img src="../IMG/FundMEblue.png" alt="brand-image" class="brand-img">
+            </a>
+          </div>
+          <!--LINKS-->
+          <ul class="link-items">
+            <li class="link">
+              <i class="fa fa-th-large" aria-hidden="true">
+                <a href="#dashboard" class="link-ref">Dashboard</a></i>
+            </li>
+            <li class="link">
+              <i class="fa fa-heart-o" aria-hidden="true">
+                <a href="#ongoing-campaign" class="link-ref">Ongoing Campaign</a></i>
+            </li>
+            <li class="link">
+              <i class="fa fa-bell-o" aria-hidden="true">
+                <a href="#notifications" class="link-ref">Notifications</a></i>
+            </li>
+            <li class="link">
+              <i class="fa fa-briefcase" aria-hidden="true"></i>
+              <a href="#wallet" class="link-ref">Wallet</a></i>
+            </li>
+          </ul>
+          <!--DONATE BUTTON-->
+          <button class="btn-campaign">Add New Campaign</button>
+        </div>
+        <!--PROFILE LINK-->
+        <a class="btn-profile" href="#profile">
+          <img src="../IMG-Landing/bazzz.jpg" alt="settings" class="profile-link-img">
+          Darasinmi
+          <img src="../FundMe Iconoraphy/chevron-down.png" alt="settings" class="profile-link-icon">
+        </a>
+      </nav>
+      <!--HAMBURGER (MOBILE)-->
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </header>
+
+
+    <!--DASHBOARD SECTION-->
+
+    <!--DASHBOARD CONTAINER-->
+    <section class="dashboard-data" id="dashboard">
+      <h1>View Profile</h1>
+      <div class="user-card">
+        <img src="../IMG-Landing/bazzz.jpg" alt="" class="user-img">
+        <div class="user-details">
+          <div class="user-status">
+            <h3 class="user-name">Darasinmi Johnson</h3>
+            <h5 class="user-label"><span>&#8226;</span>Active</h5>
+          </div>
+          <h4 class="user-occupation">Student</h4>
+          <div class="about-user">About me...</div>
+        </div>
+      </div>
+
+      <!--DASHBOARD ACTIVITIES CARDS-->
+      <section class="activities-cards">
+        <!--Total Donations Card-->
+        <div class="total-campaigns card">
+          <h4>Total Campaigns</h4>
+          <h2>20</h2>
+          <button class="btn">View all</button>
+        </div>
+        <!--Total Causes Card-->
+        <div class="pending-campaigns card" id="causes">
+          <h4>Pending Campaigns</h4>
+          <h2>3</h2>
+          <button class="btn btn-view">View all</button>
+        </div>
+        <!--Upcoming Donations Card-->
+        <div class="approved-campaigns card">
+          <h4>Approved Campains</h4>
+          <h2>5</h2>
+          <button class="btn">View all</button>
+        </div>
+        <!--Upcoming Donations Card-->
+        <div class="funds-raised card">
+          <h4>Funds Raised</h4>
+          <h2>N 375,000</h2>
+          <button class="btn">View all</button>
+        </div>
+      </section>
+
+      <!--Activities Table-->
+      <section class="dashboard-body">
+
+
+        <section class="profile-campaigns">
+          <!--Profile-->
+          <div class="profile-info">
+            <div class="profile-heading">
+              <h4 class="profile-details">Profile Details</h4>
+              <a href="#" class="edit-profile">Edit Profile</a>
+            </div>
+            <div class="profile-container">
+              <h3>Fullname <span> Darasinmi Johnson</span></h3>
+              <h3>Email <span> dara.John@abc.com</span></h3>
+              <h3>Phone <span> +234801234567</span></h3>
+            </div>
+          </div>
+
+          <!--Campaigns Table-->
+          <div class="dashboard-info">
+            <h3 class="activities" id="activities">Activities</h3>
+            <div class="dashboard-table" id="dashboard">
+              <table>
+                <!--Table Heading-->
+                <tr class="headers">
+                  <th class="campaign-name">Campaign name</th>
+                  <th class="amount">Amount Requested</th>
+                  <th class="status">Status</th>
+                </tr>
+                <!--Table Data Row One-->
+                <tr class="beneficiary-data">
+                  <td class="cause-name">Textbook</td>
+                  <td class="amount-donated">N50,000</td>
+                  <td class="donation-status">Completed</td>
+                </tr>
+                <!--Table Data Row Two-->
+                <tr class="beneficiary-data">
+                  <td class="cause-name">Textbook</td>
+                  <td class="amount-donated">N50,000</td>
+                  <td class="donation-status">Completed</td>
+                </tr>
+                <!--Table Data Row Three-->
+                <tr class="beneficiary-data">
+                  <td class="cause-name">Textbook</td>
+                  <td class="amount-donated">N50,000</td>
+                  <td class="donation-status">Completed</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <!--Data Display-->
+        <section class="data-cards-container">
+          <h3 class="data-card-heading">Campaign Progress</h3>
+          <section class="data-display">
+
+            <div class="data-card textbooks">
+              <h4>Get New Textbook</h4>
+              <div class="mkCharts" data-percent="50" data-color="#0072b1" data-size="150" data-stroke="4"
+                data-msg="Successful"></div>
+              <!--Progress bar end-->
+            </div>
+
+            <div class="data-card stationary">
+              <h4>Get New Stationary</h4>
+              <div class="mkCharts" data-percent="0" data-color="#0072b1" data-size="150" data-stroke="4"
+                data-msg="Pending"></div>
+            </div>
+
+            <div class="data-card bag">
+              <h4>Get a New bag</h4>
+              <div class="mkCharts" data-percent="35" data-color="#0072b1" data-size="150" data-stroke="4"
+                data-msg="Successful"></div>
+            </div>
+
+            <div class="data-card fees">
+              <h4>School fees</h4>
+              <div class="mkCharts" data-percent="75" data-color="#0072b1" data-size="150" data-stroke="4"
+                data-msg="Successful"></div>
+            </div>
+            </div>
+          </section>
+        </section>
+
+      </section>
+
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+
+</html>
