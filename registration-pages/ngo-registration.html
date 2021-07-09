@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration - NGO</title>
+
+    <link rel="stylesheet" href="../css/registration.css">
+</head>
+<body>
+    <div id="main">
+        <section id="left">
+            <h1>Welcome to FundMe</h1>
+            <p>
+                We are a community,
+                together helping thousands of students who are struggling.
+            </p>
+
+            <div class="circles">
+                <div class="image-1"></div>
+                <div class="image-2"></div>
+                <div class="image-3"></div>
+                <div class="image-4"></div>
+            </div>
+        </section>
+
+        <section id="right">
+            <h1>Sign Up</h1>
+            <p>Already have an account? <a href="">Log In</a></p>
+
+            <form action="">
+                <div>
+                    <select name="" id="">
+                        <option value="">NGO</option>
+                        <option value=""></option>
+                        <option value=""></option>
+                    </select>
+                </div>
+                <div class="input">
+                    <input type="text" placeholder="Name of NGO">
+                </div>
+                <div>
+                    <select name="" id="">
+                        <option value="">Please select a document to upload</option>
+                        <option value="">CAC (Coporate Affairs Commission)</option>
+                        <option value="">Government Accreditation</option>
+                    </select>
+                </div>
+                <div class="capture">  
+    
+                    <!-- this div previews the image uploaded -->
+                    <div class="capture-output">
+                        <label for="file"></label>
+                        <img id="output" width="200">
+                        <!-- <p>
+                            <img src="../svg/cross.svg"> <br>
+                            Click to capture and upload image
+                        </p> -->
+                    </div>
+                        
+                    <!-- 
+                    this div allows the user to upload a photo as a requirement.
+                    it use the javascript function from js/script.js 
+                    -->
+                    <div class="capture-input">
+                        <input type="file" name="image" id="file" onchange="loadFile(event)" required>
+                        <label for="file" class="capture-button">Capture</label>
+                    </div>        
+                </div>
+                <div class="input">
+                    <input type="text" placeholder="Street Address">
+                </div>
+                <div class="input">
+                    <input type="text" placeholder="State">
+                </div>
+                <div class="input">
+                    <input type="text" placeholder="Phone Number">
+                </div>
+                <div class="input">
+                    <input type="text" placeholder="Email Address">
+                </div>         
+                <div class="input">
+                    <input type="text" placeholder="Password">
+                </div>
+                <div>
+                    <input type="checkbox" name="" id="" class="checkbox">
+                    <p>I consent to the <a href="">Privacy Policy</a> and <a href="">Terms and Conditions</a>
+                        and I understand that i am opting in to be contected by FundMe, incluidng until such time that i may choose to opt out. 
+                    </p>
+                </div>
+                <button type="submit">Continue</button>
+            </form>
+        </section>
+    </div>
+</body>
+</html>
