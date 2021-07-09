@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body {
+  background-color: #F4F4F4;
+  font-family: "Nunito", sans-serif;
+  line-height: 16px;
+  letter-spacing: 2;
+}
+
+ul, ol, li {
+  list-style-type: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  color: #0072B1;
+}
+
+input::placeholder, input, p {
+  color: #4F4F4F;
+}
+
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+#main {
+  overflow: hidden;
+}
+#main #left {
+  overflow: hidden;
+}
+#main #right {
+  overflow-y: scroll;
+}
+
+#main {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 0.75fr 1fr;
+}
+#main #left {
+  background-color: #0072B1;
+  text-align: center;
+  padding: 20vh 10% 20px 10%;
+}
+#main #left h1, #main #left h2, #main #left h3, #main #left h4, #main #left h5, #main #left h6, #main #left p {
+  color: whitesmoke;
+  line-height: 1.5;
+}
+#main #left h1 {
+  font-size: 2rem;
+}
+#main #left p {
+  font-size: 1.2rem;
+  padding: 30px 2.5% 0 2.5%;
+}
+#main #left .circles {
+  position: relative;
+  margin: 40px 0 0 0;
+}
+#main #left .circles div {
+  width: 85px;
+  height: 85px;
+  position: absolute;
+  border: 3.5px solid whitesmoke;
+  border-radius: 50px;
+}
+#main #left .circles div img {
+  width: 100px;
+}
+#main #left .circles .image-1 {
+  background: url("../IMG-Landing/T and K.jpg");
+  top: 0;
+  right: 20%;
+}
+#main #left .circles .image-2 {
+  background: url("../IMG-Landing/Idara.jpg");
+  top: 11.5vh;
+  left: 7.5%;
+}
+#main #left .circles .image-3 {
+  background: url("../IMG-Landing/Nonso1.jpg");
+  top: 31.5vh;
+  left: 25%;
+}
+#main #left .circles .image-4 {
+  background: url("../IMG-Landing/Header.jpg");
+  top: 40vh;
+  right: 10%;
+}
+#main #left .circles .image-1, #main #left .circles .image-2, #main #left .circles .image-3, #main #left .circles .image-4 {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#main #right {
+  text-align: center;
+  padding: 10vh 10% 0;
+}
+#main #right h1 {
+  font-size: 1.85rem;
+  padding: 0 0 15px 0;
+}
+#main #right a {
+  color: #0072B1;
+  text-decoration: none;
+  font-weight: 600;
+}
+#main #right a:hover {
+  text-decoration: underline;
+}
+#main #right div {
+  margin: 10px auto;
+  padding: 0 15%;
+}
+#main #right div.input > input, #main #right div select {
+  width: 100%;
+  height: 40px;
+  padding: 15px 20px;
+  background-color: transparent;
+  border: 1px solid #4F4F4F;
+  border-radius: 5px;
+  font-size: 15px;
+}
+#main #right div select {
+  padding: 0 20px;
+}
+#main #right .checkbox {
+  display: flex;
+}
+#main #right .checkbox p {
+  color: #4F4F4F;
+  text-align: left;
+  padding-top: 6px;
+}
+#main #right .checkbox input {
+  width: max-content;
+  margin-right: 10px;
+}
+
+/*# sourceMappingURL=registration.css.map */
