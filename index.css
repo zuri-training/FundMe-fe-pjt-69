@@ -203,10 +203,20 @@ h6 > p {
 .btn5 {
   background-color: #b33e00;
   border: none;
-  color: #fff;
+  color: #fff !important;
   font-weight: 500;
   width: 150px;
   height: 40px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.btn5 > a:hover {
+  text-decoration: none;
+  color: #000;
 }
 
 @media (max-width: 782px) {
@@ -452,6 +462,10 @@ h6 > p {
     height: 303px !important;
   }
 }
+
+/* .col{
+  box-shadow: 2px 8px 20px -3px rgb(106, 104, 104) !important;
+} */
 
 /* COLLABORATE */
 .collaborate {

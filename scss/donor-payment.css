@@ -1,0 +1,490 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: 0;
+}
+
+body {
+  background-color: #F4F4F4;
+  font-family: "Nunito", sans-serif;
+  line-height: 16px;
+  letter-spacing: 2;
+  padding: 0 7.5%;
+}
+
+ul, ol, li {
+  list-style-type: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  color: #4F4F4F;
+}
+
+input::-webkit-input-placeholder {
+  color: #4F4F4F;
+}
+
+input::-moz-placeholder {
+  color: #4F4F4F;
+}
+
+input:-ms-input-placeholder {
+  color: #4F4F4F;
+}
+
+input::-ms-input-placeholder {
+  color: #4F4F4F;
+}
+
+input::placeholder, input, select, p {
+  color: #4F4F4F;
+}
+
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+body > button {
+  width: 150px;
+  padding: 10px 20px;
+  border: 1px solid #2f80ed;
+  border-radius: 5px;
+  font-size: 15px;
+  color: #0072B1;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  background-color: transparent;
+  margin: 35px 0 0px 0;
+}
+body > button:hover {
+  background-color: #2f80ed;
+  color: #F4F4F4;
+}
+body > button:active {
+  color: #0072B1;
+  background-color: transparent;
+}
+
+#main {
+  display: grid;
+  grid-template-columns: 1fr 0.9fr;
+  grid-gap: 5%;
+  gap: 5%;
+  margin-right: 12.5%;
+  margin-top: 50px;
+  position: relative;
+}
+#main .summary {
+  padding: 35px 0 30px 0;
+  border-radius: 7.5px;
+  box-shadow: 2px 8px 20px -3px #cacaca;
+  -moz-box-shadow: 2px 8px 20px -3px #cacaca;
+  -webkit-box-shadow: 2px 8px 20px -3px #cacaca;
+  position: absolute;
+  top: 0;
+  right: 10%;
+  width: 350px;
+}
+#main .summary h5 {
+  padding: 0 5% 15px 5%;
+}
+#main .summary p {
+  font-weight: 700;
+  padding: 10px 5% 13.5px 5%;
+  position: relative;
+}
+#main .summary p span {
+  position: absolute;
+  right: 0;
+  padding-right: 5%;
+}
+#main .summary hr {
+  margin: 5px 0;
+  color: #4F4F4F;
+}
+#main .general-div .info {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 0 30px 0;
+}
+#main .general-div .info img {
+  width: 130px;
+  height: 80px;
+}
+#main .general-div .info div {
+  margin-left: 3.5%;
+}
+#main .general-div .info div h3 {
+  line-height: 1.35;
+  color: #2f80ed;
+}
+#main .general-div .info div p {
+  padding-top: 5px;
+  font-size: 13px;
+}
+#main .general-div .donate {
+  padding-bottom: 40px;
+}
+#main .general-div .donate .amount h3 {
+  padding-bottom: 10px;
+}
+#main .general-div .donate .amount .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 80%;
+  margin-bottom: 30px;
+}
+#main .general-div .donate .amount .buttons p {
+  background-color: transparent;
+  outline: 0;
+  margin-top: 5px;
+  margin-right: 20px;
+  padding: 10px 0;
+  border: 1px solid #828282;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 120px;
+  text-align: center;
+}
+#main .general-div .donate .amount .buttons p:active, #main .general-div .donate .amount .buttons p:hover {
+  border: 2px solid #2f80ed;
+  padding: 9px 0;
+}
+#main .general-div .donate .amount .buttons p:active {
+  color: #0072B1;
+  font-weight: bold;
+}
+#main .general-div .donate .amount .input {
+  position: relative;
+  margin-bottom: 30px;
+}
+#main .general-div .donate .amount .input input {
+  width: 90%;
+  background-color: transparent;
+  padding: 5px 10px;
+  font-size: 23.5px;
+  text-align: end;
+  border: 1px solid #828282;
+  color: #333333;
+}
+#main .general-div .donate .amount .input span {
+  position: relative;
+  font-size: 23.5px;
+  left: -89.5%;
+  color: #333333;
+}
+#main .general-div .donate .amount > p {
+  width: 85%;
+}
+#main .general-div .donate .amount .percent {
+  margin-top: 15px;
+}
+#main .general-div .donate .amount .percent p {
+  padding: 10px 20px;
+}
+#main .general-div .donate .amount .percent p:active, #main .general-div .donate .amount .percent p:hover {
+  border: 2px solid #2f80ed;
+  padding: 9px 19px;
+}
+#main .general-div .donate .amount .continue {
+  width: 90%;
+  padding: 10px 20px;
+  border: 1px solid #2f80ed;
+  border-radius: 5px;
+  font-size: 15px;
+  color: #E0E0E0;
+  background-color: #0072B1;
+  margin: 5px 0 0 0;
+  text-align: center;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+#main .general-div .donate .amount .continue:hover {
+  background-color: transparent;
+  color: #2f80ed;
+}
+#main .general-div .donate .amount .continue:active {
+  background-color: #0072B1;
+  color: #E0E0E0;
+}
+#main .general-div .donate .payment {
+  margin: 30px 0 0 0;
+  width: 90%;
+}
+#main .general-div .donate .payment > div {
+  margin-bottom: 10px;
+}
+#main .general-div .donate .payment h3 {
+  padding-bottom: 15px;
+}
+#main .general-div .donate .payment label {
+  color: #4F4F4F;
+  font-size: 13.5px;
+}
+#main .general-div .donate .payment sup {
+  color: #d61818;
+}
+#main .general-div .donate .payment input, #main .general-div .donate .payment select {
+  margin-top: 6.5px;
+  padding: 7.5px 5px;
+  font-size: 18px;
+  background-color: transparent;
+  outline: 0;
+  border: 1px solid #828282;
+  width: 100%;
+}
+#main .general-div .donate .payment .fullname {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 6.5%;
+  gap: 6.5%;
+  width: 100%;
+}
+#main .general-div .donate .payment .fullname input {
+  width: 100%;
+}
+#main .general-div .donate .payment .card-details {
+  display: grid;
+  grid-gap: 6.5%;
+  gap: 6.5%;
+  grid-template-columns: 1fr 0.8fr;
+}
+#main .general-div .donate .payment button {
+  width: 100%;
+  padding: 10px 20px;
+  border: 1px solid #2f80ed;
+  border-radius: 5px;
+  font-size: 15px;
+  color: #E0E0E0;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  background-color: #0072B1;
+  margin: 5px 0 0 0;
+}
+#main .general-div .donate .payment button:hover {
+  background-color: #E0E0E0;
+  color: #2f80ed;
+}
+#main .general-div .donate .payment button:active {
+  -webkit-transition: 0.15s ease-in-out;
+  transition: 0.15s ease-in-out;
+  background-color: #0072B1;
+  color: #E0E0E0;
+}
+#main .general-div .donate .payment .checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+#main .general-div .donate .payment .checkbox p {
+  color: #4F4F4F;
+  padding-top: 6px;
+}
+#main .general-div .donate .payment .checkbox input {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin-right: 10px;
+}
+
+@media (max-width: 1320px) {
+  #main {
+    margin-right: 7.5%;
+  }
+}
+@media (max-width: 1240px) {
+  #main {
+    margin-right: 4.5%;
+  }
+}
+@media (max-width: 1200px) {
+  #main {
+    margin-right: 0;
+  }
+}
+@media (max-width: 1140px) {
+  #main .summary {
+    right: 5%;
+  }
+}
+@media (max-width: 1085px) {
+  #main .summary {
+    right: 0%;
+  }
+}
+@media (max-width: 1030px) {
+  body {
+    padding: 0 5%;
+  }
+}
+@media (max-width: 970px) {
+  #main .summary {
+    width: 35%;
+  }
+}
+@media (max-width: 885px) {
+  body > button {
+    margin-left: 8.5%;
+  }
+
+  header {
+    padding-right: 8.5%;
+  }
+
+  #main {
+    display: block;
+    margin-left: 8.5%;
+    margin-right: 8.5%;
+  }
+  #main .summary {
+    position: static;
+    width: 450px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+  }
+  #main .general-div .donate .amount .buttons {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #main .general-div .donate .amount .buttons p {
+    margin-right: 0;
+  }
+  #main .general-div .donate .amount > p,
+#main .general-div .donate .amount .buttons,
+#main .general-div .donate .amount .input input,
+#main .general-div .donate .amount .continue,
+#main .general-div .donate .payment {
+    width: 100%;
+  }
+  #main .general-div .donate .amount .input span {
+    left: 5px;
+    top: -27.5px;
+  }
+}
+@media (max-width: 685px) {
+  body > button {
+    margin-left: 5%;
+  }
+
+  header {
+    padding-right: 5%;
+  }
+
+  #main {
+    display: block;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+@media (max-width: 610px) {
+  #main .general-div .donate .amount .buttons {
+    gap: 10px;
+  }
+}
+@media (max-width: 570px) {
+  #main .summary {
+    width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  #main .general-div .donate .payment .fullname, #main .general-div .donate .payment .card-details {
+    display: block;
+  }
+
+  #main .general-div .donate .amount .buttons {
+    gap: 5px;
+    overflow-x: scroll;
+    /* Hide scrollbar for IE, Edge and Firefox */
+  }
+  #main .general-div .donate .amount .buttons::-webkit-scrollbar {
+    display: none;
+  }
+  #main .general-div .donate .amount .buttons {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+  }
+  #main .general-div .donate .amount .buttons p {
+    padding: 10px;
+  }
+
+  #main {
+    margin-top: 20px;
+  }
+
+  #main .general-div .info {
+    display: grid;
+  }
+  #main .general-div .info img {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    width: 70%;
+    height: auto;
+    border-radius: 5px;
+    padding-top: 10px;
+  }
+  #main .general-div .info div {
+    margin-left: 0;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  #main .general-div .info div h3 br {
+    display: none;
+  }
+}
+@media (max-width: 405px) {
+  body > button {
+    margin-left: 3%;
+  }
+
+  header {
+    padding-right: 3%;
+  }
+
+  #main {
+    display: block;
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+}
+@media (max-width: 370px) {
+  body > button {
+    margin-left: 1.5%;
+  }
+
+  header {
+    padding-right: 1.5%;
+  }
+
+  #main {
+    display: block;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+  }
+}/*# sourceMappingURL=donor-payment.css.map */
