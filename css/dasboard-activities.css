@@ -23,8 +23,13 @@ body {
   scroll-behavior: smooth;
   color: var(--text-color);
 }
+
 .container {
   display: flex;
+}
+
+a{
+  color: transparent;
 }
 
 .aside-content {
@@ -141,6 +146,9 @@ body {
   outline: none;
   border-radius: 5px;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .btn {
