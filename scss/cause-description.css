@@ -8,7 +8,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   outline: 0;
 }
 
@@ -33,6 +34,22 @@ h1, h2, h3, h4, h5, h6 {
   color: #1a1a1a;
 }
 
+input::-webkit-input-placeholder {
+  color: #4F4F4F;
+}
+
+input::-moz-placeholder {
+  color: #4F4F4F;
+}
+
+input:-ms-input-placeholder {
+  color: #4F4F4F;
+}
+
+input::-ms-input-placeholder {
+  color: #4F4F4F;
+}
+
 input::placeholder, input, select, p {
   color: #4F4F4F;
 }
@@ -53,12 +70,19 @@ body > button {
   border-radius: 5px;
   font-size: 15px;
   color: #0072B1;
+  -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
   background-color: transparent;
   margin: 35px 0 0px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-shadow: #2f80ed;
   box-shadow: 2px 8px 20px -3px #d7d7d7;
   -moz-box-shadow: 2px 8px 20px -3px #d7d7d7;
@@ -89,7 +113,9 @@ body > button:active {
   width: 100%;
 }
 #main .general-div .info {
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0 0 30px 0;
 }
 #main .general-div .info .img {
@@ -105,8 +131,12 @@ body > button:active {
   color: #0072B1;
 }
 #main .general-div .tags-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 0;
 }
 #main .general-div .tags-div p {
@@ -119,9 +149,15 @@ body > button:active {
   margin: 0 15px;
 }
 #main .general-div .tags-div .tags {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: #c07300;
 }
 #main .general-div .tags-div .tags svg {
@@ -145,14 +181,19 @@ body > button:active {
   position: relative;
 }
 #main .general-div .organizer div {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 40px 0 0 0;
 }
 #main .general-div .organizer div img {
   width: 50px;
   background-color: #115bbf;
-  clip-path: circle();
+  -webkit-clip-path: circle();
+          clip-path: circle();
   padding: 5px;
   margin: 0 20px 0 0;
 }
@@ -168,6 +209,7 @@ body > button:active {
   border-radius: 5px;
   font-size: 15px;
   color: #0072B1;
+  -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
   background-color: none;
   position: absolute;
@@ -220,8 +262,12 @@ body > button:active {
   position: relative;
 }
 #main .general-div .footnote a {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: absolute;
   right: 0;
   top: 60px;
@@ -259,11 +305,16 @@ body > button:active {
   color: #333333;
 }
 #sidebar section .target_amount {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 #sidebar section .target_amount svg {
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 #sidebar section .target_amount div {
   padding: 0 0 0 10px;
@@ -272,8 +323,12 @@ body > button:active {
   padding-bottom: 10px;
 }
 #sidebar section .due_date {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: absolute;
   top: 0;
   right: 0;
@@ -301,7 +356,8 @@ body > button:active {
 }
 #sidebar .progress progress::-webkit-progress-value {
   border-radius: 50px;
-  box-shadow: inset 0 1px 1px 0 rgba(255, 255, 255, 0.4);
+  -webkit-box-shadow: inset 0 1px 1px 0 rgba(255, 255, 255, 0.4);
+          box-shadow: inset 0 1px 1px 0 rgba(255, 255, 255, 0.4);
   background: #0072B1;
 }
 #sidebar .recent_donations {
@@ -318,8 +374,12 @@ body > button:active {
   font-size: 18.5px;
 }
 #sidebar .recent_donations .recent-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #ededed;
   padding: 15px;
   position: relative;
@@ -345,9 +405,15 @@ body > button:active {
 }
 #sidebar .recent_donations .share_and_donate {
   margin: 40px 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 #sidebar .recent_donations .share_and_donate svg {
   height: 40px;
@@ -358,8 +424,9 @@ body > button:active {
   border: 1px solid #0072B1;
   border-radius: 5px;
   font-size: 20px;
+  -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
-  background-color: #0072B1;
+  background-color: #2f80ed;
   color: #F4F4F4;
   height: 50px;
   text-shadow: #2f80ed;
@@ -447,7 +514,9 @@ body > button:active {
     padding-bottom: 15px;
   }
   #main > .general-div .tags-div .tags {
-    justify-content: start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
     padding-top: 10px;
     border-top: 1px solid #828282;
   }
@@ -463,7 +532,8 @@ body > button:active {
   }
 
   #sidebar {
-    transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
     margin: 0;
   }
 
@@ -485,7 +555,8 @@ body > button:active {
   }
 
   #sidebar {
-    transform: scale(0.85) translateX(-2.5%) translateY(-30px);
+    -webkit-transform: scale(0.85) translateX(-2.5%) translateY(-30px);
+            transform: scale(0.85) translateX(-2.5%) translateY(-30px);
     margin: 0;
     width: 105%;
   }
@@ -494,7 +565,9 @@ body > button:active {
     display: grid;
   }
   #sidebar .recent_donations .share_and_donate .share {
-    order: 2;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
     margin-top: 10px;
   }
 
@@ -557,8 +630,12 @@ body > button:active {
 
   #main > .general-div .tags-div .tags {
     display: block;
-    align-items: left;
-    justify-content: left;
+    -webkit-box-align: left;
+        -ms-flex-align: left;
+            align-items: left;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
   }
   #main > .general-div .tags-div .tags svg {
     display: none;
@@ -566,6 +643,4 @@ body > button:active {
   #main > .general-div .tags-div .tags .tag-hide {
     display: contents;
   }
-}
-
-/*# sourceMappingURL=cause-description.css.map */
+}/*# sourceMappingURL=cause-description.css.map */

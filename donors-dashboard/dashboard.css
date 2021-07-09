@@ -24,6 +24,10 @@ body {
   color: var(--text-color);
 }
 
+a{
+  color: transparent;
+}
+
 /*Hide hamburger on desktop*/
 .burger {
   display: none;
@@ -147,6 +151,10 @@ body {
   outline: none;
   border-radius: 5px;
   cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .btn {
