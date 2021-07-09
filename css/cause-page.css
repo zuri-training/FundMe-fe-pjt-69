@@ -186,8 +186,9 @@ body {
 .main-sub {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 20px;
 }
- h1 {
+h1 {
   font-size: 36px;
   line-height: 124%;
   color: #0072b1;
@@ -228,7 +229,7 @@ body {
   padding: 10px;
   margin-top: 10px;
 }
-.causes-details{
+.causes-details {
   width: 100%;
   height: 210px;
   display: flex;
@@ -239,175 +240,179 @@ body {
   box-shadow: 0px 5px 10px rgba(111, 111, 111, 0.16);
   margin: 20px;
 }
-.causes-details-info{
+.causes-details-info {
   width: 40%;
   display: flex;
-  justify-content: space-around ;
+  justify-content: space-around;
 }
 .causes-details-info img {
   width: 100px;
   border-radius: 50%;
   height: 83px;
 }
-.causes-details-text{
+.causes-details-text {
   margin-left: 20px;
 }
 .causes-details-heading {
   font-size: 20px;
 }
-.causes-details-info p{
+.causes-details-info p {
   font-size: 16px;
 }
-.causes-details-button  {
-  width: 146px;
-height: 25px;
-background: #0072B1;
-color: #FFFFFF;
+.causes-details-button {
+  width: 165px;
+  height: 35px;
+  background: #0072b1;
+  color: #ffffff;
+  border-radius: 5px;
 }
 @media screen and (max-width: 768px) {
-    .container{
-      width:100%;
-    }
-    .burger {
-      
-      display: block;
-      margin-left: 85%;
-      margin-top: 20px;
-    }
-    .header{
-      
-      width: 100%;
-    }
-  
-  
-    .burger div {
-      width: 25px;
-      height: 3px;
-      background-color: var(--text-blue-color);
-      margin: 3px;
-      transition: all 0.3s ease;
-    }
-  
-    .toggle .line1 {
-      transform: rotate(-45deg) translate(-5px, 3.5px);
-    }
-  
-    .toggle .line2 {
-      opacity: 0;
-    }
-  
-    .toggle .line3 {
-      transform: rotate(45deg) translate(-5px, -3.5px);
-    }
-  
-    .container {
-      display: block;
-      width: 100%;
-    }
-  
-    .aside-content {
-      z-index: 1;
-      position: fixed;
-      top: 0;
-      left: -100%;
-      bottom: 0;
-    }
-  
-    .aside-content.active {
-      left: 0;
-    }
-  
-    .brand-logo {
-      width: 90px;
-      height: 35px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: 0 auto;
-    }
-  
-    .link-items {
-      margin: 15px 0;
-    }
-  
-    .btn-donate {
-      width: 75%;
-    }
-  
-    .btn {
-      width: 120px;
-    }
-    .main {
-      position: relative;
-      width: 90%;
-      left: 0;
-    }
-    .topbar h1 {
-      font-size: 24px;
-      line-height: 60%;
-    }
-  
-    .categories {
-      width: 100%;
-      height: 25px;
-      padding: 0px;
-      margin-top: 0;
-    }
-    .search label input {
-      width: 50%;
-      height: 25px;
-      margin-top: 0px;
-      margin-left: 60px;
-      padding-left: 10px;
-    }
-    .search label .fa {
-      position: absolute;
-      top: 5px;
-      left: 60%;
-      cursor: pointer;
-    }
-
-  .causes-details{
+  .container {
     width: 100%;
-    height: 220px;
+  }
+  .burger {
+    display: block;
+    margin-left: 85%;
+    margin-top: 20px;
+  }
+  .header {
+    width: 100%;
+  }
+
+  .burger div {
+    width: 25px;
+    height: 3px;
+    background-color: var(--text-blue-color);
+    margin: 3px;
+    transition: all 0.3s ease;
+  }
+
+  .toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 3.5px);
+  }
+
+  .toggle .line2 {
+    opacity: 0;
+  }
+
+  .toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -3.5px);
+  }
+
+  .container {
+    display: block;
+    width: 100%;
+  }
+
+  .aside-content {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    bottom: 0;
+  }
+
+  .aside-content.active {
+    left: 0;
+  }
+
+  .brand-logo {
+    width: 90px;
+    height: 35px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .link-items {
+    margin: 15px 0;
+  }
+
+  .btn-donate {
+    width: 75%;
+  }
+
+  .btn {
+    width: 120px;
+  }
+  .main {
+    position: relative;
+    width: 90%;
+    left: 0;
+  }
+  .topbar h1 {
+    font-size: 24px;
+    line-height: 60%;
+  }
+
+  .categories {
+    width: 80%;
+    height: 25px;
+    padding: 0px;
+    margin-top: 0
+  }
+  .search label input {
+    width: 50%;
+    height: 25px;
+    margin-top: 0px;
+    margin-left: 0px;
+    padding-left: 10px;
+  }
+  .search label {
+    position: relative;
+    width: 70%;
+  }
+
+  .search label .fa {
+    position: absolute;
+    top: 3px;
+    left: 50%;
+    cursor: pointer;
+  }
+
+  .causes-details {
+    width: 100%;
+    height: 94px;
+    display: inline;
     align-items: center;
     margin: 0;
-    
   }
-  .causes-details-info{
+  .causes-details-info {
     width: 100%;
     display: flex;
-    display: flex;
     flex-direction: column;
+    margin: 0;
   }
   .causes-details-info img {
     width: 50px;
     border-radius: 50%;
     height: 40px;
+    margin-left: 0px;
   }
-  .causes-details-text{
-    margin-left: 10px;
+  .causes-details-text {
+    margin-left: 0px;
   }
   .causes-details-heading {
+    font-size: 15px;
+  }
+  .causes-details-info p {
     font-size: 12px;
   }
-  .causes-details-info p{
-    font-size: 10px;
-  }
-  img{
-    width: 85px;
-    height: 7px;
- 
+  img {
+    width: 80%;
+    height: 7px
   }
   .causes-details-progess {
-    margin: 30px;
+    margin: 0;
   }
-  .causes-details-button  {
-    width: 90px;
-  height: 35px;
-  background: #0072B1;
-  color: #FFFFFF;
+  .causes-details-button {
+    width: 100%;
+    padding: 10px 20px;
+    border: 1px solid #2f80ed;
+    border-radius: 5px;
+    background: #0072b1;
+    color: #ffffff;
+    margin-bottom: 20px;
   }
 }
