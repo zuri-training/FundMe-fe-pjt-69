@@ -25,33 +25,17 @@ var donation_amount = 0
 // value_3.innerHTML = 10000;
 // value_4.innerHTML = 50000;
 
-
+//handles selected amount
 function amount(value_1) {
     donation.innerHTML = value_1.innerHTML;
     donation_amount = parseFloat(value_1.innerHTML)
 }
 
+//handles custom amount
 function enter(amount) {
     donation.innerHTML = amount.value
     donation.innerHTML = amount.innerhtml
 }
-//   function amount(value_2) {
-//     amount_input.value = value_2.innerHTML;
-//     // donation.value = value_2.innerHTML;
-
-
-//   }
-//   function amount(value_3) {
-//     amount_input.value = value_3.innerHTML;
-//     // donation.value = value_3.innerHTML;
-
-
-//   }
-//   function amount(value_4) {
-//     amount_input.value = value_4.innerHTML;
-//     // donation.value = value_4.innerHTML;
-
-//   }
 
 //   function enter(amount_input) {
 //       donation.innerHTML = amount_input.value
@@ -78,7 +62,7 @@ ten.value = 10 / 100
 function fundTip(id) {
 //set alert to handle error when donation amount is empty.
     if(donation_amount == 0){
-        alert("Please select a donation amount")
+        alert("Please select a donation amount or enter an amount you want")
     }
 
     switch (id) {
