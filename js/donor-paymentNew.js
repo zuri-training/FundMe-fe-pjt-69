@@ -17,6 +17,7 @@ var donation = document.getElementById('donation');
 var tip = document.getElementById('tip');
 var total = document.getElementById('total');
 
+// introduced donation-amount variable to replace hard codede amount
 var donation_amount = 0
 
 // value_1.innerHTML = 1000;
@@ -75,34 +76,26 @@ ten.value = 10 / 100
 
 
 function fundTip(id) {
-
+//set alert to handle error when donation amount is empty.
     if(donation_amount == 0){
         alert("Please select a donation amount")
     }
 
     switch (id) {
         case "two":
-            console.log("Do 2 percent calucation")
             tip.innerHTML = donation.innerHTML * two.value;
-            //   total.innerHTML = donation.innerHTML + (donation.innerHTML * two.value)
             calculateTotal(parseFloat(donation.innerHTML), donation.innerHTML * two.value)
             break;
         case "five":
-            console.log("Do 5 percent caluclation")
             tip.innerHTML = donation.innerHTML * five.value;
-            //   total.innerHTML = donation.innerHTML + (donation.innerHTML * five.value)
             calculateTotal(parseFloat(donation.innerHTML), donation.innerHTML * five.value)
             break;
         case "eight":
-            console.log("Do 8 percent calc")
             tip.innerHTML = donation.innerHTML * eight.value;
-            //    total.innerHTML = donation.innerHTML + (donation.innerHTML * eight.value)
             calculateTotal(parseFloat(donation.innerHTML), donation.innerHTML * eight.value)
             break;
         case "ten":
-            console.log("Do 10 percent calc")
             tip.innerHTML = donation.innerHTML * ten.value;
-            //    total.innerHTML = number(donation.innerHTML) + (donation.innerHTML * ten.value)
             calculateTotal(parseFloat(donation.innerHTML), donation.innerHTML * ten.value)
             break;
 
