@@ -34,16 +34,10 @@ function amount(value_1) {
 //handles custom amount
 function enter(amount) {
     donation.innerHTML = amount.value
-    donation.innerHTML = amount.innerhtml
+    // donation.innerHTML = amount.innerhtml
 }
 
-//   function enter(amount_input) {
-//       donation.innerHTML = amount_input.value
-//     //   donation.value = amount_input.innerHTML;
-
-//   }
-
-
+  
 
 // handles fundmetip
 var two = document.getElementById('two');
