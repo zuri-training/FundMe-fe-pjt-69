@@ -72,7 +72,7 @@ ten.value = 10 / 100
 function fundTip(id) {
 
     if(donation_amount == 0){
-        alert("Please select a donation amount")
+        alert("Please select a donation amount or enter the amount you want")
     }
 
     switch (id) {
@@ -85,12 +85,10 @@ function fundTip(id) {
             calculateTotal(parseFloat(donation.innerHTML), donation.innerHTML * five.value)
             break;
         case "eight":
-            console.log("Do 8 percent calc")
             tip.innerHTML = donation.innerHTML * eight.value;
             calculateTotal(parseFloat(donation.innerHTML), donation.innerHTML * eight.value)
             break;
         case "ten":
-            console.log("Do 10 percent calc")
             tip.innerHTML = donation.innerHTML * ten.value;
             calculateTotal(parseFloat(donation.innerHTML), donation.innerHTML * ten.value)
             break;
