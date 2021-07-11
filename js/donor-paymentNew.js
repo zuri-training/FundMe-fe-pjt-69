@@ -31,10 +31,11 @@ function amount(value_1) {
     donation_amount = parseFloat(value_1.innerHTML)
 }
 
+
 //handles custom amount
-function enter(amount) {
-    donation.innerHTML = amount.value
-    // donation.innerHTML = amount.innerhtml
+function enter(amount_input) {
+console.log(amount_input.value)
+    donation.innerHTML = amount_input.value
 }
 
   
