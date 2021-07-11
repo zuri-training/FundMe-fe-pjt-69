@@ -1,6 +1,5 @@
 
 
-/////////////
 function showDiv() {
     document.getElementById('payment').style.display = "block";
     document.getElementById('continue').style.display = "none";
@@ -20,10 +19,6 @@ var total = document.getElementById('total');
 // introduced donation-amount variable to replace hard codede amount
 var donation_amount = 0
 
-// value_1.innerHTML = 1000;
-// value_2.innerHTML = 2000;
-// value_3.innerHTML = 10000;
-// value_4.innerHTML = 50000;
 
 //handles selected amount
 function amount(value_1) {
@@ -31,10 +26,10 @@ function amount(value_1) {
     donation_amount = parseFloat(value_1.innerHTML)
 }
 
+
 //handles custom amount
-function enter(amount) {
-    donation.innerHTML = amount.value
-    // donation.innerHTML = amount.innerhtml
+function enter(amount_input) {
+    donation.innerHTML = amount_input.value
 }
 
   
