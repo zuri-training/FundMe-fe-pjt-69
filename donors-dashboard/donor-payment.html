@@ -7,7 +7,9 @@
     <title>Donor Payment</title>
 
     <link rel="stylesheet" href="../css/donor-payment.css">
-    <script src="../js/donor-payment.js" defer></script>
+    <!-- <script src="../js/donor-payment.js" defer></script> -->
+    <script src="../js/donor-paymentNew.js" defer></script>
+
 </head>
 <body>
     <button onclick="history.back()">Back to Details</button>
@@ -21,7 +23,7 @@
                     <p>Created 7 days Ago</p>
                 </div>
             </div>
-
+            <!-- or enter the amount you want -->
             <form class="donate">
                 <section class="amount">
                     <h3>Please choose an amount</h3>
@@ -34,7 +36,8 @@
                     <h3>Enter an amount</h3>
     
                     <div class="input">
-                        <input type="number" id="amount" value="5000.00">
+                        <!-- <input type="number" id="amount" value="5000.00"> -->
+                        <input type="number" id="amount" value="" onchange="enter(amount_input)">
                         <span>N</span>
                     </div>
     
@@ -50,10 +53,10 @@
                     <h3>Stretch your support to FundMe</h3>
                     <p>Your donation helps provide us to develop the platform as well as make your experience pleasurable</p>
                     <div class="buttons percent">
-                        <p onclick="fundTip(two)" id="two">2&percnt;</p>
-                        <p onclick="fundTip(five)" id="five">5&percnt;</p>
-                        <p onclick="fundTip(eight)" id="eight">8&percnt;</p>
-                        <p onclick="fundTip(ten)" id="ten">10&percnt;</p>
+                        <p onclick="fundTip(this.id)" id="two">2&percnt;</p>
+                        <p onclick="fundTip(this.id)" id="five">5&percnt;</p>
+                        <p onclick="fundTip(this.id)" id="eight">8&percnt;</p>
+                        <p onclick="fundTip(this.id)" id="ten">10&percnt;</p>
                     </div>
 
                     <!-- <section class="summary">
@@ -71,7 +74,7 @@
                         <hr>
                         <p>Total Donation <span id="total">N5,250.00</span></p>
                     </section>
-
+                    
                     <p class="continue" id="continue" onclick="showDiv()" style="display: block;">Continue</p>
                 </section>
                     
