@@ -1,0 +1,472 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap");
+/*Root Variables*/
+:root {
+  --text-color: #333333;
+  --text-light-color: #828282;
+  --text-lighter-color: #E0E0E0;
+  --bg-color: #f4f4f4; /* lighest */
+  --white-color: #ffffff;
+  --btn-color: #b33e00;
+  --btn-hover-color: #b33e00;
+  --text-blue-color: #0072b1;
+  --bg-blue-color: #30b5ff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  background-color: var(--white-color);    
+  scroll-behavior: smooth;
+  color: var(--text-color);
+}
+
+/*Hide hamburger on desktop*/
+.burger {
+  display: none;
+}
+.fa-times {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: var(--bg-blue-color);
+  color: var(--white-color);
+  padding: 15px;
+  font-size: 16px;
+  border-radius: 50%;
+}
+
+.main-content {
+  display: flex;
+}
+
+/*Navbar styles*/
+.aside-content {
+  position: fixed;
+  height: 100vh;
+  background-color: var(--white-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+  margin-left: 0px; 
+}
+
+.main-sub-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.brand-logo {
+  width: 80px;
+  height: 30px;
+  margin: 20px auto;
+}
+
+.brand-img {
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+}
+
+.link-items {
+  margin: 20px 0;
+}
+
+.link {
+  list-style: none;
+  margin: 10px auto;
+  padding: 10px 15px 10px 5px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: var(--white-color);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.fa-th-large,
+.fa-heart-o,
+.fa-signal,
+.fa-bell-o {
+  color: var(--text-light-color);
+  padding-left: 45px;
+  font-family: "FontAwesome", "Nunito", sans-serif;
+}
+
+.link:hover,
+.fa:hover {
+  background-color: var(--bg-blue-color);
+  color: var(--text-blue-color);
+}
+
+.link-ref {
+  text-decoration: none;
+  cursor: pointer;
+  margin-left: 20px;
+  color: var(--text-light-color);
+  font-size: 10px;
+  font-weight: 500;
+}
+
+.link-ref:hover {
+  color: var(--text-blue-color);
+  background-color: var(--bg-blue-color);
+}
+
+.btn-profile {
+  display: flex;
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 10px;
+  font-weight: 500;
+  width: 80%;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg-color);
+  border-radius: 5px;
+  padding: 10px;
+  margin: 200px 0px 0px auto;
+}
+
+.btn-profile:hover {
+  background-color: #e0e0e0;
+}
+
+.profile-link-icon {
+  margin: 10px;
+  height: 15px ;
+}
+
+.profile-link-img {
+  width: 20px;
+  height: 20px;
+  margin: 10px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+
+/* /////////////XXXXX*/
+.profile{
+  position: absolute;
+  width: 78vw;
+  left: 15vw;
+  flex: 6;
+  margin: 20px auto;
+  background-color: var(--white-color);    
+}
+.profile h1 {
+  color: var(--text-blue-color);
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.profile-panel{
+    background-color: var(--text-lighter-color);
+    padding: 15px 15px 0px;
+    display: flex;
+    border-radius: 5px;
+}
+
+/* profile-info */
+.profile-info{
+    padding: 20px 35px;
+    text-align: center;
+    background-color: var(--white-color);    
+    border-radius: 5px; 
+    width: 35vw;
+    height: 530px;
+    margin-right: 20px;
+    margin-bottom: 15px;
+
+}
+.profile-info h4, .profile-content h4{
+  margin-bottom: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  /* color: var(--text-color); */
+  color: black;
+} 
+
+
+.profile-link-img-big{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.profile-content{
+    font-size: 11px;
+    text-align: left;
+    color: var(--text-color);
+}
+.paragragh-two{
+   margin-top: 10px;
+}
+.bold{
+  font-weight: 600;
+  font-size: 12px;
+  color: black;
+}
+
+/* reviews section */
+.profile-reviews{
+    margin: 0px 15px;
+    width: 50vw;
+
+}
+
+/* profile-details section */
+.profile-details{
+    padding: 20px 0px;
+    /* height: 33%; */
+    height: 195px;
+    background-color: var(--white-color);    
+    border-radius: 5px;   
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+}
+
+.profile-edit{
+  color: var(--text-blue-color);
+  font-size: 15px;
+  margin-left: 500px;
+}
+.details-table{
+    width: 90%;
+    font-family: "Nunito", sans-serif;
+    border-collapse: collapse;
+    color: var(--text-color);
+    padding: 20px 40px;
+}
+
+.row-head{
+  color: var(--text-light-color);
+  margin-top: 20px;
+
+}
+.row-body{
+  background-color: var(--white-color);    
+}
+
+.profile-name, .profile-date,
+.profile-id, .profile-dof{
+  padding: 5px 10px;
+  font-size: 14px;
+  font-weight: 600; 
+  background-color: var(--white-color); 
+  width: 150px;   
+
+}
+.row-head tr{
+  margin-top: 20px;
+
+}
+
+
+/*profile-donations section */
+.profile-donations{
+    margin-top: 20px;
+    background-color: var(--bg-color);
+    border-radius: 5px;   
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    height: 200px;
+
+}
+
+.profile-donations-header{
+    background-color: var(--text-blue-color);
+    padding: 10px;
+    border-radius: 3px;
+}
+
+.profile-donations-header h2{
+  color: var(--bg-color);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.dashboard-table {
+  width: 100%;
+  background-color: var(--white-color);
+  border-radius: 5px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+/*Table styles*/
+table {
+  width: 90%;
+  margin: 0px auto;
+  font-family: "Nunito", sans-serif;
+  border-collapse: collapse;
+  color: var(--text-color);
+  padding: 10px 20px;
+}
+
+.cause-name,
+.date {
+  color: var(--text-light-color);
+}
+
+td, th{
+  border: none;
+  text-align: left;
+  padding: 4px;
+
+}
+
+tr,
+td {
+  padding: 5px 10px;
+  font-size: 9px;
+  font-weight: 600;
+}
+
+/* tr:hover,
+tr:nth-child(even):hover {
+  background-color: var(--text-blue-color);
+  color: var(--white-color);
+} */
+
+th {
+  font-size: 10px;
+  font-weight: 600;
+  padding: 5px 10px 10px 10px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+
+
+/* //////////////////XXXXXXXX */
+/*Mobile Responsive View Styles*/
+@media screen and (max-width: 768px) {
+  .burger {
+    display: block;
+    margin-left: 15%;
+    margin-top: 20px;
+  }
+
+  .burger div {
+    width: 20px;
+    height: 3px;
+    background-color: var(--text-blue-color);
+    margin: 2px;
+    transition: all 0.3s ease;
+  }
+  .fa-times {
+    padding: 10px;
+    font-size: 12px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
+
+  .toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 3.5px);
+  }
+
+  .toggle .line2 {
+    opacity: 0;
+  }
+
+  .toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -3.5px);
+  }
+
+  .main-content {
+    display: block;
+    width: 100%;
+  }
+
+  .aside-content {
+    z-index: 1;
+    position: fixed;
+    top: 110px;
+    left: -100%;
+    bottom: 0;
+    border: 1px solid var(--bg-color);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+
+  .aside-content.active {
+    left: 0;
+  }
+
+  .brand-logo {
+    width: 110px;
+    height: 40px;
+  }
+
+  .link-items {
+    margin: 15px 0;
+  }
+  .btn-profile {
+    width: 60%;
+  margin: 200px auto 0px;
+
+  }
+
+  
+
+
+/* profile section*/
+.profile h1 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.profile-panel{
+        width: fit-content;
+}
+
+.profile-info{
+  padding: 15px 25px;
+  height: 550px;
+  overflow: hidden;
+  width: 35vw;
+
+}
+/* profile-info section */
+.profile-content{
+    font-size: 12px;
+    
+}
+.profile-reviews{
+  width: 55vw;
+
+}
+
+/* profile-details section */
+.profile-details{
+    height: 35%; 
+    padding: 10px 20px;
+}
+.profile-edit{
+  color: var(--text-blue-color);
+  font-size: 15px;
+  margin-left: 350px;
+}
+.details-table{
+  width: 100%;
+}
+
+  tr,
+  td {
+    font-size: 9.5px;
+  }
+
+  th {
+    font-size: 11px;
+  }
+}
