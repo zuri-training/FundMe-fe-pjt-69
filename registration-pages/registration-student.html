@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration - NGO</title>
+    <title>Registration - University Student</title>
 
     <link rel="stylesheet" href="../css/registration.css">
 </head>
@@ -31,32 +31,34 @@
 
             <form action="">
                 <div>
-                    <select name="" id="">
-                        <option value="">NGO</option>
+                    <select name="" id="" disabled>
+                        <option value="">University Student</option>
                         <option value=""></option>
                         <option value=""></option>
                     </select>
                 </div>
                 <div class="input">
-                    <input type="text" placeholder="Name of NGO">
+                    <input type="text" placeholder="Name of School" required>
+                </div>
+                <div class="input">
+                    <input type="text" placeholder="Matric Number" required>
+                </div>
+                <div class="input">
+                    <input type="text" placeholder="Level" required>
                 </div>
                 <div>
-                    <select name="" id="">
+                    <select name="" id="" required>
                         <option value="">Please select a document to upload</option>
-                        <option value="">CAC (Coporate Affairs Commission)</option>
-                        <option value="">Government Accreditation</option>
+                        <option value="">Letter of Acceptance</option>
+                        <option value="">School ID Card</option>
+                        <option value="">School Fees Reciept</option>
                     </select>
                 </div>
-                <div class="capture">  
-    
+
+                <div class="capture">
                     <!-- this div previews the image uploaded -->
-                    <div class="capture-output">
+                    <div class="capture-output" id="output">
                         <label for="file"></label>
-                        <img id="output" width="200">
-                        <!-- <p>
-                            <img src="../svg/cross.svg"> <br>
-                            Click to capture and upload image
-                        </p> -->
                     </div>
                         
                     <!-- 
@@ -69,29 +71,25 @@
                     </div>        
                 </div>
                 <div class="input">
-                    <input type="text" placeholder="Street Address">
+                    <input type="tel" placeholder="Phone Number" required>
                 </div>
                 <div class="input">
-                    <input type="text" placeholder="State">
-                </div>
-                <div class="input">
-                    <input type="text" placeholder="Phone Number">
-                </div>
-                <div class="input">
-                    <input type="text" placeholder="Email Address">
+                    <input type="email" placeholder="Email Address" required>
                 </div>         
                 <div class="input">
-                    <input type="text" placeholder="Password">
+                    <input type="text" placeholder="Password" required>
                 </div>
-                <div>
-                    <input type="checkbox" name="" id="" class="checkbox">
+                <div class="checkbox">
+                    <input type="checkbox" name="" id="" required>
                     <p>I consent to the <a href="">Privacy Policy</a> and <a href="">Terms and Conditions</a>
-                        and I understand that i am opting in to be contected by FundMe, incluidng until such time that i may choose to opt out. 
+                        and I understand that i am opting in to be contected by FundMe, including until such time that i may choose to opt out. 
                     </p>
                 </div>
                 <button type="submit">Continue</button>
             </form>
         </section>
     </div>
+    
+    <script src="../js/script.js"></script>    
 </body>
 </html>

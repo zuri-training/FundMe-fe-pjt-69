@@ -1,4 +1,6 @@
 var loadFile = function(event) {
 	var image = document.getElementById('output');
-	image.src = URL.createObjectURL(event.target.files[0]);
+	image.style.background = "url('../img-landing/sign-up-completed-bg.png')";
+	image.style.backgroundPosition = "center";
+	image.style.backgroundRepeat = "no-repeat";
 };
