@@ -115,9 +115,9 @@
         border-radius: 10px;
         margin: 40px 10%;
         
-        box-shadow: 2px 8px 20px -3px $grey-1;
-        -moz-box-shadow: 2px 8px 20px -3px $grey-1;
-        -webkit-box-shadow: 2px 8px 20px -3px $grey-1;
+        box-shadow: 2px 8px 20px -3px lighten($grey-2, 13.5%);
+        -moz-box-shadow: 2px 8px 20px -3px lighten($grey-2, 13.5%);
+        -webkit-box-shadow: 2px 8px 20px -3px lighten($grey-2, 13.5%);
     }
 }
 

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration - University Student</title>
+
+    <link rel="stylesheet" href="../css/registration.css">
+</head>
+<body>
+    <div id="main">
+        <section id="left">
+            <h1>Welcome to FundMe</h1>
+            <p>
+                We are a community,
+                together helping thousands of students who are struggling.
+            </p>
+
+            <div class="circles">
+                <div class="image-1"></div>
+                <div class="image-2"></div>
+                <div class="image-3"></div>
+                <div class="image-4"></div>
+            </div>
+        </section>
+
+        <section id="right">
+            <h1>Sign Up</h1>
+            <p>Already have an account? <a href="">Log In</a></p>
+
+            <form action="">
+                <div>
+                    <select name="" id="" disabled>
+                        <option value="">University Student</option>
+                        <option value=""></option>
+                        <option value=""></option>
+                    </select>
+                </div>
+                <div class="input">
+                    <input type="text" placeholder="Name of School" required>
+                </div>
+                <div class="input">
+                    <input type="text" placeholder="Matric Number" required>
+                </div>
+                <div class="input">
+                    <input type="text" placeholder="Level" required>
+                </div>
+                <div>
+                    <select name="" id="" required>
+                        <option value="">Please select a document to upload</option>
+                        <option value="">Letter of Acceptance</option>
+                        <option value="">School ID Card</option>
+                        <option value="">School Fees Reciept</option>
+                    </select>
+                </div>
+
+                <div class="capture">
+                    <!-- this div previews the image uploaded -->
+                    <div class="capture-output" id="output">
+                        <label for="file"></label>
+                    </div>
+                        
+                    <!-- 
+                    this div allows the user to upload a photo as a requirement.
+                    it use the javascript function from js/script.js 
+                    -->
+                    <div class="capture-input">
+                        <input type="file" name="image" id="file" onchange="loadFile(event)" required>
+                        <label for="file" class="capture-button">Capture</label>
+                    </div>        
+                </div>
+                <div class="input">
+                    <input type="tel" placeholder="Phone Number" required>
+                </div>
+                <div class="input">
+                    <input type="email" placeholder="Email Address" required>
+                </div>         
+                <div class="input">
+                    <input type="text" placeholder="Password" required>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" name="" id="" required>
+                    <p>I consent to the <a href="">Privacy Policy</a> and <a href="">Terms and Conditions</a>
+                        and I understand that i am opting in to be contected by FundMe, including until such time that i may choose to opt out. 
+                    </p>
+                </div>
+                <button type="submit">Continue</button>
+            </form>
+        </section>
+    </div>
+    
+    <script src="../js/script.js"></script>    
+</body>
+</html>
