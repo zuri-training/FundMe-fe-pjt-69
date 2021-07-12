@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+body {
+    font-family: "Nunito", sans-serif;
+    background-color: #fff;
+    scroll-behavior: smooth;
+  }
+
+.card{
+    position: relative;
+    top: 20vh;
+    border-radius: .6em;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.25),0 7px 7px rgba(0,0,0,0.22);
+}
+
+@media(min-width: 1092px) {
+    .card{ 
+        margin-left: 10vh !important;
+        margin-right: 10vh !important;
+        padding-top: 20vh !important;
+        padding-bottom: 20vh !important;
+    }
+}
+
+.card-title{
+    color: #0072b1;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.card-text{
+    color: #444;
+    font-weight: 400;
+    position: relative;
+    top: 1vh;
+}
+
+.btn1{
+    color: #0072b1;
+    border: 2px solid #0072b1;
+    background-color: #fff;
+    width: 150px;
+    height: 40px;
+}
+
+.btn1:hover{
+    border: none;
+    background-color: #0072b1;
+    color: #fff;
+}
+
+.btn2{
+    color: #fff;
+    background-color: #0072b1;
+    width: 150px;
+    height: 40px;
+}
+
+.btn2:hover{
+    color: #0072b1;
+    background-color: #fff;
+    border: 2px solid #0072b1;
+}
+
+.btn3{
+    color: #0072b1;
+    border: 2px solid #0072b1;
+    background-color: #fff;
+    width: 150px;
+    height: 40px;
+}
+
+.btn3:hover{
+    border: none;
+    background-color: #0072b1;
+    color: #fff;
+}
+
+@media(max-width: 782px) {
+    .button{ 
+   line-height: 7vh;
+    }
+
+    .card{
+        position: relative;
+        top: 10vh;
+        border-radius: .6em;
+        box-shadow: 0 10px 15px rgba(0,0,0,0.25),0 7px 7px rgba(0,0,0,0.22);
+    }
+}
