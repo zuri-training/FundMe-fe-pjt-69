@@ -29,12 +29,12 @@
             <h1>Sign Up</h1>
             <p>Already have an account? <a href="">Log In</a></p>
 
-            <form action="">
+            <form action="Menu">
                 <div>
-                    <select name="" id="" disabled>
-                        <option value="">School</option>
-                        <option value=""></option>
-                        <option value=""></option>
+                    <select name="regMenu" id="regMenu">
+                        <option value="../registration-pages/registration-school.html">SCHOOL</option>
+                        <option value="../registration-pages/registration-ngo.html">NGO</option>
+                        <option value="../registration-pages/registration-student.html">STUDENT</option>
                     </select>
                 </div>
                 <div class="input">
@@ -130,8 +130,20 @@
                 <button type="submit">Continue</button>
             </form>
         </section>
+
+        <script type="text/javascript">
+            var urlMenu = document.getElementById('regMenu');
+            urlMenu.onchange = function(){
+                var userOption = this.options[this.selectedIndex];
+                if(userOption.value != "nothing"){
+                    window.open(userOption.value, "Menu", "");
+                }
+            }
+        </script> 
+
     </div>
     
-    <script src="../js/script.js"></script>    
+    <script src="../js/script.js"></script> 
+   
 </body>
 </html>
