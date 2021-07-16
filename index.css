@@ -7,7 +7,7 @@ body {
 }
 
 header {
-  background-image: url(../IMG-Landing/Header.jpg);
+  background-image: url(/FundMe-fe-pjt-69/IMG-Landing/Header.jpg);
   height: 550px;
   width: 100%;
   background-repeat: no-repeat;
