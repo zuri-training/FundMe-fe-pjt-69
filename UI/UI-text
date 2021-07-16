@@ -1,0 +1,9 @@
+Style Guide
+// Commenting should be done in capital letter...
+
+font-family: Nunito;
+primary/main color: #0072B1;
+background color: #F4F4F4;
+botton color: #B33E00;
+error: #E70B0B;
+gray: #4F4F4F;

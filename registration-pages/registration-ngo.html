@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration - NGO</title>
+
+    <link rel="stylesheet" href="../css/registration.css">
+</head>
+<body>
+    <div id="main">
+        <section id="left">
+            <h1>Welcome to FundMe</h1>
+            <p>
+                We are a community,
+                together helping thousands of students who are struggling.
+            </p>
+
+            <div class="circles">
+                <div class="image-1"></div>
+                <div class="image-2"></div>
+                <div class="image-3"></div>
+                <div class="image-4"></div>
+            </div>
+        </section>
+
+        <section id="right">
+            <h1>Sign Up</h1>
+            <p>Already have an account? <a href="">Log In</a></p>
+
+            <form action="">
+                <div>
+                    <select name="regMenu" id="regMenu">
+                        <option value="../registration-pages/registration-ngo.html">NGO</option>
+                        <option value="../registration-pages/registration-school.html" target="_self">SCHOOL</option>
+                        <option value="../registration-pages/registration-student.html" target="_self">STUDENT</option>
+                    </select>
+                </div>
+                <div class="input">
+                    <input type="text" placeholder="Name of NGO" required>
+                </div>
+                <div>
+                    <select name="" id="" required>
+                        <option value="">Please select a document to upload</option>
+                        <option value="">CAC (Coporate Affairs Commission)</option>
+                        <option value="">Government Accreditation</option>
+                    </select>
+                </div>
+
+                <div class="capture">
+                    <!-- this div previews the image uploaded -->
+                    <div class="capture-output" id="output">
+                        <label for="file"></label>
+                    </div>
+                        
+                    <!-- 
+                    this div allows the user to upload a photo as a requirement.
+                    it use the javascript function from js/script.js 
+                    -->
+                    <div class="capture-input">
+                        <input type="file" name="image" id="file" onchange="loadFile(event)" required>
+                        <label for="file" class="capture-button">Capture</label>
+                    </div>        
+                </div>
+                <div class="input">
+                    <input type="text" placeholder="Street Address" required>
+                </div>
+                <div class="input">
+                    <!-- <input type="text" placeholder="State" required> -->
+                    <select name="state" id="state" required>
+                        <option value="" selected="selected">State</option>
+                        <option value="Abuja">FCT, Abuja</option>
+                        <option value="Abia">Abia</option>
+                        <option value="Adamawa">Adamawa</option>
+                        <option value="Akwa Ibom">Akwa Ibom</option>
+                        <option value="Anambra">Anambra</option>
+                        <option value="Bauchi">Bauchi</option>
+                        <option value="Bayelsa">Bayelsa</option>
+                        <option value="Benue">Benue</option>
+                        <option value="Borno">Borno</option>
+                        <option value="Cross River">Cross River</option>
+                        <option value="Delta">Delta</option>
+                        <option value="Ebonyi">Ebonyi</option>
+                        <option value="Edo">Edo</option>
+                        <option value="Ekiti">Ekiti</option>
+                        <option value="Enugu">Enugu</option>
+                        <option value="Gombe">Gombe</option>
+                        <option value="Imo">Imo</option>
+                        <option value="Jigawa">Jigawa</option>
+                        <option value="Kaduna">Kaduna</option>
+                        <option value="Kano">Kano</option>
+                        <option value="Katsina">Katsina</option>
+                        <option value="Kebbi">Kebbi</option>
+                        <option value="Kogi">Kogi</option>
+                        <option value="Kwara">Kwara</option>
+                        <option value="Lagos">Lagos</option>
+                        <option value="Nassarawa">Nassarawa</option>
+                        <option value="Niger">Niger</option>
+                        <option value="Ogun">Ogun</option>
+                        <option value="Ondo">Ondo</option>
+                        <option value="Osun">Osun</option>
+                        <option value="Oyo">Oyo</option>
+                        <option value="Plateau">Plateau</option>
+                        <option value="Rivers">Rivers</option>
+                        <option value="Sokoto">Sokoto</option>
+                        <option value="Taraba">Taraba</option>
+                        <option value="Yobe">Yobe</option>
+                        <option value="Zamfara">Zamfara</option>
+                      </select>
+                </div>
+                <div class="input">
+                    <input type="tel" placeholder="Phone Number" required>
+                </div>
+                <div class="input">
+                    <input type="email" placeholder="Email Address" required>
+                </div>         
+                <div class="input">
+                    <input type="text" placeholder="Password" required>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" name="" id="" required>
+                    <p>I consent to the <a href="">Privacy Policy</a> and <a href="">Terms and Conditions</a>
+                        and I understand that i am opting in to be contected by FundMe, including until such time that i may choose to opt out. 
+                    </p>
+                </div>
+                <button type="submit"> <a href="../beneficiaries-dashboard/dashboard.html"> Continue </a></button>
+            </form>
+        </section>
+
+        <script type="text/javascript">
+            var urlMenu = document.getElementById('regMenu');
+            urlMenu.onchange = function(e){
+                e.preventDefault();
+                var userOption = this.options[this.selectedIndex];
+                if(userOption.value != "nothing"){
+                    window.open(userOption.value, "Menu", "");
+                }
+            }
+        </script> 
+    </div>
+    
+    <script src="../js/script.js"></script>    
+</body>
+</html>

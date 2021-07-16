@@ -1,0 +1,136 @@
+@media(max-width:1050px){
+    #main > #right {
+        padding: 7.5vh 2.5% 0;
+    }
+}
+
+@media(max-width:880px){
+    #main > #right {
+        padding: 7.5vh 0.5% 0;
+    }
+
+    #main > #left {
+        padding: 12.5vh 7.5% 20px 7.5%;
+    }
+}
+
+@media(max-width:845px){
+    #main > #left {
+        padding: 12.5vh 5% 20px;
+    }
+}
+
+@media(max-width:830px){
+    #main > #right {
+        padding: 7.5vh 2.5% 0;
+
+        form {
+            padding: 20px 10% 40px;
+        }
+    }
+}
+
+@media(max-width:720px){
+    #main > #left {
+        .circles {
+            margin: 20px 0 0 0;
+
+            .image-3 {
+                top: 25.5vh;
+                left: 15%;
+            }
+
+            .image-4 {
+                top: 32.5vh;
+            }
+        }
+    }
+}
+
+@media(max-width:700px){
+    #main > #right {
+        form {
+            padding: 20px 6.5% 40px;
+        }
+    }
+}
+
+@media(max-width:675px){
+    #main > #right {
+        padding: 7.5vh 0 0 0;
+    }
+}
+
+@media(max-width:635px){
+    #main > #right {
+        form > div > input, form > div > select {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    }
+}
+
+@media(max-width:575px){
+    #main {
+        display: block;
+        overflow-y: scroll;
+    }
+
+    #main > #left {
+        display: none;
+
+        // padding: 0;
+        // // height: max-content;
+
+        // background-color: transparent;
+        // overflow: scroll;
+        // top: 20%;
+
+        // h1, p {
+        //     display: none;
+        // }
+
+        // .circles { 
+        //     div {
+        //         position: static;
+        //     }                
+        //     .image-1 {
+        //         transform: translateX(25%) translateY(40px);    
+        //     }       
+        //     .image-2 {
+        //         transform: translateX(25%) translateY(40px);
+        //     }
+        //     .image-3 {
+        //         transform: translateX(25%) translateY(40px);
+        //     }
+        //     .image-4 {
+        //         transform: translateX(25%) translateY(40px);
+        //     }
+        // }
+
+    }
+
+    #main > #right {
+        background-color: $background-color;
+        border-radius: 10px;
+        margin: 40px 10%;
+        
+        box-shadow: 2px 8px 20px -3px lighten($grey-2, 13.5%);
+        -moz-box-shadow: 2px 8px 20px -3px lighten($grey-2, 13.5%);
+        -webkit-box-shadow: 2px 8px 20px -3px lighten($grey-2, 13.5%);
+    }
+}
+
+@media(max-width:470px){
+    #main > #right {
+        margin: 40px 7.5%;
+        padding-top: 50px;
+    }
+}
+
+@media(max-width:485px){
+    #main > #right {
+        transform: scale(.9);
+        margin: 0;
+    }
+}

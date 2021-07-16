@@ -1,0 +1,314 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body {
+  background-color: #F4F4F4;
+  font-family: "Nunito", sans-serif;
+  line-height: 16px;
+  letter-spacing: 2;
+}
+
+a {
+  color: #fff !important;
+}
+
+ul, ol, li {
+  list-style-type: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  color: #0072B1;
+}
+
+input::placeholder, input, p {
+  color: #4F4F4F;
+}
+
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+#main {
+  overflow: hidden;
+}
+#main #left {
+  overflow: hidden;
+}
+#main #right {
+  overflow-y: scroll;
+}
+
+#main {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 0.75fr 1fr;
+}
+#main #left {
+  background-color: #0072B1;
+  text-align: center;
+  padding: 15vh 8.5% 20px 8.5%;
+}
+#main #left h1, #main #left h2, #main #left h3, #main #left h4, #main #left h5, #main #left h6, #main #left p {
+  color: whitesmoke;
+  line-height: 1.5;
+}
+#main #left h1 {
+  font-size: 2rem;
+}
+#main #left p {
+  font-size: 1.2rem;
+  padding: 30px 2.5% 0 2.5%;
+}
+#main #left .circles {
+  position: relative;
+  margin: 40px 0 0 0;
+}
+#main #left .circles div {
+  width: 85px;
+  height: 85px;
+  position: absolute;
+  border: 3.5px solid whitesmoke;
+  border-radius: 50px;
+}
+#main #left .circles div img {
+  width: 100px;
+}
+#main #left .circles .image-1 {
+  background: url("../IMG-Landing/T and K.jpg");
+  top: 0;
+  right: 20%;
+}
+#main #left .circles .image-2 {
+  background: url("../IMG-Landing/Idara.jpg");
+  top: 11.5vh;
+  left: 7.5%;
+}
+#main #left .circles .image-3 {
+  background: url("../IMG-Landing/Nonso1.jpg");
+  top: 31.5vh;
+  left: 25%;
+}
+#main #left .circles .image-4 {
+  background: url("../IMG-Landing/Header.jpg");
+  top: 40vh;
+  right: 10%;
+}
+#main #left .circles .image-1, #main #left .circles .image-2, #main #left .circles .image-3, #main #left .circles .image-4 {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#main #right {
+  text-align: center;
+  padding: 10vh 10% 0;
+}
+#main #right h1 {
+  font-size: 1.85rem;
+  padding: 0 0 15px 0;
+}
+#main #right a {
+  color: #0072B1;
+  text-decoration: none;
+  font-weight: 600;
+}
+#main #right a:hover {
+  text-decoration: underline;
+}
+#main #right form {
+  padding: 20px 15% 40px 15%;
+}
+#main #right form > div {
+  margin: 10px auto;
+}
+#main #right form > div > input, #main #right form > div > select {
+  width: 100%;
+  height: 40px;
+  padding: 15px 20px;
+  background-color: transparent;
+  border: 1px solid #4F4F4F;
+  border-radius: 3.5px;
+  font-size: 15px;
+  color: #4F4F4F;
+}
+#main #right form > div select {
+  padding: 0 20px;
+}
+#main #right form > div select option {
+  background-color: transparent;
+}
+#main #right form .capture .capture-input {
+  display: none;
+}
+#main #right form .capture .capture-output {
+  border: 1px dashed #0072B1;
+  height: 150px;
+  min-width: 200px;
+  text-align: center;
+  overflow: hidden;
+  border-radius: 5px;
+  position: relative;
+  background: url("../IMG-Landing/sign-up-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#main #right form .capture .capture-output label {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: transparent;
+  z-index: 10;
+}
+#main #right form .capture .capture-output > img {
+  height: 100%;
+  width: 100%;
+  border: 0;
+  outline: 0;
+}
+#main #right form .checkbox {
+  display: flex;
+  padding-top: 5px;
+  position: relative;
+}
+#main #right form .checkbox p {
+  color: #4F4F4F;
+  text-align: left;
+  font-size: 12.5px;
+  text-align: justify;
+}
+#main #right form .checkbox a {
+  color: #2f80ed;
+  text-decoration: none;
+  font-weight: 600;
+  text-decoration: underline;
+}
+#main #right form .checkbox a:hover {
+  text-decoration: none;
+}
+#main #right form .checkbox input {
+  width: max-content;
+  margin-right: 10px;
+  height: 15px;
+  border-radius: 0;
+}
+#main #right form button {
+  width: 100%;
+  background-color: #0072B1;
+  padding: 12.5px 0;
+  color: whitesmoke;
+  font-size: 18px;
+  border: 1px solid #0072B1;
+  border-radius: 3.5px;
+  transition: 0.35s ease-in-out;
+}
+#main #right form button:hover {
+  background-color: transparent;
+  color: #0072B1;
+}
+
+@media (max-width: 1050px) {
+  #main > #right {
+    padding: 7.5vh 2.5% 0;
+  }
+}
+@media (max-width: 880px) {
+  #main > #right {
+    padding: 7.5vh 0.5% 0;
+  }
+
+  #main > #left {
+    padding: 12.5vh 7.5% 20px 7.5%;
+  }
+}
+@media (max-width: 845px) {
+  #main > #left {
+    padding: 12.5vh 5% 20px;
+  }
+}
+@media (max-width: 830px) {
+  #main > #right {
+    padding: 7.5vh 2.5% 0;
+  }
+  #main > #right form {
+    padding: 20px 10% 40px;
+  }
+}
+@media (max-width: 720px) {
+  #main > #left .circles {
+    margin: 20px 0 0 0;
+  }
+  #main > #left .circles .image-3 {
+    top: 25.5vh;
+    left: 15%;
+  }
+  #main > #left .circles .image-4 {
+    top: 32.5vh;
+  }
+}
+@media (max-width: 700px) {
+  #main > #right form {
+    padding: 20px 6.5% 40px;
+  }
+}
+@media (max-width: 675px) {
+  #main > #right {
+    padding: 7.5vh 0 0 0;
+  }
+}
+@media (max-width: 635px) {
+  #main > #right form > div > input, #main > #right form > div > select {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+@media (max-width: 575px) {
+  #main {
+    display: block;
+    overflow-y: scroll;
+  }
+
+  #main > #left {
+    display: none;
+  }
+
+  #main > #right {
+    background-color: #F4F4F4;
+    border-radius: 10px;
+    margin: 40px 10%;
+    box-shadow: 2px 8px 20px -3px #dfdfdf;
+    -moz-box-shadow: 2px 8px 20px -3px #dfdfdf;
+    -webkit-box-shadow: 2px 8px 20px -3px #dfdfdf;
+  }
+}
+@media (max-width: 470px) {
+  #main > #right {
+    margin: 40px 7.5%;
+    padding-top: 50px;
+  }
+}
+@media (max-width: 485px) {
+  #main > #right {
+    transform: scale(0.9);
+    margin: 0;
+  }
+}
+
+/*# sourceMappingURL=registration.css.map */
