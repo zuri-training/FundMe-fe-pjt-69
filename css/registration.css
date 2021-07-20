@@ -13,6 +13,10 @@ body {
   letter-spacing: 2;
 }
 
+a {
+  color: #fff !important;
+}
+
 ul, ol, li {
   list-style-type: none;
 }
